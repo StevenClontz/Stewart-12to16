@@ -3,8 +3,8 @@ Stewart-12to16
 
 Notes to accompany Chapters 12 to 16 of Stewart's Calculus - Early Transcendentals, 7th edition
 
-Background
-----------
+Abstract
+--------
 
 These notes are written to support the major topics covered in Auburn University's Calculus III course based on Stewart's book.
 
