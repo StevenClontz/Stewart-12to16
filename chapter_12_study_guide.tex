@@ -1,0 +1,230 @@
+\documentclass[12pt]{article}
+\pagestyle{empty}
+
+\usepackage{graphicx}
+
+\setlength\oddsidemargin{-0.5in}
+\setlength\evensidemargin{-0.5in}
+\setlength\textwidth{7in}
+\setlength\textheight{10in}
+\setlength\topmargin{0in}
+\setlength\headheight{0in}
+\setlength\headsep{0in}
+
+\newcommand{\up}{$~$\vspace*{-0.7in}}
+\newcommand{\ans}{\noindent Ans.\underline{\hspace{3in}}}
+\newcommand{\liner}{\noindent\underline{\hspace*{7in}}}
+\newcommand{\spac}{\hspace*{3em}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\halfspac}{\hspace*{1.5em}}
+
+\begin{document}
+
+\up
+
+{\bf Ch 12 Study Guide  \hspace*{1em} Your Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \hspace*{1em} Class: 9am / 1pm}
+
+\vspace*{0.2in}
+
+\centerline{ \bf Calculus III - MATH 2630 - Spring 2013 \spac Instructor: Steven Clontz}
+
+\vspace*{0.2in}
+
+{\bf Draw a \framebox{box} around your answer. Show your work. Pens/calculators not allowed.}
+
+\indent\liner
+
+
+\begin{enumerate}
+
+% (12.1) Open/closed domains
+\item Give the domain and range of the function $f(x,y) = \frac{3}{x-y}$ in set notation or interval notation.
+
+  \begin{itemize}
+    \item Write the domain in set notation (3 pts)
+    \item Write the range in set notation or interval notation (1 pt)
+  \end{itemize}
+
+\vspace*{2.5in}
+
+Now, sketch the function's domain, tell if it is open/closed/both/neither, and tell if it is bounded/unbounded.
+
+  \begin{itemize}
+    \item Sketch the domain correctly (2 pts)
+    \item Identify the domain as open/closed/both/neither (2 pts)
+    \item Identify the domain as bounded/unbounded (2 pts)
+  \end{itemize}
+
+\vspace*{3in}
+
+\liner
+
+\newpage
+
+% (12.1) Sketch Level Curves
+
+\item Sketch three typical level curves for the function $f(x,y) = \frac{3}{x-y}$.
+
+  \begin{itemize}
+    \item Use the format $f(x,y)=c$ for level curves (2 pts)
+    \item Simplify $f(x,y)=c$ into an identifiable curve equation (3 pts)
+    \item Correctly express $f(x,y)=c$ for three values of $c$ (2 pts)
+    \item Sketch each $f(x,y)=c$ in the $xy$-plane accurately (3 pts)
+  \end{itemize}
+
+\vspace*{7.6in}
+
+\liner
+
+\newpage
+
+% (12.2) Finding Multidimensional Limits
+
+\item Compute $\ds \lim_{(x,y)\to(0,0)} \frac{x\sin 2y - \sin 2y}{y-xy}$ without restricting to a path of approach.
+
+  \begin{itemize}
+    \item Correctly identify method to simplify fraction (4 pts)
+    \item Execute method of simplification correctly (4 pts)
+    \item Compute the correct value of the limit (2 pts)
+  \end{itemize}
+
+\vspace*{7in}
+
+\liner
+
+\newpage
+
+% (12.2) Show Multidimensional limit DNE
+
+\item Prove that $\ds \lim_{(x,y)\to(0,0)} \frac{3x^2y}{y^2+x^4}$ doesn't exist.
+
+  \begin{itemize}
+    \item Restrict the limit to two paths of approach, or a path of approach depending on $k$ \\ (3 pts)
+    \item Conclude the limit DNE since the limit equals different real numbers along two different paths of approach (3 pts)
+    \item Correctly compute the limits along two paths of approach (4 pts)
+  \end{itemize}
+
+\vspace*{7in}
+
+\liner
+
+\newpage
+
+% (12.3) Finding Partial Derivatives
+
+\item Find all of the first-order and second-order partial derivatives for $f(x,y) = x^3+3xy^2+e^y$.
+
+  \begin{itemize}
+    \item Compute each of $f_x$, $f_y$, $f_{xx}$, $f_{xy}=f_{yx}$, and $f_{yy}$ correctly (2 pts each)
+  \end{itemize}
+
+\vspace*{8in}
+
+\liner
+
+\newpage
+
+% (12.4) Chain Rule
+
+\item Find $\frac{df}{dt}$ at $t=\frac{\pi}{4}$ given $f(x,y,z)=\ln(xyz)$, $x=\cos t$, $y=\sec t$, and $z=4t^2$.
+
+  \begin{itemize}
+    \item If using Chain Rule:
+      \begin{itemize}
+        \item Use a correct Chain Rule formula $\frac{df}{dt}=\nabla f \cdot \frac{d\vec{r}}{dt}$ (2 pts)
+        \item Compute each of $\frac{\partial f}{\partial x}$, $\frac{\partial f}{\partial y}$, $\frac{\partial f}{\partial z}$, $\frac{d x}{d t}$, $\frac{d y}{d t}$, $\frac{d z}{d t}$ correctly (1 pt each)
+        \item Plug in value of $t$ and simplify (2 pts)
+      \end{itemize}
+    \item If using substitution:
+      \begin{itemize}
+        \item Plug $x,y,z$ into $f(x,y,z)$ to get $f$ as a function of $t$ (3 pts)
+        \item Differentiate correctly (5 pts)
+        \item Plug in value of $t$ and simplify (2 pts)
+      \end{itemize}
+  \end{itemize}
+
+\vspace*{6in}
+
+\liner
+
+\newpage
+
+% (12.5) Directional Derivatives
+
+\item Find the directional derivative of $f(x,y,z)=3xy^2+6yz^2$ at the point $(1,2,-1)$ in the direction of $\left<2,-1,2\right>$.
+
+  \begin{itemize}
+    \item Use the formula $\frac{df}{ds_{\vec{u}}} = \nabla f \cdot \vec{u}$ (3 pts)
+    \item Compute the direction $\vec{u}$ (2 pts)
+    \item Compute the gradient $\nabla f$ (2 pts)
+    \item Compute the directional derivative (3 pts)
+  \end{itemize}
+
+\vspace*{7in}
+
+\liner
+
+\newpage
+
+% (12.6) Tangent Planes
+
+\item Find the plane tangent to the surface $xy+2yz-xz=24$ at the point $(1,2,-1)$.
+
+  \begin{itemize}
+    \item Compute the gradient $\nabla f$ (3 pts)
+    \item Use the plane equation $A(x-x_0)+B(y-y_0)+C(z-z_0)=0$ (4 pts)
+    \item Plug into the plane equation correctly (3 pts)
+  \end{itemize}
+
+\vspace*{7in}
+
+\liner
+
+\newpage
+
+% (12.7) Local Extrema and Saddle Points
+
+\item Find and label all the points yielding local maximum values, local minimum values, and saddle points for $f(x,y)=x^3+3xy+y^3+2$.
+
+  \begin{itemize}
+    \item Compute the gradient $\nabla f$ (2 pts)
+    \item Set $\nabla f = \vec{0}$ to find its critical points (1 pt)
+    \item Find all the critical points (2 pts)
+    \item Compute $f_{xx}, f_{yy}, f_{xy}$ correctly (1 pt)
+    \item Compute $f_D$ correctly (1 pt)
+    \item Use the 2nd derivative test to correctly label each critical point (1 pt for one, 3 pts for all)
+  \end{itemize}
+
+\vspace*{7in}
+
+\liner
+
+\newpage
+
+% (12.8) Lagrange Multipliers
+
+\item Find the radius and height of a cylinder with volume $2\pi$ such that the surface area is as small as possible. (HINT: Use the Method of Lagrange Multipliers along with the formulas $V=\pi r^2h$ and $SA=2\pi rh + 2\pi r^2$.)
+
+  \begin{itemize}
+    \item Identify and label the function $f$ to optimize (2 pt)
+    \item Identify and label the restriction function $g=c$ (2 pt)
+    \item Use the method of Lagrange Multipliers $\nabla f = \lambda \nabla g$ (3 pts)
+    \item Find the optimizing input (3 pts)
+  \end{itemize}
+
+\vspace*{7in}
+
+\liner
+
+\newpage
+
+%% Two pages of scratch work! %%
+\centerline{Include extra scratch work below:}
+\liner
+\newpage
+\centerline{Include extra scratch work below:}
+\liner
+
+\end{enumerate}
+
+\end{document}

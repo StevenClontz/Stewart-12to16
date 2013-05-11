@@ -1,0 +1,215 @@
+\documentclass[12pt]{article}
+\pagestyle{empty}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\setlength\oddsidemargin{-0.5in}
+\setlength\evensidemargin{-0.5in}
+\setlength\textwidth{7in}
+\setlength\textheight{10in}
+\setlength\topmargin{0in}
+\setlength\headheight{0in}
+\setlength\headsep{0in}
+
+\newcommand{\up}{$~$\vspace*{-0.7in}}
+\newcommand{\ans}{\noindent Ans.\underline{\hspace{3in}}}
+\newcommand{\liner}{\noindent\underline{\hspace*{7in}}}
+\newcommand{\spac}{\hspace*{3em}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\halfspac}{\hspace*{1.5em}}
+
+\begin{document}
+
+\up
+
+{\bf Ch 13 Study Guide  \hspace*{1em} Your Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \hspace*{1em} Class: 9am / 1pm}
+
+\vspace*{0.2in}
+
+\centerline{ \bf Calculus III - Math 2630 - Fall 2012 \spac Instructor: Steven Clontz}
+
+\vspace*{0.2in}
+
+{\bf Draw a \framebox{box} around your answer. Show your work. Pens/calculators not allowed.}
+
+\indent\liner
+
+
+\begin{enumerate}
+
+% (13.2) Nonrectangular Double Integral
+
+\item Evaluate $\ds \int_{1}^{2}\int_{1/x}^{2/x} xe^x \,dy\,dx$.
+
+  \begin{itemize}
+  \item Correctly integrate inside function (4 pts)
+  \item Correctly evaulate inside integral (3 pts)
+  \item Correctly evaulate outside integral (3 pts)
+  \end{itemize}
+
+\vspace*{6in}
+
+\liner
+
+\newpage\up
+
+% (13.2) Reversing order of integration of nonrectangular double integral.
+
+\item Evaluate $\ds \int_{0}^{1}\int_{\sqrt{y}}^{1} \frac{3}{1+x^3}\,dx\,dy$.
+
+  \begin{itemize}
+  \item Draw region of integration correctly (3 pts)
+  \item Set up new bounds of integration correctly (4 pts)
+  \item Correctly evaulate new double iterated integral (3 pts)
+  \end{itemize}
+
+\vspace*{8in}
+
+\liner
+
+\newpage\up
+
+% (13.3) Area by Double Integration
+
+\item Express the area of the region between the curves $y=4-x^2$ and $y=x^2-4$ as a double iterated integral. \textbf{Do not evaluate the integral.}
+
+  \begin{itemize}
+  \item Use correct formula $A = \iint_{R}\,dA$ (3 pts)
+  \item Draw region of integration correctly (3 pts)
+  \item Set up bounds of integration correctly (3 pts)
+  \item Write correct double iterated integral (1 pt)
+  \end{itemize}
+
+\vspace*{7.5in}
+
+\liner
+
+\newpage\up
+
+% (13.3) Average Value of a two-variable function
+
+\item Express the average value of the function $f(x,y)=3xy^2$ over the triangle with sides given by the lines $x=4$, $y=0$, $x=2y$ as a multiple of a double iterated integral. \textbf{Do not evaluate the integral.}
+
+  \begin{itemize}
+  \item Use correct formula $\frac{1}{\text{area of }R}\iint_{R}f(x,y)\,dA$ (3 pts)
+  \item Find area of the triangular/rectangular region (2 pts)
+  \item Set up bounds of integration correctly (3 pts)
+  \item Write correct multiple of double iterated integral (2 pts)
+  \end{itemize}
+
+\vspace*{7in}
+
+\liner
+
+\newpage\up
+
+% (13.5) Evaluate a triple nonrectangular integral
+
+\item Evaluate $\ds \int_{0}^{1}\int_0^{z}\int_0^{x+z} 36xz \,dy\,dx\,dz$.
+
+  \begin{itemize}
+  \item Evaulate inner integral correctly (4 pts)
+  \item Evaulate inner \& middle integrals correctly (3 pts)
+  \item Evaulte entire triple iterated integral correctly (3 pts)
+  \end{itemize}
+
+\vspace*{8in}
+
+\liner
+
+\newpage\up
+
+% (13.5) Volume of 3D Region
+
+\item Express the volume of the region in $xyz$ space in the first octant bounded by  the coordinate planes and the plane $x+3y+2z=6$ as a triple iterated integral. \textbf{Do not evaluate the integral.}
+
+  \begin{itemize}
+  \item Set up integral of the form $\int_{\text{constant}}^{\text{constant}}\int_{\leq 1\text{ var}}^{\leq 1\text{ var}}\int_{\leq 2\text{ var}}^{\leq 2\text{ var}} \, dV$ (4 pts)
+  \item Set up innermost bounds correctly (3 pts)
+  \item Set up all bounds correctly (3 pts)
+  \end{itemize}
+
+\vspace*{8in}
+
+\liner
+
+\newpage\up
+
+% (13.8) Finding 2D Transformation
+
+\item Find a transformation $x(u,v)$, $y(u,v)$ from the triangle with coordinates $(0,0)$, $(1,0)$, and $(1,1)$ in the $uv$ plane into the triangle with vertices $(0,0)$, $(2,2)$, and $(1,4)$ in the $xy$ plane.
+
+  \begin{itemize}
+  \item Draw picture of regions in $uv$ and $xy$ planes (2 pts)
+  \item Label sides of regions in both planes correctly (3 pts)
+  \item Relate sides of regions in both planes correctly (3 pts)
+  \item Solve the system of equations for the correct transformation (2 pts)
+  \end{itemize}
+
+\vspace*{7in}
+
+\liner
+
+\newpage\up
+
+% (13.8) 2D Substitution
+
+\item Using the transformation $x=3u-2v$, $y=2u+4v$ from the unit square in the $uv$ plane into the parallelogram $R$ with vertices $(0,0)$, $(3,2)$, $(1,6)$, and $(-2,4)$ in the $xy$ plane, evaulate \[\iint\limits_{R} \left(2x-y\right) \,dx\,dy\]
+
+  \begin{itemize}
+  \item Substitute $x(u,v)$, $y(u,v)$ for $x$, $y$ (2 pts)
+  \item Evaulate the Jacobian correctly, multiply the entire function by its absolute value (3 pts)
+  \item Set up the correct new bounds of integration (2 pts)
+  \item Evaulate the integral correctly (3 pts)
+  \end{itemize}
+
+\vspace*{7in}
+
+\liner
+
+\newpage\up
+
+% (13.4) Changing Cartesian to Polar Integral
+
+\item Evaluate $\ds\int_{0}^2\int_0^{\sqrt{4-x^2}} 3\sqrt{x^2+y^2}\,dy\,dx$.
+
+  \begin{itemize}
+  \item Draw the region of integration correctly (3 pts)
+  \item Set up new polar bounds of integration (3 pts)
+  \item Replace $x,y$ with $r\cos\theta,r\sin\theta$ and replace $dA$ with $r\,dr\,d\theta$ (2 pts)
+  \item Evaulate the integral correctly (2 pts)
+  \end{itemize}
+
+\vspace*{7.6in}
+
+\liner
+
+\newpage
+
+% (13.7) Changing Cartesian to Spherical Integral
+
+\item Express the volume of the solid inside the sphere $x^2+y^2+z^2=4$ ($\rho=2$) and above the cone $z=\frac{\sqrt{3}}{2}\sqrt{x^2+y^2}$ ($\phi=\pi/6$) as a triple iterated integral using spherical coordinates. \textbf{Do not evaluate the integral.}
+
+  \begin{itemize}
+  \item Use volume formula $\iiint_D \,dV$ (3 pts)
+  \item Set up spherical bounds of integration (4 pts)
+  \item Replace $dV$ with $\rho^2\sin\phi\,d\rho\,d\phi\,d\theta$ (3 pts)
+  \end{itemize}
+
+\vspace*{7in}
+
+\liner
+
+\newpage
+
+%% Two pages of scratch work! %%
+\centerline{Include extra scratch work below:}
+\liner
+\newpage
+\centerline{Include extra scratch work below:}
+\liner
+
+\end{enumerate}
+
+\end{document}

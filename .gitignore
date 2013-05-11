@@ -1,0 +1,6 @@
+*
+!.gitignore
+!*.tex
+!README.md
+!*.pdf
+dnt*

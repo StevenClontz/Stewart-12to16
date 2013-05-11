@@ -1,0 +1,250 @@
+\documentclass[12pt]{article}
+\pagestyle{empty}
+
+\usepackage{graphicx}
+
+\setlength\oddsidemargin{-0.5in}
+\setlength\evensidemargin{-0.5in}
+\setlength\textwidth{7in}
+\setlength\textheight{10in}
+\setlength\topmargin{0in}
+\setlength\headheight{0in}
+\setlength\headsep{0in}
+
+\newcommand{\up}{$~$\vspace*{-0.7in}}
+\newcommand{\ans}{\noindent Ans.\underline{\hspace{3in}}}
+\newcommand{\liner}{\noindent\underline{\hspace*{7in}}}
+\newcommand{\spac}{\hspace*{3em}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\halfspac}{\hspace*{1.5em}}
+
+\renewcommand{\vec}{\mathbf}
+\newcommand{\veci}{\vec{i}}
+\newcommand{\vecj}{\vec{j}}
+\newcommand{\veck}{\vec{k}}
+
+\newcommand{\proj}{\mbox{proj}}
+
+\newcommand{\<}{\left<}
+\renewcommand{\>}{\right>}
+
+\newcommand{\dvar}{\,d}
+
+\begin{document}
+
+\up
+
+{ \bf Ch 10 Study Guide / Your Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ / Your Class: \_\_\_\_\_\_\_\_\_\_}
+
+\vspace*{0.2in}
+
+\centerline{ \bf Calculus III - Math 2630 - Spring 2013 \spac Instructor: Steven Clontz}
+
+\vspace*{0.2in}
+
+{\bf Draw a \framebox{box} around your answer. Show your work. Calculators not allowed.}
+
+\indent\liner
+
+
+\begin{enumerate}
+
+% (10.3) Angle between vectors
+\item Find the cosine of the angle between the vectors $\vec{u}=\<4,-3,0\>$ and $\vec{v}=\<2,6,-3\>$.
+
+  \begin{enumerate}
+\item Invoke correct formula $\vec{u}\cdot\vec{v} = |\vec{u}||\vec{v}|\cos \theta$ (3 points)
+\item Compute each of $|\vec{u}|$, $|\vec{v}|$, $\vec{u}\cdot\vec{v}$ correctly (1 point each, 3 total)
+\item Compute $\cos \theta$ correctly (4 points)
+  \end{enumerate}
+
+\vspace*{6.5in}
+
+\liner
+\newpage\up
+
+% (10.3) Projection vector
+\item Find the vector which is the projection of the vector $\vec{u} = \veci-2\vecj+2\veck$ onto the vector \\$\vec{v}=-3\veci+4\veck$.
+
+\begin{enumerate}
+\item Apply correct formula $\ds\proj_{\vec{v}}(\vec{u}) = \left(\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|^2}\right)\vec{v}$ (3 points)
+\item Compute each of $\vec{u}\cdot\vec{v}$, $|\vec{v}|$ correctly (2 points each, 4 total)
+\item Compute $\proj_{\vec{v}}(\vec{u})$ correctly (3 points)
+\end{enumerate}
+
+\vspace*{7in}
+
+\liner
+\newpage\up
+
+% (10.4) Right-hand rule
+\item Circle one for each: Given the below images, does the vector $\vec{u}\times\vec{v}$ extend OUT of the paper or INTO the paper for each?
+
+\begin{enumerate}
+\item Get all correct (10 points)
+\item Get all incorrect (5 points)
+\item Mix of correct and incorrect (0 points)
+\end{enumerate}
+
+\begin{center}
+\setlength{\unitlength}{0.03in}
+\begin{picture}(90,120)
+\put(0,90){\vector(-4,1){30}}
+\put(0,90){\vector(1,4){5}}
+\put(-19,89){$\vec{v}$}
+\put(5,100){$\vec{u}$}
+\put(-25,75){OUT / INTO}
+
+\put(90,90){\vector(0,1){20}}
+\put(90,90){\vector(2,3){10}}
+\put(82,100){$\vec{v}$}
+\put(97,95){$\vec{u}$}
+\put(75,76){OUT / INTO}
+
+\thicklines
+\put(-20,40){\vector(4,-1){30}}
+\put(-20,40){\vector(1,-4){5}}
+\put(-25,25){$\vec{v}$}
+\put(0,40){$\vec{u}$}
+\put(-25,5){OUT / INTO}
+
+\put(90,40){\vector(0,2){20}}
+\put(90,40){\vector(1,-1){20}}
+\put(82,45){$\vec{u}$}
+\put(97,23){$\vec{v}$}
+\put(75,6){OUT / INTO}
+\end{picture}
+\end{center}
+
+\vspace*{4in}
+
+\liner
+\newpage\up
+
+% (10.4) Finding normal vectors.
+\item Find a nonzero vector which is normal to both of the vectors $\<1,3,-4\>$ and $\<2,0,1\>$.
+
+\begin{enumerate}
+\item Claim cross-product is normal (2 points)
+\item Set up the cross-product correctly (2 points)
+\item Compute cross-product correctly (6 points)
+\end{enumerate}
+
+\vspace*{8in}
+
+\liner
+\newpage\up
+
+% (10.5) Find the vector/parametric equation for a line.
+\item Find the vector equation and parametric equations for the line passing through $(1,2,3)$ and parallel to the line given by $\vec{r}(t)=\<4-t,3-2t,2+t\>$.
+
+\begin{enumerate}
+\item Identify a point on the line (1 point) 
+\item Identify a vector parallel to the line (2 points)
+\item Write a correct vector equation (4 points) 
+\item Write correct parametric equations (3 points)
+\end{enumerate}
+
+\vspace*{7in}
+
+\liner
+\newpage\up
+
+% (10.5) Find the equation for a plane.
+\item Find the equation for the plane passing through $(1,4,-1)$ and normal to the line $$x=-3t, y=t+2, z=2t-1$$
+
+\begin{enumerate}
+\item Identify a point on the plane (2 point) 
+\item Identify a vector normal to the plane (3 points) 
+\item Write a correct plane equation (5 points)
+\end{enumerate}
+
+\vspace*{7in}
+
+\liner
+\newpage\up
+
+% (10.5) Find the distance from a point to a plane.
+\item Find the distance from the point $(2,7,-3)$ to the plane given by the equation $2x+6y-3z=6$.
+
+\begin{enumerate}
+\item Use the correct formula for distance from a point to a plane $d = \frac{|\vec{PS}\cdot\vec{n}|}{|\vec{n}|}$ (3 points)
+\item Identify a correct $\vec{PS}$ (2 points) 
+\item Identify a correct $\vec{n}$ (2 points) 
+\item Compute the correct distance (3 points)
+\end{enumerate}
+
+\vspace*{7.5in}
+
+\liner
+\newpage\up
+
+% (10.5) Find the distance from a point to a line
+\item Find the distance from the point $(2,7,-3)$ to the line given by the equation $\vec{r}(t)=\<2t,6t,-3t\>$.
+
+\begin{enumerate}
+\item Use the correct formula for distance from a point to a line $d = \frac{|\vec{PS}\times\vec{v}|}{|\vec{v}|}$ (3 points)
+\item Identify a correct $\vec{PS}$ (2 points) 
+\item Identify a correct $\vec{v}$ (2 points) 
+\item Compute the correct distance (3 points)
+\end{enumerate}
+
+\vspace*{7.5in}
+
+\liner
+\newpage\up
+
+% (10.6) Sketch and name a cylinder
+\item Give the name of the surface in 3D space given by the equation $x=\sin z$. Sketch any relevant planar cross-sections and sketch the graph in 3D space.
+
+\begin{enumerate}
+\item Identify the surface as a cylinder (2 points) 
+\item Sketch a cross-section of the surface in a coordinate plane (3 points) 
+\item Sketch the surface in $xyz$ space (5 points)
+\end{enumerate}
+
+\vspace*{7.5in}
+
+\liner
+\newpage\up
+
+% (10.6) Sketch and name a quadric surface
+\item Give the name of the surface in 3D space given by the equation $x^2-z^2=4y^2+16$. Sketch any relevant planar cross-sections and sketch the graph in 3D space.
+
+\begin{enumerate}
+\item Sketch cross-sections of the surface in each coordinate plane (2 point each, 6 total) 
+\item Sketch the surface in $xyz$ space (2 points) 
+\item Identify the quadric surface as a [hyperboloid of two sheets] (2 points)
+\end{enumerate}
+
+\vspace*{7.5in}
+
+\liner
+\newpage\up
+
+%% Two pages of scratch work! %%
+\centerline{Include extra scratch work below:}
+\liner
+\newpage
+\centerline{Include extra scratch work below:}
+\liner
+\newpage
+
+\end{enumerate}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
