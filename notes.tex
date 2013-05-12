@@ -153,7 +153,7 @@
 
 \newpage
   
-\centerline{\bf 12.3 The Dot Product TODO find new title}
+\centerline{\bf 12.3 The Dot Product}
   
     \begin{itemize}
     \item Dot Product
@@ -187,6 +187,7 @@
     \item Work
       \[W = \vec{F} \cdot \vec{D} = |\vec{F}||\vec{D}|\cos \theta\]\
     
+    % All these are outdated from Hass - might replace or make new homework sheet.
     % \item \textbf{Suggested Exercises for 10.3}
     %   \begin{itemize}
     %   \item Finding and applying dot products: 1-8
@@ -196,49 +197,9 @@
   
 \newpage
 
-\centerline{\bf 10.4 The Cross Product}
+\centerline{\bf 12.4 The Cross Product}
   
     \begin{itemize}
-    \item Right-hand rule
-
-      Any method for determining a special orthogonal direction used throughout mathematics and physics, with respect to an ordered pair of vectors $\vec{u},\vec{v}$
-      
-    \item Unit Normal Vector
-
-      The vector $\vec{n}$ orthogonal to an ordered pair of vectors $\vec{u},\vec{v}$ following the right-hand rule
-    
-    \item Cross Product
-       \[\vec{u} \times \vec{v} = (|\vec{u}||\vec{v}|\sin \theta) \vec{n} \]
-    
-    \item Parallel Vectors
-      \begin{itemize}
-      \item  $\vec{u},\vec{v}$ are parallel if $\vec{u} \times \vec{v} = 0$
-      \item $\vec{u},\vec{v}$ are parallel if the angle between them is $0=0^\circ$ or $\pi = 180^\circ$
-      \item $\vec{0}$ is parallel to every vector
-      \end{itemize}
-    
-    \item Cross Product Properties
-    
-      \begin{enumerate}
-      \item $(r\vec{u}) \times (s\vec{v}) = (rs)(\vec{u} \times \vec{v})$
-      \item $\vec{u} \times (\vec{v} + \vec{w}) = \vec{u} \times \vec{v} + \vec{u} \times \vec{w}$
-      \item $(\vec{v} + \vec{w}) \times \vec{u} = \vec{v} \times \vec{u} + \vec{w} \times \vec{u}$
-      \item $\vec{v} \times \vec{u} = -(\vec{u} \times \vec{v})$
-      \item $\vec{0} \times \vec{u} = \vec{0}$
-      \item $\vec{u} \times \vec{u} = \vec{0}$
-      \end{enumerate}
-
-    \item Standard Unit Vector Cross Products
-      \begin{enumerate}
-      \item $\veci \times \vecj = \veck$
-      \item $\vecj \times \veck = \veci$
-      \item $\veck \times \veci = \vecj$
-      \end{enumerate}
-
-    \item Parallelogram Area
-      The area of a parallelogram determined by $\vec{u},\vec{v}$ is \[|\vec{u} \times \vec{v}| = |\vec{u}||\vec{v}|\sin \theta\]
-    
-    \newpage
     \item Determinants
       \begin{itemize}
       \item 2x2 Determinant
@@ -302,7 +263,7 @@ c & d \\
 \end{tabular}\end{center}
       
       \end{itemize}
-    \item Computing Cross Products
+    \item Cross Product
 \[
     \vec{u} \times \vec{v} = 
 \begin{array}{|c c c|}
@@ -342,10 +303,50 @@ v_1 & v_2 \\
 \langle & u_2v_3-u_3v_2 & , & u_3v_1-u_1v_3 & , & u_1v_2-u_2v_1 & \rangle
 \end{array}
     \]
+
+    \item Right-Hand Rule
+      \begin{itemize}
+      \item A method for determining a special orthogonal direction used throughout mathematics and physics in 3D space, with respect to an ordered pair of vectors $\vec{u},\vec{v}$
+      \item $\vec{u}\times\vec{v}$ is orthogonal to both $\vec{u}$, $\vec{v}$ according to the Right-Hand Rule.
+      \end{itemize}
+
+    \newpage
+
+    \item Cross Product Magnitude
+      \[|\vec{u}\times\vec{v}|=|\vec{u}||\vec{v}|\sin\theta\]
+
+      The area of the parallelogram determined by $\vec{u},\vec{v}$ is $|\vec{u}\times\vec{v}|$.
+    
+    \item Parallel Vectors
+      \begin{itemize}
+      \item  $\vec{u},\vec{v}$ are parallel if $\vec{u} \times \vec{v} = 0$
+      \item $\vec{u},\vec{v}$ are parallel if the angle between them is $0=0^\circ$ or $\pi = 180^\circ$
+      \item $\vec{0}$ is parallel to every vector
+      \end{itemize}
+    
+    \item Cross Product Properties
+    
+      \begin{enumerate}
+      \item $(r\vec{u}) \times (s\vec{v}) = (rs)(\vec{u} \times \vec{v})$
+      \item $\vec{u} \times (\vec{v} + \vec{w}) = \vec{u} \times \vec{v} + \vec{u} \times \vec{w}$
+      \item $(\vec{v} + \vec{w}) \times \vec{u} = \vec{v} \times \vec{u} + \vec{w} \times \vec{u}$
+      \item $\vec{v} \times \vec{u} = -(\vec{u} \times \vec{v})$
+      \item $\vec{0} \times \vec{u} = \vec{0}$
+      \item $\vec{u} \times \vec{u} = \vec{0}$
+      \end{enumerate}
+
+    \item Standard Unit Vector Cross Products
+      \begin{enumerate}
+      \item $\veci \times \vecj = \veck$
+      \item $\vecj \times \veck = \veci$
+      \item $\veck \times \veci = \vecj$
+      \end{enumerate}
+      The standard unit vectors are known as a ``right handed frame''.
     
     \item Torque
     
-    \[\overrightarrow{\tau} = \vec{r} \times \vec{F} = (|\vec{r}||\vec{F}|\sin \theta)\vec{n} \]
+    \[\overrightarrow{\tau} = \vec{r} \times \vec{F} \]
+    \[|\overrightarrow{\tau}| = |\vec{r}||\vec{F}|\sin\theta\]
     
     \item Triple Scalar (or ``Box'') Product
     
@@ -360,28 +361,26 @@ v_1 & v_2 \\
     
     Its absolute value $|(\vec{u}\times\vec{v})\cdot\vec{w}|$ gives the volume of a parallelpiped determined by the three vectors.
     
-    \item \textbf{Suggested Exercises for 10.4}
-      \begin{itemize}
-      \item Finding cross products: 1-14
-      \item Finding areas and unit normal vectors using cross products: 15-18
-      \item Finding volumes using cross products: 19-22
-      \item Computing torque: 25-26
-      \end{itemize}
+    % \item \textbf{Suggested Exercises for 10.4}
+    %   \begin{itemize}
+    %   \item Finding cross products: 1-14
+    %   \item Finding areas and unit normal vectors using cross products: 15-18
+    %   \item Finding volumes using cross products: 19-22
+    %   \item Computing torque: 25-26
+    %   \end{itemize}
     \end{itemize}
 
 \newpage
 
-\centerline{\bf 10.5 Lines and Planes in Space}
+\centerline{\bf 12.5 Equations of Lines and Planes}
   
     \begin{itemize}
-    \item Vector Equation for a Line
-      \[\vec{r}(t) = \vec{P_0} + t\vec{v}\] for $-\infty < t < \infty$
-    
-    \item Parametric Equations for a Line
-      \[x = x_0 + tv_1, y = y_0 + tv_2, z = z_0 + tv_3\] for $-\infty < t < \infty$
-    
-    \item Line Passing through a pair of points
-      \[\vec{r}(t) = \vec{P_0} + t(\vec{P_0P_1})=(1-t)\vec{P_0}+t\vec{P_1}\] for $-\infty < t < \infty$
+    \item Vector Equation and Parametric Equations for a Line
+      \[\vec{r}(t) = \vec{P_0} + t\vec{v}\]
+      \[x = x_0 + At, y = y_0 + Bt, z = z_0 + Ct\] for $-\infty < t < \infty$
+
+    \item Symmetric Equations for a Line
+      \[\frac{x-x_0}{A}=\frac{y-y_0}{B}=\frac{z-z_0}{C}\]
     
     \item Line Segment joining a pair of points
       \[\vec{r}(t) = \vec{P_0} + t(\vec{P_0P_1})=(1-t)\vec{P_0}+t\vec{P_1}\] for $0 \leq t \leq 1$
@@ -390,30 +389,33 @@ v_1 & v_2 \\
       \[d = \frac{|\vec{PS} \times \vec{v}|}{|\vec{v}|}\]
     
     \item Equation for a Plane
-      \[\vec{n} \cdot (\vec{P_0}\vec{P}) = 0\] 
-      \[A(x-x_0) + B(y-y_0) + C(z-z_0) = 0\] 
+      \[A(x-x_0) + B(y-y_0) + C(z-z_0) = 0\]
+      \[Ax+By+Cz = D\]
     
     \item Line of Intersection of Two Planes
-      \[\vec{r}(t) = \vec{P} + t(\vec{n_1} \times \vec{n_2})\]
+      \[\vec{r}(t) = \vec{P_0} + t(\vec{n_1} \times \vec{n_2})\]
+
+    \item Angle of Intersection of Two Planes
+      \[\theta = \frac{\vec{n_1}\cdot\vec{n_2}}{|\vec{n_1}||\vec{n_2}|}\]
     
     \item Distance from a Point to a Plane
       \[d = \frac{|\vec{PS} \cdot \vec{n}|}{|\vec{n}|}\]
-\newpage
-    \item \textbf{Suggested Exercises for 10.5}
-      \begin{itemize}
-      \item Finding parametric equations for lines: 1-12
-      \item Finding parametrizations for line segments: 13-20
-      \item Finding equations for planes: 21-26
-      \item Distance from a point to a line: 33-38
-      \item Distance from a point to a plane: 39-44
-      \end{itemize}
+
+    % \item \textbf{Suggested Exercises for 10.5}
+    %   \begin{itemize}
+    %   \item Finding parametric equations for lines: 1-12
+    %   \item Finding parametrizations for line segments: 13-20
+    %   \item Finding equations for planes: 21-26
+    %   \item Distance from a point to a line: 33-38
+    %   \item Distance from a point to a plane: 39-44
+    %   \end{itemize}
     
     \end{itemize}
 
 
 \newpage
 
-\centerline{\bf 10.6 Cylinders and Quadratic Surfaces }
+\centerline{\bf 12.6 Cylinders and Quadratic Surfaces }
 
 \begin{itemize}
 \item Sketching surfaces
@@ -430,14 +432,14 @@ v_1 & v_2 \\
 \item Cylinders
 
   \begin{itemize}
-  \item A \textbf{cylinder} is any surface generated by moving a planar along a line normal to that plane.
+  \item A \textbf{cylinder} is any surface generated by considering parallel lines passing through a planar curve.
   \item A 3D surface defined by a function of only two variables results in a cylinder.
   \end{itemize}
 
 \item Quadric Surfaces
 
   \begin{itemize}
-  \item A \textbf{quadric surface} is any surface defined by a second degree equation of $x,y,z$: \[Ax^2+Bx+Cy^2+Dy+Ez^2+Fz=G\]
+  \item A \textbf{quadric surface} is any surface defined by a second degree equation of $x,y,z$.
   \item Most helpful to consider the cross-sections in each of the coordinate planes.
   \end{itemize}
 
@@ -456,10 +458,7 @@ v_1 & v_2 \\
     \item Two double-lines
     \item One point (with parallel ellipses)
     \end{itemize}
-  \item Cross-sections parallel to the point cross-section are ellipses.
   \end{itemize}
-
-\newpage
 
 \item Elliptical Paraboloid
   \begin{itemize}
@@ -468,9 +467,8 @@ v_1 & v_2 \\
     \item Two parabolas
     \item One point (with parallel ellipses)
     \end{itemize}
-  \item Cross-sections parallel to the point cross-section are ellipses.
   \end{itemize}
-
+\newpage
 \item Hyperbolic Paraboloid
   \begin{itemize}
   \item Cross-sections in the coordinate planes include
@@ -485,7 +483,7 @@ v_1 & v_2 \\
   \item Cross-sections in the coordinate planes include
     \begin{itemize}
     \item Two hyperbolas
-    \item One ellipsis (with parallel hyperbolas)
+    \item One ellipsis (with parallel ellipses)
     \end{itemize}
   \end{itemize}
 
@@ -494,86 +492,73 @@ v_1 & v_2 \\
   \item Cross-sections in the coordinate planes include
     \begin{itemize}
     \item Two hyperbola
-    \item One empty cross-section (with parallel hyperbolas)
+    \item One empty cross-section (with parallel ellipses)
     \end{itemize}
-  \item Cross-sections parallel to the empty cross-section are ellipses.
   \end{itemize}
 
-\item \textbf{Suggested Exercises for 10.6}
-  \begin{itemize}
-  \item Identify surfaces from equations: 1-12
-  \item Sketching surfaces: 13-44
-  \end{itemize}
+% \item \textbf{Suggested Exercises for 10.6}
+%   \begin{itemize}
+%   \item Identify surfaces from equations: 1-12
+%   \item Sketching surfaces: 13-44
+%   \end{itemize}
 \end{itemize}
 
 \newpage
 
-\centerline{\bf 11.1 Vector Functions and their Derivatives}
+\centerline{\bf 13.1 Vector Functions and Space Curves}
 
 \begin{itemize}
   \item Curves, Paths, and Vector Functions
     \begin{itemize}
-      \item A \textbf{position function} maps a moment in time to a position on a path. It can be defined with \textbf{parametric equations} \[x=x(t)\] \[y=y(t)\] \[z=z(t)\] or with a \textbf{vector function} \[\vec{r}(t) = \<x(t),y(t),z(t)\> = x(t)\veci + y(t)\vecj + z(t)\veck\]
+      \item A \textbf{position function} maps a moment in time to a position on a path. It can be defined with \textbf{parametric equations} \[x=x(t), y=y(t), z=z(t)\] or with a \textbf{vector function} \[\vec{r}(t) = \<x(t),y(t),z(t)\>\]
       \item $x(t),y(t),z(t)$ are called \textbf{component functions}
     \end{itemize}
 
   \item Vector Function Limits
-    \begin{itemize}
-    \item If the value of the vector function $\vec{r}(t)$ becomes arbitrarily close to the vector $\vec{L}$ as values of $t$ close to $t_0$ are plugged into the function, then the \textbf{limit of $\vec{r}(t)$ as $t$ approaches $t_0$} is $\vec{L}$, or \[\lim_{t\to t_0} \vec{r}(t) = \vec{L}\]
-      \begin{itemize}
-      \item (Precise definition:) Suppose there exists a function $\delta(\epsilon)$ so that for all positive numbers $\epsilon>0$ and all numbers $t$ where $|\vec{r}(t)-\vec{L}|<\epsilon$, it follows that $|t-t_0|<\delta(\epsilon)$. Then we say that $\lim_{t\to t_0} \vec{r}(t) = \vec{L}$.
-      \end{itemize}
-    \item Note that \[\lim_{t\to t_0} \vec{r}(t) = \<\lim_{t\to t_0} f(t), \lim_{t\to t_0} g(t), \lim_{t\to t_0} h(t)\>\]
-    \end{itemize}
+    \[\lim_{t\to a} \vec{r}(t) = \<\lim_{t\to a} f(t), \lim_{t\to a} g(t), \lim_{t\to a} h(t)\>\]
 
   \item Continuity of Vector Functions
     \begin{itemize}
-      \item The function $\vec{r}(t)$ is \textbf{continuous at a point} $t_0$ if \[\lim_{t\to t_0}\vec{r}(t) = \vec{r}(t_0)\]
       \item
-      The function $\vec{r}(t)$ is \textbf{continuous} if \[\lim_{t\to t_0}\vec{r}(t) = \vec{r}(t_0)\] for all $t_0$ in its domain.
+      The function $\vec{r}(t)$ is \textbf{continuous} if \[\lim_{t\to a}\vec{r}(t) = \vec{r}(a)\] for all $a$ in its domain.
       \item $\vec{r}(t)$ is continuous exactly when $f(t),g(t),h(t)$ are all continuous.
     \end{itemize}
+\end{itemize}
 
+\newpage
+
+\centerline{\bf 13.2 Derivatives and Integrals of Vector Functions}
+
+\begin{itemize}
   \item Derivatives of Vector Functions
+      \[\ds \frac{d\vec{r}}{dt} = \vec{r}'(t) = \lim_{\Delta t \to 0} \frac{\vec{r}(t+\Delta t) - \vec{r}(t)}{\Delta t} = \<f'(t),g'(t),h'(t)\>\]
     \begin{itemize}
-      \item $\ds \frac{d\vec{r}}{dt} = \vec{r}'(t) = \lim_{\Delta t \to 0} \frac{\vec{r}(t+\Delta t) - \vec{r}(t)}{\Delta t}$
-      \item $\vec{r}'(t) = \<f'(t),g'(t),h'(t)\>$
       \item $\vec{r}(t)$ is \textbf{differentiable} if $\vec{r}'(t)$ is defined for every value of $t$ is in its domain.
-      \item $\vec{r}(t)$ is \textbf{smooth} if $\vec{r}(t)$ is differentiable, $\vec{r}'(t)$ is continuous, and $\vec{r}'(t) \not= 0$
-      \item $\vec{r}'(t_0)$ is a \textbf{tangent vector} to the curve where $t=t_0$
-      \item The \textbf{tangent line} to a curve given by the vector function: \[\vec{l}(t)=\vec{r}(t_0)+t\vec{r}'(t_0)\]
+      \item $\vec{r}'(a)$ is a \textbf{tangent vector} to the curve where $t=a$
+      \item The \textbf{tangent line} to a curve at $t=a$: \[\vec{l}(t)=\vec{r}(a)+t\vec{r}'(a)\]
     \end{itemize}
 
-  \item Vectors and Physics
-    \begin{itemize}
-    \item Position: $\vec{r}(t)$
-    \item Velocity: $\vec{v}(t) = \vec{r}'(t) = \frac{d\vec{r}}{dt}$
-    \item Speed: $|\vec{v}(t)|$ 
-    \item Direction: $\frac{\vec{v}(t)}{|\vec{v}(t)|}$ 
-      \begin{itemize}
-        \item (Remember that $\vec{v}=|\vec{v}|\frac{\vec{v}}{|\vec{v}|}$)
-      \end{itemize}
-    \item Acceleration: $\vec{a}(t) = \vec{v}'(t) = \vec{r}''(t)$ 
-    \end{itemize}
+  % \item Vectors and Physics
+  %   \begin{itemize}
+  %   \item Position: $\vec{r}(t)$
+  %   \item Velocity: $\vec{v}(t) = \vec{r}'(t) = \frac{d\vec{r}}{dt}$
+  %   \item Speed: $|\vec{v}(t)|$ 
+  %   \item Direction: $\frac{\vec{v}(t)}{|\vec{v}(t)|}$ 
+  %     \begin{itemize}
+  %       \item (Remember that $\vec{v}=|\vec{v}|\frac{\vec{v}}{|\vec{v}|}$)
+  %     \end{itemize}
+  %   \item Acceleration: $\vec{a}(t) = \vec{v}'(t) = \vec{r}''(t)$ 
+  %   \end{itemize}
   
   \item Differentiation Rules for Vector Functions
-    \begin{enumerate}
-      \item Constant Function Rule
       \[\frac{d}{dt} [\vec{C}] = \vec{0}\]
-      \item Constant Multiple Rules
       \[\frac{d}{dt} [c\vec{u}(t)] = c\vec{u}'(t)\]
       \[\frac{d}{dt} [f(t)\vec{C}] = f'(t)\vec{C}\]
-      \item Sum and Difference Rules
       \[\frac{d}{dt} [\vec{u}(t) \pm \vec{v}(t)] = \vec{u}'(t) \pm \vec{v}'(t)\]
-      \item Scalar Product Rule
       \[\frac{d}{dt} [f(t)\vec{u}(t)] = f(t)\vec{u}'(t) + f'(t)\vec{u}(t)\]
-      \item Dot Product Rule
       \[\frac{d}{dt} [\vec{u}(t) \cdot \vec{v}(t)] = \vec{u}(t)\cdot\vec{v}'(t) + \vec{u}'(t)\cdot\vec{v}(t)\]
-      \item Cross Product Rule
       \[\frac{d}{dt} [\vec{u}(t) \times \vec{v}(t)] = \vec{u}(t)\times\vec{v}'(t) + \vec{u}'(t)\times\vec{v}(t)\]
-      \item Chain Rule
       \[\frac{d\vec{u}}{dt} = \frac{d}{dt} [\vec{u}(f(t))] =\vec{u}'(f(t))f'(t) = \frac{d\vec{u}}{df}\frac{df}{dt}\]
-    \end{enumerate}
   
   \item Derivative of a Constant Length Vector Function
     \begin{itemize}
@@ -581,17 +566,11 @@ v_1 & v_2 \\
       \item Thus the derivative of a constant length vector function is perpindicular to the original.
     \end{itemize}
   
-  \item \textbf{Suggested Exercises for 11.1}
-    \begin{itemize}
-      \item Position/Velocity/Acceleration Vectors: 1-14
-    \end{itemize}
-\end{itemize}
+  % \item \textbf{Suggested Exercises for 11.1}
+  %   \begin{itemize}
+  %     \item Position/Velocity/Acceleration Vectors: 1-14
+  %   \end{itemize}
 
-\newpage
-
-\centerline{\bf 11.2 Integrals of Vector Functions}
-
-  \begin{itemize}
     \item Antiderivatives of Vector Functions
       \begin{itemize}
         \item If $\vec{R}'(t)=\vec{r}(t)$, then $\vec{R}(t)$ is an \textbf{antiderivative} of $\vec{r}(t)$.
@@ -603,441 +582,421 @@ v_1 & v_2 \\
     \item Definite Integrals
       \[\ds\int^b_a \vec{r}(t) \dvar{t} = \<\int^b_a x(t) \dvar{t}, \int^b_a y(t) \dvar{t}, \int^b_a z(t) \dvar{t} \> \]
       \[\int^b_a \vec{r}(t)dt = \left[\vec{R}(t)\right]^b_a=\vec{R}(b)-\vec{R}(a)\]
-      
-    \item Initial Value Problems
+
+    \item Differential Vector Equations
       \begin{itemize}
-      \item If we know $\vec{r}'(t)$ and $\vec{r}(t_0)$, then \[\vec{r}(t)=\vec{R}'(t)+\vec{r}(t_0)-\vec{R}'(t_0)\]
+      \item If we know $\vec{r}'(t)$ and $\vec{r}(a)$ for some $t=a$, then \[\vec{r}(t)=\int_a^t\vec{r}'(t)\,dt+\vec{r}(a)\]
       \end{itemize}
     
-    \item Ideal Projectile Motion 
-      \begin{itemize}
-      \item Assume the following:
-        \begin{itemize}
-          \item The acceleration acting on a projectile is $\<0,-g\>$
-          \item The launch position is the origin $\<0,0\>=\vec{0}$
-          \item The launch angle is $\alpha$
-          \item The initial velocity is $\vec{v_0}$, and initial speed is $v_0=|\vec{v_0}|$
-        \end{itemize}
-      \item This results in the initial value problem:
-        \[\vec{a}(t) = \<0,-g\>\]
-        \[\vec{v}(0) = \<v_0\cos\alpha,v_0\sin\alpha\>\]
-        \[\vec{r}(0) = \<0,0\> \]
-      \item The velocity function solves to \[\vec{v}(t) = \<v_0\cos\alpha,-gt+v_0\sin\alpha\>\]
-      \item The position function solves to 
-        \[\vec{r}(t) = \<(v_0\cos\alpha)t,-\frac{1}{2}gt^2+(v_0\sin\alpha)t\>\]
-        with parametric equations 
-        \[x=(v_0\cos\alpha)t\] \[y=-\frac{1}{2}gt^2+(v_0\sin\alpha)t\]
-      \item The parabolic position curve can be expressed as \[y = -\left(\frac{g}{2v_0^2\cos^2\alpha}\right)x^2+(\tan\alpha)x\]
-      \item Properties of ideal projectile motion beginning at origin:
-        \[y_{max} = \frac{(v_0\sin\alpha)^2}{2g}\]
-        \[t_{tot} = \frac{2v_0\sin\alpha}{g}\]
-        \[R = \frac{v_0^2}{g}\sin2\alpha\]
-      \item If we assume the initial position is instead $\vec{r}(0)=\<x_0,y_0\>$, then the position function changes to \[\vec{r}(t)=\<(v_0\cos\alpha)t+x_0,-\frac{1}{2}gt^2+(v_0\sin\alpha)t+y_0\>\]
-      \end{itemize}
-    \item \textbf{Suggested Exercises for 11.2}
-      \begin{itemize}
-      \item Vector function integrals: 1-6
-      \item Vector function initial value problems: 7-12
-      \item Ideal projectile motion: 15-21
-      \end{itemize}
+    % \item Ideal Projectile Motion 
+    %   \begin{itemize}
+    %   \item Assume the following:
+    %     \begin{itemize}
+    %       \item The acceleration acting on a projectile is $\<0,-g\>$
+    %       \item The launch position is the origin $\<0,0\>=\vec{0}$
+    %       \item The launch angle is $\alpha$
+    %       \item The initial velocity is $\vec{v_0}$, and initial speed is $v_0=|\vec{v_0}|$
+    %     \end{itemize}
+    %   \item This results in the initial value problem:
+    %     \[\vec{a}(t) = \<0,-g\>\]
+    %     \[\vec{v}(0) = \<v_0\cos\alpha,v_0\sin\alpha\>\]
+    %     \[\vec{r}(0) = \<0,0\> \]
+    %   \item The velocity function solves to \[\vec{v}(t) = \<v_0\cos\alpha,-gt+v_0\sin\alpha\>\]
+    %   \item The position function solves to 
+    %     \[\vec{r}(t) = \<(v_0\cos\alpha)t,-\frac{1}{2}gt^2+(v_0\sin\alpha)t\>\]
+    %     with parametric equations 
+    %     \[x=(v_0\cos\alpha)t\] \[y=-\frac{1}{2}gt^2+(v_0\sin\alpha)t\]
+    %   \item The parabolic position curve can be expressed as \[y = -\left(\frac{g}{2v_0^2\cos^2\alpha}\right)x^2+(\tan\alpha)x\]
+    %   \item Properties of ideal projectile motion beginning at origin:
+    %     \[y_{max} = \frac{(v_0\sin\alpha)^2}{2g}\]
+    %     \[t_{tot} = \frac{2v_0\sin\alpha}{g}\]
+    %     \[R = \frac{v_0^2}{g}\sin2\alpha\]
+    %   \item If we assume the initial position is instead $\vec{r}(0)=\<x_0,y_0\>$, then the position function changes to \[\vec{r}(t)=\<(v_0\cos\alpha)t+x_0,-\frac{1}{2}gt^2+(v_0\sin\alpha)t+y_0\>\]
+    %   \end{itemize}
+    % \item \textbf{Suggested Exercises for 11.2}
+    %   \begin{itemize}
+    %   \item Vector function integrals: 1-6
+    %   \item Vector function initial value problems: 7-12
+    %   \item Ideal projectile motion: 15-21
+    %   \end{itemize}
   \end{itemize}
 
 \newpage
 
-\centerline{\bf 11.3 Arc Length in Space}
+\centerline{\bf 13.3 Arc Length and Curvature}
 
   \begin{itemize}
     \item Arc Length along a Space Curve
-      \begin{itemize}
-        \item Approximation 
-          \[L \approx \sum_{i=0}^n |\vec{r}(t_i+\Delta{t})-\vec{r}(t_i)|=\sum_{i=1}^n \left|\frac{\vec{r}(t_i+\Delta{t})-\vec{r}(t_i)}{\Delta{t}}\right|\Delta{t}\]
-        \item Definition 
-          \[L = \int_a^b \left|\lim_{\Delta{t}\to0}\frac{\vec{r}(t+\Delta{t})-\vec{r}(t)}{\Delta{t}}\right| \dvar{t} = \int_a^b |\vec{v}(t)| \dvar{t}\]
-        \item Arclength Parameter 
-          \[s(t) = \int_0^t |\vec{v}(\tau)|d\tau\]
-          \[\frac{ds}{dt} = |\vec{v}(t)| = \text{speed}\]
-      \end{itemize}
+          \[L = \int_a^b \left|\lim_{\Delta{t}\to0}\frac{\vec{r}(t+\Delta{t})-\vec{r}(t)}{\Delta{t}}\right| \dvar{t} = \int_a^b |\vec{r}'(t)| \dvar{t}\]
+
+    \item Arclength Parameter 
+      \[s(t) = \int_0^t |\vec{r}'(u)|du\]
+      \[\frac{ds}{dt} = |\vec{r}'(t)|\]
 
     \item Unit Tangent Vector
-      \[\vec{T} = \frac{d\vec{r}}{ds} = \frac{\vec{v}}{|\vec{v}|}\]
+      \[\vec{T}(s) = \frac{d\vec{r}}{ds}\]
+      \[\vec{T}(t) = \frac{d\vec{r}/dt}{|d\vec{r}/dt|}\]
 
-    \item \textbf{Suggested Exercises for 11.3}
-      \begin{itemize}
-      \item Unit tangent vectors and arc length: 1-8
-      \item Arc length parameter: 11-14
-      \end{itemize}
-  \end{itemize}
+%     \item \textbf{Suggested Exercises for 11.3}
+%       \begin{itemize}
+%       \item Unit tangent vectors and arc length: 1-8
+%       \item Arc length parameter: 11-14
+%       \end{itemize}
+%   \end{itemize}
 
-\newpage
+% \newpage
 
-\centerline{\bf 11.4 Curvature of a Curve}
+% \centerline{\bf 11.4 Curvature of a Curve}
 
-  \begin{itemize}
+%   \begin{itemize}
+
     \item Curvature
-      \[\kappa = \left|\frac{d\vec{T}}{ds}\right| = \frac{1}{|\vec{v}|}\left|\frac{d\vec{T}}{dt}\right| = \frac{|\vec{v} \times \vec{a}|}{|\vec{v}|^3}\]
+      \[
+        \kappa(s) = \left|\frac{d\vec{T}}{ds}\right| 
+      \]
+      \[
+        \kappa(t) = \frac{|d\vec{T}/dt|}{|d\vec{r}/dt|} = \frac{|\frac{d\vec{r}}{dt}\times \frac{d^2\vec{r}}{dt^2}|}{|\frac{d\vec{r}}{dt}|^3}
+      \]
+      For $y=f(x)$:
+      \[
+        \kappa(x) = \frac{|f''(x)|}{[1+(f'(x))^2]^{3/2}}
+      \]
     
-    \item Curvature of a Circle
+    % \item Curvature of a Circle
     
-      \begin{itemize}
-      \item The curvature of a circle with radius $a$ is constantly \[\kappa = \frac{1}{a}\]
-      \end{itemize}
+    %   \begin{itemize}
+    %   \item The curvature of a circle with radius $a$ is constantly \[\kappa = \frac{1}{a}\]
+    %   \end{itemize}
     
     \item Principal Unit Normal Vector
-      \[\vec{N} = \frac{d\vec{T}/ds}{|d\vec{T}/ds|} = \frac{d\vec{T}/dt}{|d\vec{T}/dt|} = \frac{1}{\kappa} \frac{d\vec{T}}{ds}\]
+      \[\vec{N}(s) = \frac{d\vec{T}/ds}{|d\vec{T}/ds|}\]
+      \[\vec{N}(t) = \frac{d\vec{T}/dt}{|d\vec{T}/dt|}\]
     
-    \item Circles of Curvature
+    % \item Circles of Curvature
     
-      \begin{itemize}
-      \item The circle which:
-        \begin{enumerate}
-        \item is tangent to a curve at a point
-        \item has the same curvature as the curve at that point
-        \item lies on the concave side of the curve, in the direction of $\vec{N}$
-        \end{enumerate}
-      \item Radius: $a = \displaystyle\frac{1}{\kappa}$.
-      \item Center: $\<x_0,y_0\> = \vec{r}(t_0)+a\vec{N}$.
-      \item Equations: 
-        \[(x-x_0)^2+(y-y_0)^2=a^2\]
-        \[\vec{c}(t) = \<a\sin t+x_0,a\cos t+y_0\>, 0\leq t\leq 2\pi\]
-      \end{itemize}
+    %   \begin{itemize}
+    %   \item The circle which:
+    %     \begin{enumerate}
+    %     \item is tangent to a curve at a point
+    %     \item has the same curvature as the curve at that point
+    %     \item lies on the concave side of the curve, in the direction of $\vec{N}$
+    %     \end{enumerate}
+    %   \item Radius: $a = \displaystyle\frac{1}{\kappa}$.
+    %   \item Center: $\<x_0,y_0\> = \vec{r}(t_0)+a\vec{N}$.
+    %   \item Equations: 
+    %     \[(x-x_0)^2+(y-y_0)^2=a^2\]
+    %     \[\vec{c}(t) = \<a\sin t+x_0,a\cos t+y_0\>, 0\leq t\leq 2\pi\]
+    %   \end{itemize}
       
-    \item \textbf{ Suggested Exercises for 11.4:}
+    % \item \textbf{ Suggested Exercises for 11.4:}
     
-      \begin{itemize}
-      \item Find $\vec{T},\vec{N},\kappa$: 1-4, 9-16
-      \item Circles of Curvature: 21-22
-      \end{itemize}
+    %   \begin{itemize}
+    %   \item Find $\vec{T},\vec{N},\kappa$: 1-4, 9-16
+    %   \item Circles of Curvature: 21-22
+    %   \end{itemize}
     
-  \end{itemize}
+%   \end{itemize}
 
-\newpage
+% \newpage
 
-\centerline{\bf 11.5 Tangental and Normal Components of Acceleration}
+% \centerline{\bf 11.5 Tangental and Normal Components of Acceleration}
 
-  \begin{itemize}
+%   \begin{itemize}
   
     \item Binormal Unit Vector
       \[\vec{B} = \vec{T} \times \vec{N}\]
+      The triple $\vec{T},\vec{N},\vec{B}$ forms a right-handed frame.
 
-    \item Right-handed vector frames
+  \end{itemize}
+
+\newpage
+
+\centerline{\bf 13.4 Motion in Space: Velocity and Acceleration}
+
+  \begin{itemize}
+
+    \item Position, Velocity, and Acceleration
       \begin{itemize}
-        \item $\veci,\vecj,\veck$
-        \item $\vec{T},\vec{N},\vec{B}$
+      \item Position: $\vec{r}(t)$
+      \item Velocity: $\vec{v}(t) = \vec{r}'(t) = \frac{d\vec{r}}{dt}$
+      \item Speed: $v(t)=|\vec{v}(t)|=\frac{ds}{dt}$ 
+      \item Direction: $\vec{T}(t)=\frac{\vec{v}(t)}{|\vec{v}(t)|}$ 
+      \item Acceleration: $\vec{a}(t) = \vec{v}'(t) = \vec{r}''(t)$ 
       \end{itemize}
+
+    \item Ideal Projectile Motion
+      \[\vec{a}(t)=\<0,-g\>\]
+      \[\vec{v}(t)=\<v_0\cos\alpha,-gt+v_0\sin\alpha\>\]
+      \[\vec{r}(t)=\<(v_0\cos\alpha)t,-\frac{1}{2}gt^2+(v_0\sin\alpha)t\>\]
       
     \item Tangental and Normal Components of Acceleration
       \[\vec{a} = \left(\frac{d^2s}{dt^2}\right)\vec{T} + \kappa\left(\frac{ds}{dt}\right)^2\vec{N}+0\vec{B}\]
       \begin{itemize}
         \item Tangental component
-          \[a_T = \frac{d^2s}{dt^2} = \frac{d}{dt}|\vec{v}| \]
+          \[a_T = \frac{d^2s}{dt^2} = v' \]
         \item Normal component
-          \[a_N = \kappa\left(\frac{ds}{dt}\right)^2 = \kappa|\vec{v}|^2 = \sqrt{|\vec{a}|^2 - a_T^2}\]
+          \[a_N = \kappa\left(\frac{ds}{dt}\right)^2 = \kappa v^2 = \sqrt{|\vec{a}|^2 - a_T^2}\]
       \end{itemize}
     
-    \item Torsion
-      \begin{itemize}
-        \item Magnitude of torsion
-          \[|\tau| = \left|\frac{d\vec{B}}{ds}\right|\]
-        \item Signed torsion
-          \[\frac{d\vec{B}}{ds} = (-\tau)\vec{N}\]
-          \[\tau = -\frac{d\vec{B}}{ds}\cdot \vec{N} = -\frac{1}{|\vec{v}|}\left(\frac{d\vec{B}}{dt}\cdot\vec{N}\right)\]
-          \[
-            \tau
-            =
-            \frac{
-            \begin{array}{|ccc|}
-            \dot{x} & \dot{y} & \dot{z} \\
-            \ddot{x} & \ddot{y} & \ddot{z} \\
-            \dddot{x} & \dddot{y} & \dddot{z}
-            \end{array}
-            }{
-            |\vec{v}\times\vec{a}|^2
-            }
-          \]
-      \end{itemize}
+    % \item Torsion
+    %   \begin{itemize}
+    %     \item Magnitude of torsion
+    %       \[|\tau| = \left|\frac{d\vec{B}}{ds}\right|\]
+    %     \item Signed torsion
+    %       \[\frac{d\vec{B}}{ds} = (-\tau)\vec{N}\]
+    %       \[\tau = -\frac{d\vec{B}}{ds}\cdot \vec{N} = -\frac{1}{|\vec{v}|}\left(\frac{d\vec{B}}{dt}\cdot\vec{N}\right)\]
+    %       \[
+    %         \tau
+    %         =
+    %         \frac{
+    %         \begin{array}{|ccc|}
+    %         \dot{x} & \dot{y} & \dot{z} \\
+    %         \ddot{x} & \ddot{y} & \ddot{z} \\
+    %         \dddot{x} & \dddot{y} & \dddot{z}
+    %         \end{array}
+    %         }{
+    %         |\vec{v}\times\vec{a}|^2
+    %         }
+    %       \]
+    %   \end{itemize}
       
-    \item \textbf{ Suggested Exercises for 11.5:}
+    % \item \textbf{ Suggested Exercises for 11.5:}
     
-      \begin{itemize}
-      \item Finding tangental and normal components of acceleration: 1-6
-      \item Finding $\vec{B}$ and $\tau$: 9-16
-      \end{itemize}
+    %   \begin{itemize}
+    %   \item Finding tangental and normal components of acceleration: 1-6
+    %   \item Finding $\vec{B}$ and $\tau$: 9-16
+    %   \end{itemize}
   
   \end{itemize}
 
-\newpage
-
-\centerline{\bf 11.6 Velocity and Acceleration in Polar Coordinates}
-
-  \begin{itemize}
-  
-    \item Polar Coordinates $(r,\theta)$
-      \begin{itemize}
-        \item Cartesian to Polar
-          \[r = x^2+y^2, \theta = \Arctan\left(\frac{y}{x}\right)\]
-        \item Polar to Cartesian
-          \[x = r\cos\theta, y=r\sin\theta\]
-      \end{itemize}
-      
-    \item Cylindrical Coordinates $(r,\theta,z)$
-      \begin{itemize}
-        \item Cartesian to Cylindrical
-          \[r = x^2+y^2, \theta = \Arctan\left(\frac{y}{x}\right), z=z\]
-        \item Cylindrical to Cartesian
-          \[x = r\cos\theta, y=r\sin\theta, z=z\]
-      \end{itemize}
-      
-    \item Polar/Cylindrical Unit Vectors
-      \[\vec{u}_r = \<\cos\theta,\sin\theta\>, \vec{u}_\theta = \<-\sin\theta,\cos\theta\>\]
-      \begin{itemize}
-        \item Cylindrical Right-handed frame
-          \[\vec{u}_r,\vec{u}_\theta,\veck\]
-        \item Derivatives
-          \[\frac{d}{dt}\left[\vec{u}_r\right] = \dot{\vec{u}_r} = \dot{\theta}\vec{u}_\theta \]
-          \[\frac{d}{dt}\left[\vec{u}_\theta\right] = \dot{\vec{u}_\theta} = -\dot{\theta}\vec{u}_r \]
-        \item Polar Position/Velocity/Acceleration
-          \[\vec{r} = r\vec{u}_r\]
-          \[\vec{v} = \dot{r}\vec{u}_r + r\dot\theta\vec{u}_\theta\]
-          \[\vec{a} = (\ddot{r} - r\dot\theta^2)\vec{u}_r + (r\ddot\theta + 2\dot{r}\dot\theta)\vec{u}_\theta\]
-        \item Cylindrical Position/Velocity/Acceleration
-          \[\vec{r} = r\vec{u}_r + z\veck\]
-          \[\vec{v} = \dot{r}\vec{u}_r + r\dot\theta\vec{u}_\theta + \dot{z}\veck\]
-          \[\vec{a} = (\ddot{r} - r\dot\theta^2)\vec{u}_r + (r\ddot\theta + 2\dot{r}\dot\theta)\vec{u}_\theta+\ddot{z}\veck\]
-      \end{itemize}
-    
-    \item \textbf{ Suggested Exercises for 11.6:}
-      \begin{itemize}
-      \item Expressing $\vec{v}$ and $\vec{a}$ in terms of $\vec{u}_r$ and $\vec{u}_\theta$: 1-5
-      \end{itemize}
-  \end{itemize}
-
-
-% Gonna opt out on a sets section, since not in book.
 % \newpage
 
-%   \centerline{\bf Sets}
+% \centerline{\bf 11.6 Velocity and Acceleration in Polar Coordinates}
 
-%   A few notes on the mathematical concept of a ``set''.
+%   \begin{itemize}
+  
+%     \item Polar Coordinates $(r,\theta)$
+%       \begin{itemize}
+%         \item Cartesian to Polar
+%           \[r = x^2+y^2, \theta = \Arctan\left(\frac{y}{x}\right)\]
+%         \item Polar to Cartesian
+%           \[x = r\cos\theta, y=r\sin\theta\]
+%       \end{itemize}
+      
+%     \item Cylindrical Coordinates $(r,\theta,z)$
+%       \begin{itemize}
+%         \item Cartesian to Cylindrical
+%           \[r = x^2+y^2, \theta = \Arctan\left(\frac{y}{x}\right), z=z\]
+%         \item Cylindrical to Cartesian
+%           \[x = r\cos\theta, y=r\sin\theta, z=z\]
+%       \end{itemize}
+      
+%     \item Polar/Cylindrical Unit Vectors
+%       \[\vec{u}_r = \<\cos\theta,\sin\theta\>, \vec{u}_\theta = \<-\sin\theta,\cos\theta\>\]
+%       \begin{itemize}
+%         \item Cylindrical Right-handed frame
+%           \[\vec{u}_r,\vec{u}_\theta,\veck\]
+%         \item Derivatives
+%           \[\frac{d}{dt}\left[\vec{u}_r\right] = \dot{\vec{u}_r} = \dot{\theta}\vec{u}_\theta \]
+%           \[\frac{d}{dt}\left[\vec{u}_\theta\right] = \dot{\vec{u}_\theta} = -\dot{\theta}\vec{u}_r \]
+%         \item Polar Position/Velocity/Acceleration
+%           \[\vec{r} = r\vec{u}_r\]
+%           \[\vec{v} = \dot{r}\vec{u}_r + r\dot\theta\vec{u}_\theta\]
+%           \[\vec{a} = (\ddot{r} - r\dot\theta^2)\vec{u}_r + (r\ddot\theta + 2\dot{r}\dot\theta)\vec{u}_\theta\]
+%         \item Cylindrical Position/Velocity/Acceleration
+%           \[\vec{r} = r\vec{u}_r + z\veck\]
+%           \[\vec{v} = \dot{r}\vec{u}_r + r\dot\theta\vec{u}_\theta + \dot{z}\veck\]
+%           \[\vec{a} = (\ddot{r} - r\dot\theta^2)\vec{u}_r + (r\ddot\theta + 2\dot{r}\dot\theta)\vec{u}_\theta+\ddot{z}\veck\]
+%       \end{itemize}
+    
+%     \item \textbf{ Suggested Exercises for 11.6:}
+%       \begin{itemize}
+%       \item Expressing $\vec{v}$ and $\vec{a}$ in terms of $\vec{u}_r$ and $\vec{u}_\theta$: 1-5
+%       \end{itemize}
+%   \end{itemize}
 
-%     \begin{itemize}
-%     \item A \textbf{set} is a collection of mathematical objects. Sets are often described as a list of objects surrounded by curly brackets.
-%     \item A set can contain any finite number of objects, or an infinite amount of objects.
-%       \begin{itemize}
-%       \item $\{1,f,\alpha\}$ is a finite set
-%       \item $\{4,6,8,10,\dots\}$ is an infinite set
-%       \end{itemize}
-%     \item The symbol $\in$ is used to describe membership in a set.
-%       \begin{itemize}
-%       \item $\alpha \in \{1,f,\alpha\}$
-%       \item $\alpha \not\in \{4,6,8,10,\dots\}$
-%       \end{itemize}
-%     \item The symbol $\subseteq$ is used to describe a \textbf{subset} of a set. If a set $A$ is a subset of a set $B$ (that is, $A\subseteq B$), then everything in $A$ must be in $B$.
-%       \begin{itemize}
-%       \item $\{1,2\} \subseteq \{1,2\}$
-%       \item $\{3,4,9\} \subseteq \{1,2,3,\dots\}$
-%       \item $\{2,3,-4\} \not\subseteq \{1,2,3,\dots\}$
-%       \item $\{1,3,5,\dots\} \subseteq \{1,2,3,\dots\}$
-%       \item $\{0,2,4,\dots\} \not\subseteq \{1,2,3,\dots\}$
-%       \end{itemize}
-%     \item Order and frequency do not matter in a set; only membership.
-%       \begin{itemize}
-%       \item $\{1,2,3\} = \{2,3,1\} = \{3,2,1\} = \{1,2,3,2\}$
-%       \end{itemize}
-%     \item If a set has no members, we say it is the \textbf{empty set} $\emptyset$.
-%     \item Sets are often defined by showing an ``example'' member and giving conditions for it following a colon.
-%       \begin{itemize} 
-%       \item $\mathbb{Z}  = \{n : n \text{ is an integer}\} = \{\dots,-2,-1,0,1,2,\dots\}$
-%       \item $\mathbb{P} = \{n : n \in \mathbb{Z} \text{ and } n > 0\} = \{1,2,3,\dots\}$
-%       \item $\mathbb{R} = \{x : x \text{ is a real number}\}$
-%       \item $[-2,4) = \{y \in \mathbb{R} : -2 \leq y < 4 \}$
-%       \end{itemize} \newpage
-%     \item A finite ordered list of objects $(x_1,x_2,\dots,x_n)$ is known as an \textbf{$n$-tuple}.
-%       \begin{itemize}
-%       \item The $2$-tuple $(3,-\frac{1}{2})$ is an ordered pair.
-%       \item The $3$-tuple $(\pi,1,-0.3)$ is an ordered triple.
-%       \end{itemize}
-%     \item The set $\mathbb{R}^n=\{(x_1,x_2,\dots,x_n) : x_i \text{ is a real number }\}$ represents the set of all $n$-tuples of real numbers.
-%       \begin{itemize}
-%       \item $(2,\pi,-3.1,0) \in \mathbb{R}^4$
-%       \item $\{(2,-1),(-e,7+\ln 2)\} \subseteq \mathbb{R}^2$
-%       \item $\mathbb{R}^2$ corresponds to the $xy$-plane, since every point in the plane corresponds to an ordered pair.
-%       \item Similarly, $\mathbb{R}^3$ corresponds to $xyz$-space.
-%       \end{itemize}
-%     \item A $\cap$ denotes the ``intersection'' of two sets, while a $\cup$ denotes the ``union'' of two sets.
-%       \begin{itemize}
-%       \item $A \cap B = \{x : x\in A \text{ and } x \in B\}$
-%       \item $(2,\infty) \cap [-2,4] = (2,4]$
-%       \item $A \cup B = \{x : x\in A \text{ or } x \in B\}$
-%       \item $(-1,1) \cup \mathbb{Z} = \{z : z \text{ is an integer or } -1<x<1 \}$
-%       \end{itemize}
-%     \item \textbf{Suggested Exercises}
-%       \begin{enumerate}
-%       \item Write ``all real numbers greater than 7'' in set notation and interval notation.
-%       \item Write ``all integers $n$ that make $n^2+3n$ nonnegative'' in set notation.
-%       \item Write ``all ordered pairs $(x,y)$ which are a solution to the inequality $2x+3y\geq 7$'' in set notation, and sketch this set in the plane.
-%       \item Write ``all ordered pairs such that the first coordinate is an integer and the second coordinate is any real number less than $-3$'' in set notation.
-%       \end{enumerate}
-%     \item \textbf{Further Reading}
-%       \begin{itemize}
-%       \item http://www.sosmath.com/algebra/inequalities/ineq02/ineq02.html
-%       \item http://en.wikipedia.org/wiki/Set-builder\_notation
-%       \end{itemize}
-%     \end{itemize}
 
 
 \newpage
 
-\centerline{\bf 12.1 Functions of Several Variables}
+\centerline{\bf 14.1 Functions of Several Variables}
 
 \begin{itemize}
 
-  \item Real-Valued Functions
-
+  \item Functions of Two Variables
     \begin{itemize}
-      \item A \textbf{real-valued function} $f$ on with \textbf{domain} $D \subset \mathbb{R}^n$ is a rule that assigns a real number \[f(x_1,x_2,\dots,x_n) \in \mathbb{R}\] to each $(x_1,x_2,\dots,x_n) \in D$.
-      \item The domain of a function is assumed to be all of $\mathbb{R}^n$ except where the function is not well-defined.
-      \item The \textbf{range} of the function is \[R = \{f(x_1,x_2,\dots,x_n) : (x_1,x_2,\dots,x_n) \in D\}\]
+      \item A \textbf{function $f$ of two variables} is a rule which assigns a real number $f(x,y)$ to each pair of real numbers $(x,y)$ in its \textbf{domain} \[\text{dom}(f)\subseteq \mathbb{R}^2\] The set of values $f$ takes on is its \textbf{range} \[\text{ran}(f) = \{f(x,y):(x,y)\in\text{dom}(f)\}\]
+      \item The \textbf{level curve} for each $k\in\text{ran}(f)$ is given by the equation \[f(x,y)=k\]
+      \item The \textbf{graph} of $f$ is a surface in 3D space which visualizes the function, given by the equation $z=f(x,y)$.
     \end{itemize}
+
+  \item Functions of Three Variables
+    \begin{itemize}
+      \item A \textbf{function $f$ of three variables} is a rule which assigns a real number $f(x,y,z)$ to each pair of real numbers $(x,y,z)$ in its \textbf{domain} \[\text{dom}(f)\subseteq \mathbb{R}^3\] The set of values $f$ takes on is its \textbf{range} \[\text{ran}(f) = \{f(x,y,z):(x,y,z)\in\text{dom}(f)\}\]
+      \item The \textbf{level surface} for each $k\in\text{ran}(f)$ is given by the equation \[f(x,y,z)=k\]
+    \end{itemize}
+
+  \item Alternate Forms
+    \begin{itemize}
+      \item We may also consider functions of the form $f(x_1,x_2,\dots)=f(P)=f(\vec{r})$.
+      \item If $P=(x,y)$ and $\vec{r}=\<x,y\>$, then $f(x,y)=f(P)=f(\vec{r})$. 
+      \item If $P=(x,y,z)$ and $\vec{r}=\<x,y,z\>$, then $f(x,y,z)=f(P)=f(\vec{r})$. 
+    \end{itemize}
+
+
+
+%   \item Real-Valued Functions
+
+%     \begin{itemize}
+%       \item A \textbf{real-valued function} $f$ on with \textbf{domain} $D \subset \mathbb{R}^n$ is a rule that assigns a real number \[f(x_1,x_2,\dots,x_n) \in \mathbb{R}\] to each $(x_1,x_2,\dots,x_n) \in D$.
+%       \item The domain of a function is assumed to be all of $\mathbb{R}^n$ except where the function is not well-defined.
+%       \item The \textbf{range} of the function is \[R = \{f(x_1,x_2,\dots,x_n) : (x_1,x_2,\dots,x_n) \in D\}\]
+%     \end{itemize}
   
-  \item Regions
+%   \item Regions
   
-    \begin{itemize}
-      \item A subset of the $xy$-plane ($\mathbb{R}^2$) or $xyz$-space ($\mathbb{R}^3$) is known as a \textbf{region}.
-      \item The \textbf{ball} $B(p,\epsilon)$ is the set of points \[B(p,\epsilon) = \{q \in \mathbb{R}^2 : \text{the distance between }p\text{ and }q\text{ is less than }\epsilon\}\] Its \textbf{center} is the point $p$ and its \textbf{radius} is $\epsilon$.
-      \item A point $p\in\mathbb{R}^2$ is known as an \textbf{interior point} of a region $R$ if \textit{there exists some ball} containing $p$ that lies inside $R$.
-      \item A point $p\in\mathbb{R}^2$ is known as a \textbf{boundary point} of a region $R$ if \textit{every ball} containing $p$ contains some points in $R$ and some points not in $R$.
-      \item A point $p\in\mathbb{R}^2$ is known as an \textbf{exterior point} of a region $R$ if \textit{there exists some ball} containing $p$ that lies outside $R$.
-      \item The \textbf{interior} of $R$ is the set \[\textrm{int}(R)=\{p : p \text{ is an interior point of } R\}\]
-      \item The \textbf{boundary} of $R$ is the set \[\textrm{bd}(R)=\{p : p \text{ is a boundary point of } R\}\]
-      \item The \textbf{exterior} of $R$ is the set \[\textrm{ext}(R)=\{p : p \text{ is an exterior point of } R\}\]
-      \item A region $R$ is \textbf{open} if it doesn't contain any of its boundary.
-      \item A region $R$ is \textbf{closed} if it contains all of its boundary.
-      \item A region $R$ is \textbf{bounded} if it can be contained within a ball.
-      \item A region $R$ is \textbf{unbounded} if it cannot be contained within a ball.
-    \end{itemize}
+%     \begin{itemize}
+%       \item A subset of the $xy$-plane ($\mathbb{R}^2$) or $xyz$-space ($\mathbb{R}^3$) is known as a \textbf{region}.
+%       \item The \textbf{ball} $B(p,\epsilon)$ is the set of points \[B(p,\epsilon) = \{q \in \mathbb{R}^2 : \text{the distance between }p\text{ and }q\text{ is less than }\epsilon\}\] Its \textbf{center} is the point $p$ and its \textbf{radius} is $\epsilon$.
+%       \item A point $p\in\mathbb{R}^2$ is known as an \textbf{interior point} of a region $R$ if \textit{there exists some ball} containing $p$ that lies inside $R$.
+%       \item A point $p\in\mathbb{R}^2$ is known as a \textbf{boundary point} of a region $R$ if \textit{every ball} containing $p$ contains some points in $R$ and some points not in $R$.
+%       \item A point $p\in\mathbb{R}^2$ is known as an \textbf{exterior point} of a region $R$ if \textit{there exists some ball} containing $p$ that lies outside $R$.
+%       \item The \textbf{interior} of $R$ is the set \[\textrm{int}(R)=\{p : p \text{ is an interior point of } R\}\]
+%       \item The \textbf{boundary} of $R$ is the set \[\textrm{bd}(R)=\{p : p \text{ is a boundary point of } R\}\]
+%       \item The \textbf{exterior} of $R$ is the set \[\textrm{ext}(R)=\{p : p \text{ is an exterior point of } R\}\]
+%       \item A region $R$ is \textbf{open} if it doesn't contain any of its boundary.
+%       \item A region $R$ is \textbf{closed} if it contains all of its boundary.
+%       \item A region $R$ is \textbf{bounded} if it can be contained within a ball.
+%       \item A region $R$ is \textbf{unbounded} if it cannot be contained within a ball.
+%     \end{itemize}
 
-  \item Sketching Functions
+%   \item Sketching Functions
 
-    \begin{itemize}
-      \item Level curve
-        \[\{(x,y):f(x,y)=c\}\]
-      \item Surface $z=f(x,y)$
-        \[\{(x,y,f(x,y)): (x,y)\in \textrm{Dom}(f)\}\]
-      \item Contour curve 
-        \[\{(x,y,c): f(x,y)=c\}\]
-      \item Level surface
-        \[\{(x,y,z):f(x,y,z)=c\}\]
-    \end{itemize}
+%     \begin{itemize}
+%       \item Level curve
+%         \[\{(x,y):f(x,y)=c\}\]
+%       \item Surface $z=f(x,y)$
+%         \[\{(x,y,f(x,y)): (x,y)\in \textrm{Dom}(f)\}\]
+%       \item Contour curve 
+%         \[\{(x,y,c): f(x,y)=c\}\]
+%       \item Level surface
+%         \[\{(x,y,z):f(x,y,z)=c\}\]
+%     \end{itemize}
 
-\item \textbf{ Suggested Exercises for 12.1:}
+% \item \textbf{ Suggested Exercises for 12.1:}
 
-  \begin{itemize}
-  \item Identifying and describing domains, ranges, level curves, boundaries: 1-12
-  \item Relating level curves to graphs: 13-18
-  \item Sketching surfaces and level curves: 19-28
-  \item Finding level curves through a point: 29-32
-  \item Sketching level surfaces: 33-40
-  \item Finding level surfaces through a point: 41-44
-  \end{itemize}
+%   \begin{itemize}
+%   \item Identifying and describing domains, ranges, level curves, boundaries: 1-12
+%   \item Relating level curves to graphs: 13-18
+%   \item Sketching surfaces and level curves: 19-28
+%   \item Finding level curves through a point: 29-32
+%   \item Sketching level surfaces: 33-40
+%   \item Finding level surfaces through a point: 41-44
+%   \end{itemize}
   
 \end{itemize}
 
 \newpage
 
-\centerline{\bf 12.2 Limits and Continuity in Higher Dimensions}
+\centerline{\bf 14.2 Limits and Continuity}
 
 \begin{itemize}
 
   \item Limits
     \begin{itemize}
-      \item If the value of the vector function $f(P)$ becomes arbitrarily close to the number $L$ as points $P$ close to $P_0$ are plugged into the function, then the \textbf{limit of $f(P)$ as $P$ approaches $P_0$} is $L$: \[\lim_{P\to P_0} f(P) = L\]
-        \begin{itemize}
-          \item Precise definition: \newline
-          Suppose there exists a function $\delta(\epsilon)$ so that for all positive numbers $\epsilon>0$ and all numbers $P$ where $|f(P)-L|<\epsilon$, it follows that $|\vec{P}-\vec{P_0}|<\delta(\epsilon)$. Then we say that $\lim_{P\to P_0} f(P) = L$.
-        \end{itemize}
-      \item Note that values of $f$ must approach $L$ no matter which direction we approach $p_0$.
+      \item If the value of the function $f(P)$ becomes arbitrarily close to the number $L$ as vectors $P$ close to $P_0$ are plugged into the function, then the \textbf{limit of $f(P)$ as $P$ approaches $P_0$} is $L$: \[\lim_{P\to P_0} f(P) = L\]
+      \item For functions of two or three variables:
+      \[\lim_{(x,y)\to(x_0,y_0)}f(x,y) = L\]
+      \[\lim_{(x,y,z)\to(x_0,y_0,z_0)}f(x,y,z) = L\]
     \end{itemize}
-    
-  \item Limit Laws
-  
-    \begin{enumerate}
-      \item Sum/Difference Law \[\lim_{p\to p_0}(f(p)\pm g(p)) = \lim_{p\to p_0}f(p) \pm \lim_{p\to p_0}g(p)\]
-      \item Product Law \[\lim_{p\to p_0}(f(p)\cdot g(p)) = \lim_{p\to p_0}f(p) \cdot \lim_{p\to p_0}g(p)\]
-      \item Constant Multiple Law \[\lim_{p\to p_0}(kf(p)) = k\lim_{p\to p_0}f(p)\]
-      \item Quotient Law \[\lim_{p\to p_0}\frac{f(p)}{g(p)} = \frac{\ds \lim_{p\to p_0}f(p)}{\ds \lim_{p\to p_0}g(p)}\]
-      \item Power Law (for $r,s\in \mathbb{Z}$) \[\lim_{p\to p_0}(f(p))^{r/s} = \left(\lim_{p\to p_0}f(p)\right)^{r/s}\]
-    \end{enumerate}
-
-  \newpage
-          
-  \item Computing Limits
-    
-      \begin{itemize}
-      \item $\ds \lim_{P \to P_0} f(x) = \lim_{x\to x_0} f(x)$
-      \item Factoring and cancelling is a useful strategy.
-      \item L'Hopital's Rule does not apply for multiple variable limits.
-      \end{itemize}
   
   \item Showing a Limit DNE
   
     \begin{itemize}
-      \item If
+      \item In order for a limit $\lim_{P\to P_0}f(x,y)$ to exist, the values of $f$ must approach $L$ no matter which direction we approach $P_0$.
+      \item Choose $y=g(x)$ and $y=h(x)$ where $P_0$ lays on both graphs. If
         \[
-          \lim_{x\to x_0} h(x,f(x)) \not= \lim_{x\to x_0} h(x,g(x))
+          \lim_{x\to x_0} f(x,g(x)) \not= \lim_{x\to x_0} f(x,h(x))
         \]
-        then $\ds\lim_{P\to P_0} h(x,y)$ DNE.
+        then $\ds\lim_{P\to P_0} f(x,y)$ DNE.
+      \item Or choose $x=g(y)$ and $x=h(y)$ where $P_0$ lays on both graphs. If 
+        \[
+          \lim_{y\to y_0} f(g(y),y) \not= \lim_{y\to y_0} f(h(y),y)
+        \]
+        then $\ds\lim_{P\to P_0} f(x,y)$ DNE.
     \end{itemize}
+    
+  \item Limit Laws
+  
+    \[\lim_{P\to P_0}(f(P)\pm g(P)) = \lim_{P\to P_0}f(P) \pm \lim_{P\to P_0}g(P)\]
+    \[\lim_{P\to P_0}(f(P)\cdot g(P)) = \lim_{P\to P_0}f(P) \cdot \lim_{P\to P_0}g(P)\]
+    \[\lim_{P\to P_0}(kf(P)) = k\lim_{P\to P_0}f(P)\]
+    \[\lim_{P\to P_0}\frac{f(P)}{g(P)} = \frac{\ds \lim_{P\to P_0}f(P)}{\ds \lim_{P\to P_0}g(P)}\]
+    \[\lim_{P\to P_0}(f(P))^{r/s} = \left(\lim_{P\to P_0}f(P)\right)^{r/s}\]
+          
+  \item Computing Limits
+    
+      \begin{itemize}
+      \item Variables not involved in a limit may be eliminated: \[\lim_{P \to P_0} f(x) = \lim_{x\to x_0} f(x)\]
+      \item Due to the Limit Laws, many limits follow the ``just plug it in'' rule.
+      \item If plugging in results in a zero in a denominator, use factoring, perhaps with conjugates.
+      \item L'Hopital's Rule does not apply for multiple variable limits.
+      \end{itemize}
   
   \item Continuity
   
     \begin{itemize}
-      \item A function $f(p)$ is \textbf{continuous} if $\ds \lim_{p\to p_0}f(p) = f(p_0)$ for all points $p_0$ in its domain.
+      \item A function $f(P)$ is \textbf{continuous} if $\ds \lim_{P\to P_0}f(P) = f(P_0)$ for all points $P_0$ in its domain.
       \item If a multi-variable function is composed of continuous single-variable functions, then it is also continuous.
     \end{itemize}
   
-  \item \textbf{ Suggested Exercises for 12.2:}
+  % \item \textbf{ Suggested Exercises for 12.2:}
   
-    \begin{itemize}
-    \item Computing limits: 1-26
-    \item Showing limits don't exist: 35-42
-    \end{itemize}
+  %   \begin{itemize}
+  %   \item Computing limits: 1-26
+  %   \item Showing limits don't exist: 35-42
+  %   \end{itemize}
 
 \end{itemize}
 
 \newpage
 
-\centerline{\bf 12.3 Partial Derivatives}
+\centerline{\bf 14.3 Partial Derivatives}
 
 \begin{itemize}
 
-  \item Partial Derivatives 
-  
+  \item Partial Derivatives
     \begin{itemize}
-      \item The \textbf{partial derivative of $f$ with respect to $x_i$} is the limit \[\frac{\partial f}{\partial x_i}=f_{x_i}=\lim_{h\to 0}\frac{f(x_1,\dots,x_i+h,\dots,x_n)-f(x_1,\dots,x_n)}{h}\]
-      \item By the definition, we can see that to compute partial derivatives with respect to a variable, we can treat all other variables as constants and differentiate as normal.
+      \item For a function $f$ of two variables $(x,y)$:
+        \[\frac{\p f}{\p x}=f_x(x,y)=\lim_{h\to0}\frac{f(x+h,y)-f(x,y)}{h}\]
+        \[\frac{\p f}{\p y}=f_y(x,y)=\lim_{h\to0}\frac{f(x,y+h)-f(x,y)}{h}\]
+      \item To compute partial derivatives with respect to a variable, treat all other variables as constants and differentiate as normal.
+      \item Functions of more than two variables behave similarly. For $T(x,y,z)$:
+        \[\frac{\p T}{\p z}=T_z(x,y,z)=\lim_{h\to0}\frac{T(x,y,z+h)-T(x,y,z)}{h}\]
     \end{itemize}
     
   \item Higher Order Partial Derivatives
 
     \[
-      \frac{\partial^2 f}{\partial x\partial y} = \frac{\partial}{\partial x}\left[ \frac{\partial f}{\partial y} \right] = (f_y)_x = f_{yx}
+      \frac{\p^2 f}{\p x\p y} = \frac{\p}{\p x}\left[ \frac{\p f}{\p y} \right] = (f_y)_x = f_{yx}
     \] 
     \[
-      \frac{\partial^2 g}{\partial z\partial z}= \frac{\partial^2 g}{\partial z^2}= g_{zz}
+      \frac{\p^2 g}{\p z^2}= \frac{\p}{\p z}\left[ \frac{\p g}{\p z} \right]= (g_z)_z=g_{zz}
     \]
   
-    \begin{itemize}
-      \item Mixed Derivative Theorem:
+    \item Mixed Derivative Theorem 
+      \begin{itemize}
+      \item For many naturally occuring functions:
         \[f_{xy}=f_{yx}\]
-    \end{itemize}
+      \end{itemize}
   
-  \item \textbf{Suggested Exercises for 12.3:}
+  % \item \textbf{Suggested Exercises for 12.3:}
   
-    \begin{itemize}
-      \item Finding first-order partial derivatives: 1-38
-      \item Finding second-order partial derivatives: 41-50
-      \item Finding partial derivatives from the limit definition: 53-56
-    \end{itemize}
+  %   \begin{itemize}
+  %     \item Finding first-order partial derivatives: 1-38
+  %     \item Finding second-order partial derivatives: 41-50
+  %     \item Finding partial derivatives from the limit definition: 53-56
+  %   \end{itemize}
 
 \end{itemize}
 
