@@ -1152,74 +1152,69 @@ v_1 & v_2 \\
 
 \newpage
 
-\centerline{\bf 12.6 Tangent Planes and Differentials}
+% \centerline{\bf 12.6 Tangent Planes and Differentials}
+
+% \begin{itemize}
+
+%   \item Normal Vector to a Level Surface
+%     \begin{itemize}
+%       \item 
+%         $\nabla f$ is normal to the level surface $f(x,y,z)=c$ for every point $(x,y,z)$ in the domain of $f$.
+%     \end{itemize}
+    
+%   \item Normal Vector to the Surface $z=f(x,y)$
+%     \begin{itemize}
+%       \item 
+%         If $g(x,y,z)=f(x,y)-z$, then \[\nabla g = \<f_x,f_y,-1\>\] is normal to the surface $z=f(x,y)$ for every point $(x,y)$ in the domain of $f$.
+%     \end{itemize}
+    
+%   \item Tangent Line to Curve of Intersection of Two Surfaces
+%     \begin{itemize}
+%       \item 
+%         If $P_0$ is a point on two surfaces with normal vectors $\vec{n_1},\vec{n_2}$, then the tangent line to the curve of intersection is given by
+%         \[
+%           \vec{r}(t) = \vec{P_0} + t(\vec{n_1} \times \vec{n_2})
+%         \]
+%     \end{itemize}
+    
+%   \item \textbf{Suggested Exercises for 12.6:}
+  
+%     \begin{itemize}
+%     \item Finding tangent planes \& normal lines to surfaces of the form $f(x,y,z)=c$: 1-8
+%     \item Finding tangent planes \& normal lines to surfaces of the form $z=f(x,y)$: 9-12
+%     \item Finding tangent lines to curves of intersection: 13-18
+%     \end{itemize}
+  
+% \end{itemize}
+
+% \newpage
+
+\centerline{\bf 14.7 Maximum and Minimum Values}
 
 \begin{itemize}
 
-  \item Normal Vector to a Level Surface
-    \begin{itemize}
-      \item 
-        $\nabla f$ is normal to the level surface $f(x,y,z)=c$ for every point $(x,y,z)$ in the domain of $f$.
-    \end{itemize}
-    
-  \item Normal Vector to the Surface $z=f(x,y)$
-    \begin{itemize}
-      \item 
-        If $g(x,y,z)=f(x,y)-z$, then \[\nabla g = \<f_x,f_y,-1\>\] is normal to the surface $z=f(x,y)$ for every point $(x,y)$ in the domain of $f$.
-    \end{itemize}
-    
-  \item Tangent Line to Curve of Intersection of Two Surfaces
-    \begin{itemize}
-      \item 
-        If $P_0$ is a point on two surfaces with normal vectors $\vec{n_1},\vec{n_2}$, then the tangent line to the curve of intersection is given by
-        \[
-          \vec{r}(t) = \vec{P_0} + t(\vec{n_1} \times \vec{n_2})
-        \]
-    \end{itemize}
-    
-  \item \textbf{Suggested Exercises for 12.6:}
+  \item Local Maximum and Minimum Values
   
     \begin{itemize}
-    \item Finding tangent planes \& normal lines to surfaces of the form $f(x,y,z)=c$: 1-8
-    \item Finding tangent planes \& normal lines to surfaces of the form $z=f(x,y)$: 9-12
-    \item Finding tangent lines to curves of intersection: 13-18
-    \end{itemize}
-  
-\end{itemize}
-
-\newpage
-
-\centerline{\bf 12.7 Extreme Values and Saddle Points}
-
-\begin{itemize}
-
-  \item Local Extreme Values
-  
-    \begin{itemize}
-    \item Let $f$ be a function of many variables defined on a region containing the point $P_0$.
+    \item Let $f$ be a function of many variables defined near the point $P_0$.
       \begin{itemize}
-      \item $f(P_0)$ is a \textbf{local maximum} if it is the largest nearby value (there exists an open region around $P_0$ over which no greater value of $f$ exists)
-      \item $f(P_0)$ is a \textbf{local minimum} if it is the smallest nearby value (there exists an open region around $P_0$ over which no lesser value of $f$ exists)
+      \item $f$ has a \textbf{local maximum} $f(P_0)$ at $P_0$ if $f(P_0)$ is the largest value of $f$ near $P_0$
+      \item $f$ has a \textbf{local minimum} $f(P_0)$ at $P_0$ if $f(P_0)$ is the smallest value of $f$ near $P_0$
       \end{itemize}
-    \item Local max/mins are also known as \textbf{local extrema}.
     \end{itemize}
 
   \item Critical Points
     \begin{itemize}
       \item
-        The \textbf{critical points} for a function $f$ of many variables are the points in the domain where 
+        If $P_0$ is a point in the domain of $f$ and
           \[
-            \nabla f = 0 \text{ or } \nabla f \text{ DNE}
+            \nabla f(P_0) = 0 \text{ or } \nabla f(P_0) \text{ DNE}
           \]
+        then $P_0$ is called a \textbf{critical point}.
       \item
-        Critical points occur when there is a horizontal tangent plane or no tangent plane.
-    \end{itemize}
-    
-  \item First Derivative Test for Local Extreme Values
-  
-    \begin{itemize}
+        Critical points occur when the tangent plane is horizontal or DNE.
       \item
-        The local extreme values of a function always occur at critical points.
+        The local maximum and minimum values of a function always occur at critical points.
     \end{itemize}
     
   \item Saddle Points
@@ -1233,91 +1228,143 @@ v_1 & v_2 \\
     
   \item Discriminant Function
     \begin{itemize}
-      \item The \textbf{discriminant} (sometimes called ``Hessian'') of $f(x,y)$ is the function
+      \item The \textbf{discriminant} of $f$ with variables $x,y$ is the function
         \[
           f_D = \begin{array}{|cc|}f_{xx}&f_{xy}\\f_{yx}&f_{yy}\end{array} = f_{xx}f_{yy} - f_{xy}^2
         \]
     \end{itemize}
 
-  \newpage
-
   \item Second Derivative Test for Local Extreme Values of $f(x,y)$
-  
+
+    Let $(a,b)$ be a critical point of of $f$ where $\nabla f$ is defined.
     \begin{itemize}
       \item If $f_D(a,b)>0$ and $f_{xx}(a,b)<0$, then $f(a,b)$ is a local maximum.
       \item If $f_D(a,b)>0$ and $f_{xx}(a,b)>0$, then $f(a,b)$ is a local minimum.
       \item If $f_D(a,b)<0$, then $f$ has a saddle point at $(a,b)$.
       \item If $f_D(a,b)=0$, then the test is inconclusive.
     \end{itemize}
-    
-  \item Absolute Extrema on Closed and Bounded Regions
+
+  \newpage
+
+  \item Absolute Maximum and Minimum Values
   
     \begin{itemize}
-    \item Let $f$ be a function of many variables defined on a region containing the point $P_0$.
+    \item Let $f$ be a function of many variables.
       \begin{itemize}
-      \item $f(P_0)$ is the \textbf{absolute maximum} of $f$ if it is the largest value in the range of $f$
-      \item $f(P_0)$ is the \textbf{absolute minimum} of $f$ if it is the smallest value in the range of $f$
+      \item $f$ has an \textbf{absolute maximum} $f(P_0)$ at $P_0$ if $f(P_0)$ is the largest value in the range of $f$
+      \item $f$ has an \textbf{absolute minimum} $f(P_0)$ at $P_0$ if $f(P_0)$ is the smallest value in the range of $f$
       \end{itemize}
-    \item Absolute max/mins are also known as \textbf{absolute extrema}.
-    \item Every continuous function of many variables with a closed and bounded domain has absolute extrema.
+    \item Every continuous function of many variables with a closed and bounded domain has an absolute maximum and minimum value.
     \end{itemize}
     
-  \item Finding Absolute Extrema of $f(x,y)$ on a Closed and Bounded Region $D$
+  \item Finding Absolute Max/Min of $f(x,y)$ on a Closed and Bounded Region $D$
     \begin{itemize}
       \item The following points are candidates for giving the absolute extrema:
         \begin{itemize}
-          \item Critical points within $D$.
-          \item Critical points on any of $D$'s boundary curves. (Find a relation of $x$ and $y$ and use that to make $f$ a function of a single variable.)
+          \item Critical points of $f$ within $D$.
+          \item Critical points for a function which gives part of the boundary of $D$.
           \item Corners of $D$.
         \end{itemize}
       \item Plug each of these into $f(x,y)$. The largest of these is the absolute maximum, and the smallest of these is the absolute minimum.
     \end{itemize}
     
-  \item \textbf{Suggested Exercises for 12.7:}
+  % \item \textbf{Suggested Exercises for 12.7:}
   
-    \begin{itemize}
-    \item Finding local max/min and saddle points: 1-30
-    \item Finding absolute max/min: 31-36
-    \end{itemize}
+  %   \begin{itemize}
+  %   \item Finding local max/min and saddle points: 1-30
+  %   \item Finding absolute max/min: 31-36
+  %   \end{itemize}
   
 \end{itemize}
   
   \newpage
   
-  \centerline{\bf 12.8 Lagrange Multipliers}
+  \centerline{\bf 14.8 Lagrange Multipliers}
   
   \begin{itemize}
   
   \item The Method of Lagrange Multipliers
   
     \begin{itemize}
-    \item The \textbf{Method of Lagrange Multipliers} says that if $f(P)$ is a function of many variables which has an absolute extreme value on the restricted domain $\{P : g(P)=c\}$, and $f,g$ are differentiable functions such that $\nabla g \not= \vec{0}$, then the absolute extreme value occurs satisfies \[\nabla f=\lambda \nabla g \text{ and } g=c\] for some real number $\lambda$.
+    \item 
+      The \textbf{Method of Lagrange Multipliers} says that if $f$ is a function of many variables which has an absolute max/min value on the restriction $g(P)=k$ where $\nabla g \not= 0$, then the absolute max/min occurs at a point $P$ where 
+      \[
+        \nabla f(P)=\lambda \nabla g(P) \text{ and } g(P)=k
+      \] 
+      for some real number $\lambda$.
+
+    \item 
+      If two constraints $g(P)=k$ and $h(P)=l$ are given, then we find where
+      \[
+        \nabla f(P)=\lambda \nabla g(P) + \mu \nabla h(P) \text{ and } g(P)=k \text{ and } h(P)=l
+      \]
+      for some real numbers $\lambda,\mu$.
+
     \end{itemize}
     
-  \item \textbf{Suggested Exercises for 12.8:}
+  % \item \textbf{Suggested Exercises for 12.8:}
   
-    \begin{itemize}
-    \item Finding absolute extrema using the Method of Lagrange Multipliers: 1-30
-    \end{itemize}
+  %   \begin{itemize}
+  %   \item Finding absolute extrema using the Method of Lagrange Multipliers: 1-30
+  %   \end{itemize}
     
   \end{itemize}
   
   \newpage
   
-  \centerline{\bf 13.1 Double and Iterated Integrals over Rectangles}
+\centerline{\bf 15.1 Double Integrals over Rectangles}
   
+  \begin{itemize}
+
+  \item Double Integral
+    \begin{itemize}
+    \item We define the \textbf{double integral} of a function $f(x,y)$ over a region $R$ to be 
+      \[
+        \iint_R f(x,y)\d{A} = \lim_{n\to\infty}\sum_{i=1}^n f(x_{i,n},y_{i,n})\Delta A_{i,n}
+      \]
+    where for each positive integer $n$ we've defined a way to partition $R$ into $n$ pieces 
+      \[
+        R_{1,n},R_{2,n},\dots,R_{n,n}
+      \]
+    where $R_{i,n}$ has area $\Delta A_{i,n}$ and contains the point $(x_{i,n},y_{i,n})$, and \[\lim_{n\to\infty} \Delta A_{i,n} = 0\]
+    \item Since for $f(x,y)\geq 0$,
+      \[
+        \sum_{i=1}^n f(x_{i,n},y_{i,n})\Delta A_{i,n}
+      \]
+      is an approximation of the volume under $z=f(x,y)$ and over $R$, the double integral is used to define the precise volume.
+    \end{itemize}
+
+  \item Midpoint Rule for Approximating Rectangular Double Integrals
+    \begin{itemize}
+      \item For the rectangle
+      \[
+        R: a\leq x\leq b, c\leq y\leq d
+      \]
+      we may approximate the double integral by partitioning the rectangle into a grid of $m\times n$ rectangular pieces all with area $\Delta A$ and evaluating:
+      \[
+        \iint_R f(x,y)\d{A} \approx \sum_{i=1}^m\sum_{j=1}^n f(\overline{x_i},\overline{y_j}) \Delta A
+      \]
+      where $(\overline{x_i},\overline{y_j})$ is the midpoint of the $i\times j$ rectangle.
+    \end{itemize}
+
+  \end{itemize}
+
+\newpage
+
+\centerline{\bf 15.2 Iterated Integrals}
+
   \begin{itemize}
 
   \item Volume as Integral of Area
 
     \begin{itemize}
-    \item If $A(x)$ is the area of a solid's cross-section, then its volume is
+    \item If $A(x)$ is the area of a solid's cross-section, then the solid's volume is
       \[
         V  = \int_a^b A(x)\d{x}
       \]
     \end{itemize}
   
-  \item Double Integrals over Rectangles
+  \item Double Iterated Integrals over Rectangles
   
     \begin{itemize}
     \item For a solid bounded above by $z=f(x,y)\geq 0$ over the rectangle \[R: a\leq x\leq b, c\leq y\leq d\] its cross-sectional area at $x$ is given by:
@@ -1339,15 +1386,15 @@ v_1 & v_2 \\
       \[
         V = \iint_R f(x,y)\d{A}
       \]
-    \item If $f(x,y)\not\geq 0$, then the double integral represents \textbf{net volume}: volume above the $xy$-plane minus volume below the $xy$-plane.
+    \item If $f$ is not always positive, then the double integral represents \textbf{net volume}: volume above the $xy$-plane minus volume below the $xy$-plane.
     \end{itemize}
     
-  \item \textbf{Suggested Exercises for 13.1:}
+  % \item \textbf{Suggested Exercises for 13.1:}
   
-    \begin{itemize}
-    \item Evaluating iterated integrals with constant bounds: 1-12
-    \item Evaluating double integrals over rectangles: 13-28
-    \end{itemize}
+  %   \begin{itemize}
+  %   \item Evaluating iterated integrals with constant bounds: 1-12
+  %   \item Evaluating double integrals over rectangles: 13-28
+  %   \end{itemize}
     
   \end{itemize}
   
