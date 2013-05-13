@@ -1002,108 +1002,151 @@ v_1 & v_2 \\
 
 \newpage
 
-\centerline{\bf 12.4 The Chain Rule}
+\centerline{\bf 14.4 Tangent Planes and Linear Approximations}
+
+\begin{itemize}
+
+  \item Tangent Plane to $z=f(x,y)$ at $(a,b,f(a,b))$
+    \[
+      z-f(a,b)=f_x(a,b)(x-a)+f_y(a,b)(y-b)
+    \]
+
+  \item Linearization of $f(x,y)$ at $(a,b)$
+    \[
+      L(x,y) = f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b)
+    \]
+
+  \item Differentiability and a Sufficient Condition
+    \begin{itemize}
+      \item A multi-variable function $f$ is \textbf{differentiable} at a point if its linearizaration approximates the value of the function near that point.
+      \item If $f_x$, $f_y$ exist near $(a,b)$ and are continuous at $(a,b)$, then $f$ is differentiable at $(a,b)$.
+    \end{itemize}
+
+  \item Linear Approximation
+
+    If $f$ is differentiable at $(a,b)$, then
+      \[
+        f(x,y) \approx f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b)
+      \]
+
+\end{itemize}
+
+\newpage
+
+\centerline{\bf 14.5 The Chain Rule}
 
 \begin{itemize}
 
   \item Gradient Vector Function
-    \[\nabla f = \< f_{x_1}, \dots, f_{x_n} \> = \<\frac{\partial f}{\partial x_1}, \dots, \frac{\partial f}{\partial x_n}\>\]
+    \[\nabla f(x,y) = \< f_x(x,y),f_y(x,y) \> = \<\frac{\p f}{\p x}, \frac{\p f}{\p y}\>\]
+    \[\nabla f(x,y,z) = \< f_x(x,y,z),f_y(x,y,z),f_z(x,y,z) \> = \<\frac{\p f}{\p x}, \frac{\p f}{\p y}, \frac{\p f}{\p z}\>\]
+
+  \item Nested Functions
+    \begin{itemize}
+      \item If $f$ is a function of $\vec{r}=\<x,y,z\>$, and $x,y,z$ are functions of $t$, then we say $x,y,z$ are itermediate variables and may consider the following composed function of $t$:
+        \[f(\vec{r}(t))=f(x(t),y(t),z(t))\]
+      \item If $f$ is a function of $\vec{r}=\<x,y,z\>$, and $x,y,z$ are functions of $\vec{s}=\<t,u,v\>$, then we say $x,y,z$ are itermediate variables and may consider the following composed function of $t,u,v$:
+        \[f(\vec{r}(\vec{s}))=f(x(t,u,v),y(t,u,v),z(t,u,v))\]
+    \end{itemize}
   
   \item Chain Rule
     \begin{itemize}
-      \item For single variable functions:
-        \[\frac{df}{dt}=\nabla{f}\cdot\frac{d\vec{r}}{dt}=\frac{\partial f}{\partial x_1}\frac{dx_1}{dt}+\frac{\partial f}{\partial x_2}\frac{dx_2}{dt}+\dots\]
-      \item For multi-variable functions:
-        \[\frac{\partial f}{\partial t_i}=\nabla{f}\cdot\frac{\partial\vec{r}}{\partial t_i}=\frac{\partial f}{\partial x_1}\frac{\partial x_1}{\partial t_i}+\frac{\partial f}{\partial x_2}\frac{\partial x_2}{\partial t_i}+\dots\]
+      \item For functions of the form $f(\vec{r}(t))=f(x(t),y(t),z(t))$:
+        \[
+          \frac{df}{dt}=\nabla{f}\cdot\frac{d\vec{r}}{dt}=\frac{\p f}{\p x}\frac{dx}{dt}+\frac{\p f}{\p y}\frac{dy}{dt}+\frac{\p f}{\p z}\frac{dz}{dt}
+        \]
+      \item For functions of the form $f(\vec{r}(\vec{s}))=f(x(t,u,v),y(t,u,v),z(t,u,v))$:
+        \[
+          \frac{\p f}{\p t}=\nabla{f}\cdot\frac{\p\vec{r}}{\p t}=\frac{\p f}{\p x}\frac{\p x}{\p t}+\frac{\p f}{\p y}\frac{\p y}{\p t}+\frac{\p f}{\p z}\frac{\p z}{\p t}
+        \]
     \end{itemize}
     
   \item Differentiation by Substitution
   
     \begin{itemize}
-    \item The Chain Rule can be avoided by ``plugging in'' functions and using single-variable calculus.
+    \item The multi-variable Chain Rule can be avoided by ``plugging in'' functions and using single-variable calculus.
     \end{itemize}
+
+  \newpage
 
   \item Total Derivative
     \begin{itemize}
-    \item If the variables $x,y,z$ of a function $f$ are dependent on each other, then
+    \item If $f$ is a function of $x,y,z$, and $y,z$ are also functions of $x$, then
       \[
         \frac{df}{dx} = \nabla f \cdot \frac{d\vec{r}}{dx} = 
-        \frac{\partial f}{\partial x}\frac{dx}{dx} + \frac{\partial f}{\partial y}\frac{dy}{dx} + \frac{\partial f}{\partial z}\frac{dz}{dx} 
+        \frac{\partial f}{\partial x} + \frac{\partial f}{\partial y}\frac{dy}{dx} + \frac{\partial f}{\partial z}\frac{dz}{dx} 
       \]
     \end{itemize}
     
   \item Implicit Differentiation
     \begin{itemize}
     \item If $f(x,y)=c$ defines $y$ as a function of $x$, then
-      \[\ds\frac{dy}{dx} = -\frac{f_x}{f_y}\]
+      \[\ds\frac{dy}{dx} = -\frac{\p f/\p x}{\p f/\p y} = -\frac{f_x}{f_y}\]
+    \end{itemize}
+
+  \item Tree Diagram for the Chain Rule
+    \begin{itemize}
+      \item The tree diagram for the chain rule can be used to generate the chain rule.
+      \item It also holds for multiple levels of intermediate variables.
+      %TODO: Insert images
     \end{itemize}
     
-  \item \textbf{Suggested Exercises for 12.4:}
+  % \item \textbf{Suggested Exercises for 12.4:}
   
-    \begin{itemize}
-    \item Finding $\frac{dw}{dt}$ for $w=f(x(t),y(t),z(t))$: 1-6
-    \item Finding partial derivatives for compositions of multi-variable functions: 7-12, 33-38
-    \item Using partial derivatives for implicit differentiation: 25-28
-    \end{itemize}
+  %   \begin{itemize}
+  %   \item Finding $\frac{dw}{dt}$ for $w=f(x(t),y(t),z(t))$: 1-6
+  %   \item Finding partial derivatives for compositions of multi-variable functions: 7-12, 33-38
+  %   \item Using partial derivatives for implicit differentiation: 25-28
+  %   \end{itemize}
 
 \end{itemize}
 
 \newpage
 
-\centerline{\bf 12.5 Directional Derivatives and Gradient Vectors}
+\centerline{\bf 14.6 Directional Derivatives and the Gradient Vector}
 
 \begin{itemize}
 
 \item Directional Derivative
 
   \begin{itemize}
-    \item The \textbf{directional derivative of $f$ in the direction of $\vec{u}$} is 
+    \item The \textbf{directional derivative} of $f$ for the unit vector $\vec{u}$ is 
       \[ 
-        \frac{df}{ds_{\vec{u}}} = \left(\frac{df}{ds}\right)_{\vec{u}} = D_{\vec{u}}f = \nabla f \cdot \vec{u}
+        D_{\vec{u}}f = \nabla f \cdot \vec{u}
       \]
 
-    \item If $\theta$ is the angle between $\nabla f$ and $\vec{u}$, then
-      \[
-        \frac{df}{ds_{\vec{u}}}=\nabla f \cdot \vec{u}=|\nabla f||\vec{u}|\cos \theta = |\nabla f|\cos \theta
-      \]
-
-    \item The angle $\theta$ between $\nabla f$ and $\vec{u}$ determines the value of the directional derivative at a fixed point $p_0$:
-
-      \begin{itemize}
-        \item Max: $|\nabla f_{p_0}|$ at $\theta = 0$
-        \item Zero: $0$ at $\theta = \frac{\pi}{2}$
-        \item Min: $-|\nabla f_{p_0}|$ at $\theta = \pi$
-      \end{itemize}
+    \item The maximum value of $D_{\vec{u}}f$ at a fixed point $P_0$ is $|\nabla f(P_0)|$, which occurs when $\vec{u}=\frac{\nabla f(P_0)}{|\nabla f(P_0)|}$.
   \end{itemize}
   
-\item Normal Vector to a Level Curve
+\item Normal Vector to Level Curves and Surfaces
   \begin{itemize}
-    \item $\nabla f$ is normal to the level curve $f(x,y)=c$ for every point $(x,y)$ in the domain of $f$.
+    \item The gradient vectors $\nabla f$ are normal vectors to the level curves $f(x,y)=k$ for every $(x,y)$ in the domain of $f$.
+    \item The gradient vectors $\nabla f$ are normal vectors to the level surfaces $f(x,y,z)=k$ for every $(x,y,z)$ in the domain of $f$.
   \end{itemize}
 
-\item Gradient Rules
+% \item Gradient Rules
 
-    \begin{enumerate}
-    \item Constant Multiple Rule
-    \[\nabla(kf)=k\nabla f\]
-    \item Sum Rule
-    \[\nabla(f+g)=\nabla f+\nabla g\]
-    \item Difference Rule
-    \[\nabla(f-g)=\nabla f-\nabla g\]
-    \item Product Rule
-    \[\nabla(fg)=g(\nabla f)+f(\nabla g)\]
-    \item Quotient Rule
-    \[\nabla\left(\frac{f}{g}\right)=\frac{g(\nabla f)-f(\nabla g)}{g^2}\]
-    \end{enumerate}
+%     \begin{enumerate}
+%     \item Constant Multiple Rule
+%     \[\nabla(kf)=k\nabla f\]
+%     \item Sum Rule
+%     \[\nabla(f+g)=\nabla f+\nabla g\]
+%     \item Difference Rule
+%     \[\nabla(f-g)=\nabla f-\nabla g\]
+%     \item Product Rule
+%     \[\nabla(fg)=g(\nabla f)+f(\nabla g)\]
+%     \item Quotient Rule
+%     \[\nabla\left(\frac{f}{g}\right)=\frac{g(\nabla f)-f(\nabla g)}{g^2}\]
+%     \end{enumerate}
 
-\item \textbf{Suggested Exercises for 12.5:}
+% \item \textbf{Suggested Exercises for 12.5:}
 
-  \begin{itemize}
-  \item Finding $\nabla f$ at a point: 1-8
-  \item Finding directional derivatives: 9-16
-  \item Finding the direction of maximal/minimal rate of change: 17-22
-  \item Finding the direction of no instantaneous change: 27-28
-  \end{itemize}
+%   \begin{itemize}
+%   \item Finding $\nabla f$ at a point: 1-8
+%   \item Finding directional derivatives: 9-16
+%   \item Finding the direction of maximal/minimal rate of change: 17-22
+%   \item Finding the direction of no instantaneous change: 27-28
+%   \end{itemize}
 
 \end{itemize}
 
