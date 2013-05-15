@@ -53,6 +53,63 @@
 \newcommand{\Arctan}{\text{Arctan}}
 
 
+% %%%%%%%%%%
+% % IMAGES % TODO: get these working
+% %%%%%%%%%%
+% % Generated with LaTeXDraw 2.0.8
+% % Wed May 15 14:38:09 CDT 2013
+% \usepackage[usenames,dvipsnames]{pstricks}
+% % \usepackage{epsfig}
+% % \usepackage{pst-grad} % For gradients
+% % \usepackage{pst-plot} % For axes
+% \newcommand{\figChainRule}{
+%   \scalebox{1} { % Change this value to rescale the drawing.
+%     \begin{pspicture}(0,-0.8972656)(4.5931444,0.8972656)
+%       \usefont{T1}{ptm}{m}{n}
+%       \rput(2.2477636,0.71265626){f}
+%       \psline[linewidth=0.04cm](2.2564843,0.52765626)(0.65648437,0.12765625)
+%       \psline[linewidth=0.04cm](2.2564843,0.52765626)(2.2564843,0.12765625)
+%       \psline[linewidth=0.04cm](2.2564843,0.52765626)(3.8564844,0.12765625)
+%       \psline[linewidth=0.04cm](0.65648437,-0.27234375)(0.056484375,-0.47234374)
+%       \psline[linewidth=0.04cm](0.65648437,-0.27234375)(0.65648437,-0.47234374)
+%       \psline[linewidth=0.04cm](0.65648437,-0.27234375)(1.2564844,-0.47234374)
+%       \psline[linewidth=0.04cm](2.2564843,-0.27234375)(1.6564844,-0.47234374)
+%       \psline[linewidth=0.04cm](2.2564843,-0.27234375)(2.2564843,-0.47234374)
+%       \psline[linewidth=0.04cm](2.2564843,-0.27234375)(2.8564844,-0.47234374)
+%       \psline[linewidth=0.04cm](3.8564844,-0.27234375)(3.2564843,-0.47234374)
+%       \psline[linewidth=0.04cm](3.8564844,-0.27234375)(3.8564844,-0.47234374)
+%       \psline[linewidth=0.04cm](3.8564844,-0.27234375)(4.4564843,-0.47234374)
+%       \usefont{T1}{ptm}{m}{n}
+%       \rput(0.66191405,-0.06734375){x}
+%       \usefont{T1}{ptm}{m}{n}
+%       \rput(2.264375,-0.04734375){y}
+%       \usefont{T1}{ptm}{m}{n}
+%       \rput(3.849873,-0.06734375){z}
+%       \usefont{T1}{ptm}{m}{n}
+%       \rput(0.045,-0.72734374){t}
+%       \usefont{T1}{ptm}{m}{n}
+%       \rput(0.6460449,-0.72734374){u}
+%       \usefont{T1}{ptm}{m}{n}
+%       \rput(1.2433203,-0.7473438){v}
+%       \usefont{T1}{ptm}{m}{n}
+%       \rput(1.665,-0.70734376){t}
+%       \usefont{T1}{ptm}{m}{n}
+%       \rput(2.2660449,-0.70734376){u}
+%       \usefont{T1}{ptm}{m}{n}
+%       \rput(2.8633204,-0.72734374){v}
+%       \usefont{T1}{ptm}{m}{n}
+%       \rput(3.265,-0.72734374){t}
+%       \usefont{T1}{ptm}{m}{n}
+%       \rput(3.866045,-0.72734374){u}
+%       \usefont{T1}{ptm}{m}{n}
+%       \rput(4.4633203,-0.7473438){v}
+%     \end{pspicture} 
+%   }
+% }
+
+
+
+
 \begin{document}
 
 \centerline{\bf Sections 12.1 - 12.2 Overview }
@@ -1088,7 +1145,6 @@ v_1 & v_2 \\
     \begin{itemize}
       \item The tree diagram for the chain rule can be used to generate the chain rule.
       \item It also holds for multiple levels of intermediate variables.
-      %TODO: Insert images
     \end{itemize}
     
   % \item \textbf{Suggested Exercises for 12.4:}
@@ -1695,33 +1751,176 @@ v_1 & v_2 \\
   
 \newpage
 
-\centerline{\bf 14.1 Line Integrals}
+\centerline{\bf 16.1 Vector Fields}
 
   \begin{itemize}
+
+  \item Vector Fields
+    \begin{itemize}
+    \item A \textbf{vector field} assigns a vector to each point in 2D or 3D space.
+    \[
+      \vec{F}(\vec{r})=\vec{F}(x,y)=\<M(x,y),N(x,y)\>=\<M(\vec{r}),N(\vec{r})\>
+    \]
+    \[
+      \vec{F}(\vec{r})=\vec{F}(x,y,z)=\<M(x,y,z),N(x,y,z),P(x,y,z)\>=\<M(\vec{r}),N(\vec{r}),P(\vec{r})\>
+    \]
+    \end{itemize}
+
+  \item Gradient Vector Field
+    \begin{itemize}
+    \item The gradient vector field $\nabla f(x,y)=\<f_x(x,y),f_y(x,y)\>$ assigns vectors whose directions are normal to level curves and whose magnitudes are equal to the maximal directional derivative at the point.
+    \item The gradient vector field $\nabla f(x,y,z)=\<f_x(x,y,z),f_y(x,y,z),f_z(x,y,z)\>$ assigns vectors whose directions are normal to level surfaces and whose magnitudes are equal to the maximal directional derivative at the point. 
+    \end{itemize}
+
+  \end{itemize}
+
+\newpage
+
+\centerline{\bf 16.2 Line Integrals}
+
+  \begin{itemize}
+
+  \item Common Curve Parametrizations
+
+    \begin{itemize}
+      \item A line segment beginning at $P_0$ and ending at $P_1$
+        \[
+          \vec{r}(t) = \vec{P_0} + t(\vec{P_1}-\vec{P_0}), 0\leq t\leq 1
+        \]
+      \item A circle centered at the origin with radius $a$
+        \[
+          \vec{r}(t) = \<a\cos t,a\sin t\>, 0\leq t\leq 2\pi \text{ (counter-clockwise)}
+        \]
+        \[
+          \vec{r}(t) = \<a\sin t,a\cos t\>, 0\leq t\leq 2\pi \text{ (clockwise)}
+        \]
+      \item A planar curve given by $y=f(x)$ from $(x_0,y_0)$ to $(x_1,y_1)$
+        \[
+          \vec{r}(t) = \<t,f(t)\>, x_0\leq t\leq x_1 \text{ (for } x_0\leq x_1 \text{)}
+        \]
+        \[
+          \vec{r}(t) = \<-t,f(-t)\>, x_1\leq t\leq x_0 \text{ (for } x_1\leq x_0 \text{)}
+        \]
+    \end{itemize}
   
   \item Line Integrals with Respect to Arclength
   
     \begin{itemize}
-    \item The area of the ribbon with base along the curve $C$ in $xyz$ space and height given by $f(x,y,z)$ is given by the \textbf{line integral of $f(x,y,z)$ over $C$ with respect to arclength $s$}: \[\int\limits_C f(x,y,z)\dvar{s}\]
-    \item Arclength line integrals can be evaulated by finding a smooth parametrization $\vec{r}(s)$ of the curve $C$ with respect to arclength $s$ for $a\leq s \leq b$: \[\int\limits_C f(x,y,z)\dvar{s} = \int_{s=a}^{s=b} f(x(s),y(s),z(s))\dvar{s}\]
-    \item If $\vec{r}(t)$ is an arbitrary parametrization of $C$ for $a \leq t \leq b$, then \[\int\limits_C f(x,y,z)\dvar{s}=\int_{t=a}^{t=b} f(x(t),y(t),z(t))|\vec{v}(t)|\dvar{t}\]
+    \item We define the \textbf{line integral with respect to arclength} of a function of many variables $f(\vec{r})$ along a curve $C$ to be 
+      \[
+        \int_C f(\vec{r})\d{s} = \lim_{n\to\infty}\sum_{i=1}^n f(\vec{r}_{n,i})\Delta s_{n,i}
+      \]
+    where for each positive integer $n$ we've defined a way to partition $C$ into $n$ pieces 
+      \[
+        \Delta C_{n,1},\Delta C_{n,2},\dots,\Delta C_{n,n}
+      \]
+    where $\Delta C_{n,i}$ has length $\Delta s_{n,i}$, contains the position vector $\vec{r}_{n,i}$, and \[\lim_{n\to\infty} \max(\Delta s_{n,i}) = 0\]
+    \item If $\vec{r}(t)$ is a parametrization of $C$ for $a \leq t \leq b$, then 
+      \[
+        \int\limits_C f(\vec{r})\dvar{s}=\int_{t=a}^{t=b} f(\vec{r}(t))\frac{ds}{dt}\d{t}
+      \]
+    \end{itemize}
+
+  \newpage
+
+  \item Line Integrals with Respect to Variables
+
+    \begin{itemize}
+    \item Similarly, we can find the \textbf{line integral with respect to a variable} for a function of many variables $f(\vec{r})$ along a curve $C$:
+      \[
+        \int\limits_C f(\vec{r})\dvar{x}=\int_{t=a}^{t=b} f(\vec{r}(t))\frac{dx}{dt}\d{t}
+      \]
+    \item Similar defintions hold for $y,z$.
+    \end{itemize}
+
+  \item Line Integrals of Vector Fields
+
+    \begin{itemize}
+    \item The \textbf{line integral of a vector field} is defined to be the line integral with respect to arclength of the dot product of the vector field $\vec{F}(\vec{r})=\<M(\vec{r}),N(\vec{r}),P(\vec{r})\>$ with the unit tangent vector $\vec{T}(\vec{r})$ to the curve.
+      \[
+        \int_C \vec{F}(x,y,z)\cdot\vec{T}(x,y,z)\d{s}
+      \]
+    \item There are several ways to write and evaluate line integrals of vector fields:
+      \[
+        \int_C \vec{F}\cdot\vec{T}\d{s} = \int_C \vec{F}\cdot\d{\vec{r}} = \int_C \<M,N,P\>\cdot\<\d x,\d y,\d z\>
+      \]
+      \[
+        = \int_C M\d{x}+N\d{y}+P\d{z} = \int_a^b \left(M(\vec{r}(t))\frac{dx}{dt}+N(\vec{r}(t))\frac{dy}{dt}+P(\vec{r}(t))\frac{dz}{dt}\right)\d{t}
+      \]
+      \[
+        = \int_a^b \vec{F}(\vec{r}(t))\cdot\frac{\d{\vec{r}}}{dt}\d{t}
+      \]
     \end{itemize}
     
   \item Additivity
 
-   \[\int\limits_{C_1+C_2} f\dvar{s}=\int\limits_{C_1}f\dvar{s}+\int\limits_{C_2}f\dvar{s}\]
+  Let $C_1+C_2$ represent the curve taken by moving along $C_1$ followed by moving along $C_2$.
 
-  \item Reversing Arclength Line Integrals
+   \[\int\limits_{C_1+C_2} f(\vec{r})\d{s}=\int\limits_{C_1}f(\vec{r})\d{s}+\int\limits_{C_2}f(\vec{r})\d{s}\]
 
-  \[\int\limits_{C} f\dvar{s} = \int\limits_{-C} f\dvar{s}\]
-        
-  \item \textbf{Suggested Exercises for 14.1:}
-  
+   \[\int\limits_{C_1+C_2} f(\vec{r})\d{x}=\int\limits_{C_1}f(\vec{r})\d{x}+\int\limits_{C_2}f(\vec{r})\d{x}\]
+
+   \[\int\limits_{C_1+C_2} \vec{F}\cdot\d{\vec{r}}=\int\limits_{C_1}\vec{F}\cdot\d{\vec{r}}+\int\limits_{C_2}\vec{F}\cdot\d{\vec{r}}\]
+
+  \item Effects of Curve Orientation
+
+  Let $-C$ represent the curve taken by moving along $C$ in the opposite direction.
+
+  \[\int\limits_{C} f(\vec{r})\d{s} = +\int\limits_{-C} f(\vec{r})\d{s}\]
+
+  \[\int\limits_{C} f(\vec{r})\d{x} = -\int\limits_{-C} f(\vec{r})\d{x}\]
+
+  \[\int\limits_{C} \vec{F}\cdot\d{\vec{r}} = -\int\limits_{-C} \vec{F}\cdot\d{\vec{r}}\]
+
+  \item Work
+
     \begin{itemize}
-    \item Identifying vector equations for graphs: 1-8
-    \item Evaluating line integrals: 9-22
+      \item If $\vec{F}$ is a vector field representing the force applied to an object as it is moved over a smooth curve $C$, then the \textbf{work} done by the force over that curve is given by
+        \[
+          \int_C \vec{F}\cdot\d{\vec{r}} = \int_a^b \vec{F}(\vec{r}(t))\cdot\frac{\d{\vec{r}}}{dt}\d{t}
+        \]
     \end{itemize}
+        
+  % \item \textbf{Suggested Exercises for 14.1:}
+  
+  %   \begin{itemize}
+  %   \item Identifying vector equations for graphs: 1-8
+  %   \item Evaluating line integrals: 9-22
+  %   \end{itemize}
     
+  \end{itemize}
+
+\newpage
+
+\centerline{\bf 16.3 The Fundamental Theorem for Line Integrals}
+
+  \begin{itemize}
+
+  \item The Fundamental Theorem
+    \begin{itemize}
+      \item If $C$ is any smooth curve beginning at the point $A$ and ending at the point $B$, then
+        \[
+          \int_C \nabla f\cdot \d{\vec{r}} = \left[f\right]_A^B = f(B)-f(A)
+        \]
+      \item If $C$ is any smooth curve which is \textbf{closed} (begins and ends at the same point), then
+        \[
+          \int_C \nabla f\cdot \d{\vec{r}} = 0
+        \]
+    \end{itemize}
+
+  \item Conservative Fields
+    \begin{itemize}
+      \item We say $\vec{F}=\<M,N,P\>$ is a conservative field if there is a \textbf{potential function} $f$ such that $\nabla f = \vec{F}$.
+      \item Line integrals of conservative fields are said to be path independent since for any curve $C$ beginning at $A$ and ending at $B$:
+        \[
+          \int_C \vec{F}\cdot \d{\vec{r}} = \int_C \nabla f\cdot \d{\vec{r}} = \left[f\right]_A^B = f(B)-f(A)
+        \]
+      \item We can prove a field is conservative by finding its potential function or showing it satisfies the \textbf{Component Test}:
+        \[
+          \frac{\p M}{\p y}=\frac{\p N}{\p x}, \frac{\p N}{\p z}=\frac{\p P}{\p y}, \frac{\p P}{\p x}=\frac{\p M}{\p z}
+        \]
+    \end{itemize}
+
   \end{itemize}
   
   \newpage
