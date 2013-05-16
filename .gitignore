@@ -1,7 +1,6 @@
 *
 !.gitignore
-!*.tex
 !README.md
-!*.pdf
-dnt*
-*_study_guide.*
+!stewart_*.tex
+!stewart_*.pdf
+!header.tex
