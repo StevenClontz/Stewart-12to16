@@ -1,114 +1,8 @@
-\documentclass[12pt]{article}
+\newcommand{\thetitle}{
+  Stewart's Calculus Chapter 12-16 Notes
+}
 
-\usepackage{fancyhdr}
-
-\usepackage{graphicx}
-
-\pdfpagewidth 8.5in
-\pdfpageheight 11in
-
-\setlength\topmargin{0in}
-\setlength\headheight{0in}
-\setlength\headsep{0.2in}
-\setlength\textheight{8in}
-\setlength\textwidth{6in}
-\setlength\oddsidemargin{0in}
-\setlength\evensidemargin{0in}
-\setlength\parindent{0in}
-\setlength\parskip{0.1in} 
-
-\pagestyle{fancy}
-\headheight 35pt
-
-\lhead{}
-\chead{Stewart's Calculus Chapter 12-16 Notes}
-\rhead{Page \thepage}
-
-\lfoot{\footnotesize http://github.com/StevenClontz/Stewart-12to16}
-\cfoot{}
-\rfoot{\footnotesize Last saved on \today}
- 
-\usepackage{amssymb}
-\usepackage{amsfonts}
-\usepackage{amsmath}
-\usepackage{mathtools}
-\usepackage{amsthm}
-\usepackage{wasysym} % for \smiley
-      
-\newcommand{\ds}{\displaystyle}
-\renewcommand{\vec}[1]{\mathbf{#1}}
-\newcommand{\veci}{\mathbf{i}}
-\newcommand{\vecj}{\mathbf{j}}
-\newcommand{\veck}{\mathbf{k}}
-\newcommand{\dvar}[1]{\,d{#1}}
-\renewcommand{\d}[1]{\dvar{#1}}
-\renewcommand{\div}{\textrm{div}\,}
-\newcommand{\spin}{\textrm{spin}\,}
-\newcommand{\proj}{\textrm{proj}}
-\newcommand{\<}{\left<}
-\renewcommand{\>}{\right>}
-
-\newcommand{\p}{\partial}
-
-\newcommand{\Arctan}{\text{Arctan}}
-
-
-% %%%%%%%%%%
-% % IMAGES % TODO: get these working
-% %%%%%%%%%%
-% % Generated with LaTeXDraw 2.0.8
-% % Wed May 15 14:38:09 CDT 2013
-% \usepackage[usenames,dvipsnames]{pstricks}
-% % \usepackage{epsfig}
-% % \usepackage{pst-grad} % For gradients
-% % \usepackage{pst-plot} % For axes
-% \newcommand{\figChainRule}{
-%   \scalebox{1} { % Change this value to rescale the drawing.
-%     \begin{pspicture}(0,-0.8972656)(4.5931444,0.8972656)
-%       \usefont{T1}{ptm}{m}{n}
-%       \rput(2.2477636,0.71265626){f}
-%       \psline[linewidth=0.04cm](2.2564843,0.52765626)(0.65648437,0.12765625)
-%       \psline[linewidth=0.04cm](2.2564843,0.52765626)(2.2564843,0.12765625)
-%       \psline[linewidth=0.04cm](2.2564843,0.52765626)(3.8564844,0.12765625)
-%       \psline[linewidth=0.04cm](0.65648437,-0.27234375)(0.056484375,-0.47234374)
-%       \psline[linewidth=0.04cm](0.65648437,-0.27234375)(0.65648437,-0.47234374)
-%       \psline[linewidth=0.04cm](0.65648437,-0.27234375)(1.2564844,-0.47234374)
-%       \psline[linewidth=0.04cm](2.2564843,-0.27234375)(1.6564844,-0.47234374)
-%       \psline[linewidth=0.04cm](2.2564843,-0.27234375)(2.2564843,-0.47234374)
-%       \psline[linewidth=0.04cm](2.2564843,-0.27234375)(2.8564844,-0.47234374)
-%       \psline[linewidth=0.04cm](3.8564844,-0.27234375)(3.2564843,-0.47234374)
-%       \psline[linewidth=0.04cm](3.8564844,-0.27234375)(3.8564844,-0.47234374)
-%       \psline[linewidth=0.04cm](3.8564844,-0.27234375)(4.4564843,-0.47234374)
-%       \usefont{T1}{ptm}{m}{n}
-%       \rput(0.66191405,-0.06734375){x}
-%       \usefont{T1}{ptm}{m}{n}
-%       \rput(2.264375,-0.04734375){y}
-%       \usefont{T1}{ptm}{m}{n}
-%       \rput(3.849873,-0.06734375){z}
-%       \usefont{T1}{ptm}{m}{n}
-%       \rput(0.045,-0.72734374){t}
-%       \usefont{T1}{ptm}{m}{n}
-%       \rput(0.6460449,-0.72734374){u}
-%       \usefont{T1}{ptm}{m}{n}
-%       \rput(1.2433203,-0.7473438){v}
-%       \usefont{T1}{ptm}{m}{n}
-%       \rput(1.665,-0.70734376){t}
-%       \usefont{T1}{ptm}{m}{n}
-%       \rput(2.2660449,-0.70734376){u}
-%       \usefont{T1}{ptm}{m}{n}
-%       \rput(2.8633204,-0.72734374){v}
-%       \usefont{T1}{ptm}{m}{n}
-%       \rput(3.265,-0.72734374){t}
-%       \usefont{T1}{ptm}{m}{n}
-%       \rput(3.866045,-0.72734374){u}
-%       \usefont{T1}{ptm}{m}{n}
-%       \rput(4.4633203,-0.7473438){v}
-%     \end{pspicture} 
-%   }
-% }
-
-
-
+\input{./header.tex}
 
 \begin{document}
 
@@ -133,7 +27,7 @@
   \item Definition of a Vector
   
     \begin{itemize}
-    \item A vector $\vec{v}=\overrightarrow{v}$ is a mathematical object which stores length (magnitude) and direction, and can be thought of as a directed line segment.
+    \item A vector $\vect{v}=\overrightarrow{v}$ is a mathematical object which stores length (magnitude) and direction, and can be thought of as a directed line segment.
   
     \item Two vectors with the same length and direction are considered equal, even if they aren't in the same position. 
 
@@ -150,21 +44,21 @@
     
   \item Position Vector
   
-    If $P=(a,b,c)$ is a point, then $\vec{P}=\<a,b,c\>$ is its \textbf{position vector}. 
+    If $P=(a,b,c)$ is a point, then $\vect{P}=\<a,b,c\>$ is its \textbf{position vector}. 
 
     We assume $(a,b,c)=\<a,b,c\>$.
 
   \item Vector Between Points
   
-  The vector from $P_1 = (x_1,y_1,z_1)$ to $P_2 = (x_2,y_2,z_2)$ is \[\vec{P_1P_2} = \overrightarrow{P_1P_2} = \<x_2-x_1,y_2-y_1,z_2-z_1\>\]
+  The vector from $P_1 = (x_1,y_1,z_1)$ to $P_2 = (x_2,y_2,z_2)$ is \[\vect{P_1P_2} = \overrightarrow{P_1P_2} = \<x_2-x_1,y_2-y_1,z_2-z_1\>\]
   
   \item Length of a Vector
   
-    \[|\vec{v}| = |\<v_1,v_2,v_3\>| = \sqrt{v_1^2 + v_2^2 + v_3^2}\]
+    \[|\vect{v}| = |\<v_1,v_2,v_3\>| = \sqrt{v_1^2 + v_2^2 + v_3^2}\]
   
   \item The Zero Vector
   
-  \[\vec{0} = \overrightarrow{0} = \<0,0,0\>\]
+  \[\vect{0} = \overrightarrow{0} = \<0,0,0\>\]
   
   \item Vector Operations
     \begin{itemize}
@@ -176,15 +70,15 @@
 
   \item Vector Operation Properties
     \begin{enumerate}
-    \item $\vec{u}+\vec{v} = \vec{v}+\vec{u}$
-    \item $(\vec{u}+\vec{v})+\vec{w} = \vec{u}+(\vec{v}+\vec{w})$
-    \item $\vec{u}+\vec{0} = \vec{u}$
-    \item $\vec{u}+(-\vec{u}) = \vec{0}$
-    \item $0\vec{u} = \vec{0}$
-    \item $1\vec{u} = \vec{u}$
-    \item $a(b\vec{u}) = (ab)\vec{u}$
-    \item $a(\vec{u} + \vec{v}) = a\vec{u} + a\vec{v}$
-    \item $(a+b)\vec{u} = a\vec{u} + b\vec{u}$
+    \item $\vect{u}+\vect{v} = \vect{v}+\vect{u}$
+    \item $(\vect{u}+\vect{v})+\vect{w} = \vect{u}+(\vect{v}+\vect{w})$
+    \item $\vect{u}+\vect{0} = \vect{u}$
+    \item $\vect{u}+(-\vect{u}) = \vect{0}$
+    \item $0\vect{u} = \vect{0}$
+    \item $1\vect{u} = \vect{u}$
+    \item $a(b\vect{u}) = (ab)\vect{u}$
+    \item $a(\vect{u} + \vect{v}) = a\vect{u} + a\vect{v}$
+    \item $(a+b)\vect{u} = a\vect{u} + b\vect{u}$
     \end{enumerate}
 
   \item Unit Vectors
@@ -202,7 +96,7 @@
       \[\<v_x,v_y,v_z\> = v_x\veci + v_y\vecj + v_z\veck\]
 
     \item Length-Direction Form:
-      \[\vec{v} = |\vec{v}|\frac{\vec{v}}{|\vec{v}|}\]
+      \[\vect{v} = |\vect{v}|\frac{\vect{v}}{|\vect{v}|}\]
 
     \end{itemize}
   \end{itemize}
@@ -214,35 +108,35 @@
   
     \begin{itemize}
     \item Dot Product
-      \[ \vec{u} \cdot \vec{v} = \<u_1,u_2,u_3\>\cdot\<v_1,v_2,v_3\> = u_1v_1 + u_2v_2 + u_3v_3 \]
+      \[ \vect{u} \cdot \vect{v} = \<u_1,u_2,u_3\>\cdot\<v_1,v_2,v_3\> = u_1v_1 + u_2v_2 + u_3v_3 \]
   
     \item Angle between vectors
-      \[\cos\theta = \frac{\vec{u}\cdot\vec{v}}{|\vec{u}||\vec{v}|}\] 
+      \[\cos\theta = \frac{\vect{u}\cdot\vect{v}}{|\vect{u}||\vect{v}|}\] 
       
     \item Alternate Dot Product formula
-      \[\vec{u} \cdot \vec{v} = |\vec{u}||\vec{v}|\cos \theta \]
+      \[\vect{u} \cdot \vect{v} = |\vect{u}||\vect{v}|\cos \theta \]
       
     \item Orthogonal Vectors
       \begin{itemize}
-      \item  $\vec{u},\vec{v}$ are orthogonal if $\vec{u} \cdot \vec{v} = 0$
-      \item $\vec{u},\vec{v}$ are orthogonal if the angle between them is $\frac{\pi}{2} = 90^\circ$
-      \item $\vec{0}$ is orthogonal to every vector
+      \item  $\vect{u},\vect{v}$ are orthogonal if $\vect{u} \cdot \vect{v} = 0$
+      \item $\vect{u},\vect{v}$ are orthogonal if the angle between them is $\frac{\pi}{2} = 90^\circ$
+      \item $\vect{0}$ is orthogonal to every vector
       \end{itemize}
     
     \item Dot Product Properties
       \begin{enumerate}
-      \item $\vec{u} \cdot \vec{v} = \vec{v}\cdot\vec{u}$
-      \item $(c\vec{u})\cdot \vec{v} = \vec{u} \cdot (c\vec{v}) = c(\vec{u} \cdot \vec{v})$
-      \item $\vec{u} \cdot (\vec{v} + \vec{w}) = \vec{u}\cdot\vec{v} + \vec{u}\cdot \vec{w}$
-      \item $\vec{u} \cdot \vec{u} = |\vec{u}|^2$
-      \item $\vec{0} \cdot \vec{u} = 0$
+      \item $\vect{u} \cdot \vect{v} = \vect{v}\cdot\vect{u}$
+      \item $(c\vect{u})\cdot \vect{v} = \vect{u} \cdot (c\vect{v}) = c(\vect{u} \cdot \vect{v})$
+      \item $\vect{u} \cdot (\vect{v} + \vect{w}) = \vect{u}\cdot\vect{v} + \vect{u}\cdot \vect{w}$
+      \item $\vect{u} \cdot \vect{u} = |\vect{u}|^2$
+      \item $\vect{0} \cdot \vect{u} = 0$
       \end{enumerate}
     
     \item Projection Vector
-      \[\proj_{\vec{v}}(\vec{u}) = \left(\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|} \right)\frac{\vec{v}}{|\vec{v}|}\]
+      \[\proj_{\vect{v}}(\vect{u}) = \left(\frac{\vect{u}\cdot\vect{v}}{|\vect{v}|} \right)\frac{\vect{v}}{|\vect{v}|}\]
 
     \item Work
-      \[W = \vec{F} \cdot \vec{D} = |\vec{F}||\vec{D}|\cos \theta\]\
+      \[W = \vect{F} \cdot \vect{D} = |\vect{F}||\vect{D}|\cos \theta\]\
     
     % All these are outdated from Hass - might replace or make new homework sheet.
     % \item \textbf{Suggested Exercises for 10.3}
@@ -322,7 +216,7 @@ c & d \\
       \end{itemize}
     \item Cross Product
 \[
-    \vec{u} \times \vec{v} = 
+    \vect{u} \times \vect{v} = 
 \begin{array}{|c c c|}
 \veci & \vecj & \veck \\
 u_1 & u_2 & u_3 \\
@@ -363,33 +257,33 @@ v_1 & v_2 \\
 
     \item Right-Hand Rule
       \begin{itemize}
-      \item A method for determining a special orthogonal direction used throughout mathematics and physics in 3D space, with respect to an ordered pair of vectors $\vec{u},\vec{v}$
-      \item $\vec{u}\times\vec{v}$ is orthogonal to both $\vec{u}$, $\vec{v}$ according to the Right-Hand Rule.
+      \item A method for determining a special orthogonal direction used throughout mathematics and physics in 3D space, with respect to an ordered pair of vectors $\vect{u},\vect{v}$
+      \item $\vect{u}\times\vect{v}$ is orthogonal to both $\vect{u}$, $\vect{v}$ according to the Right-Hand Rule.
       \end{itemize}
 
     \newpage
 
     \item Cross Product Magnitude
-      \[|\vec{u}\times\vec{v}|=|\vec{u}||\vec{v}|\sin\theta\]
+      \[|\vect{u}\times\vect{v}|=|\vect{u}||\vect{v}|\sin\theta\]
 
-      The area of the parallelogram determined by $\vec{u},\vec{v}$ is $|\vec{u}\times\vec{v}|$.
+      The area of the parallelogram determined by $\vect{u},\vect{v}$ is $|\vect{u}\times\vect{v}|$.
     
     \item Parallel Vectors
       \begin{itemize}
-      \item  $\vec{u},\vec{v}$ are parallel if $\vec{u} \times \vec{v} = 0$
-      \item $\vec{u},\vec{v}$ are parallel if the angle between them is $0=0^\circ$ or $\pi = 180^\circ$
-      \item $\vec{0}$ is parallel to every vector
+      \item  $\vect{u},\vect{v}$ are parallel if $\vect{u} \times \vect{v} = 0$
+      \item $\vect{u},\vect{v}$ are parallel if the angle between them is $0=0^\circ$ or $\pi = 180^\circ$
+      \item $\vect{0}$ is parallel to every vector
       \end{itemize}
     
     \item Cross Product Properties
     
       \begin{enumerate}
-      \item $(r\vec{u}) \times (s\vec{v}) = (rs)(\vec{u} \times \vec{v})$
-      \item $\vec{u} \times (\vec{v} + \vec{w}) = \vec{u} \times \vec{v} + \vec{u} \times \vec{w}$
-      \item $(\vec{v} + \vec{w}) \times \vec{u} = \vec{v} \times \vec{u} + \vec{w} \times \vec{u}$
-      \item $\vec{v} \times \vec{u} = -(\vec{u} \times \vec{v})$
-      \item $\vec{0} \times \vec{u} = \vec{0}$
-      \item $\vec{u} \times \vec{u} = \vec{0}$
+      \item $(r\vect{u}) \times (s\vect{v}) = (rs)(\vect{u} \times \vect{v})$
+      \item $\vect{u} \times (\vect{v} + \vect{w}) = \vect{u} \times \vect{v} + \vect{u} \times \vect{w}$
+      \item $(\vect{v} + \vect{w}) \times \vect{u} = \vect{v} \times \vect{u} + \vect{w} \times \vect{u}$
+      \item $\vect{v} \times \vect{u} = -(\vect{u} \times \vect{v})$
+      \item $\vect{0} \times \vect{u} = \vect{0}$
+      \item $\vect{u} \times \vect{u} = \vect{0}$
       \end{enumerate}
 
     \item Standard Unit Vector Cross Products
@@ -402,13 +296,13 @@ v_1 & v_2 \\
     
     \item Torque
     
-    \[\overrightarrow{\tau} = \vec{r} \times \vec{F} \]
-    \[|\overrightarrow{\tau}| = |\vec{r}||\vec{F}|\sin\theta\]
+    \[\overrightarrow{\tau} = \vect{r} \times \vect{F} \]
+    \[|\overrightarrow{\tau}| = |\vect{r}||\vect{F}|\sin\theta\]
     
     \item Triple Scalar (or ``Box'') Product
     
     \[
-    (\vec{u}\times\vec{v})\cdot\vec{w} =
+    (\vect{u}\times\vect{v})\cdot\vect{w} =
     \begin{array}{|c c c|}
     u_1 & u_2 & u_3 \\
     v_1 & v_2 & v_3 \\
@@ -416,7 +310,7 @@ v_1 & v_2 \\
     \end{array}
     \]
     
-    Its absolute value $|(\vec{u}\times\vec{v})\cdot\vec{w}|$ gives the volume of a parallelpiped determined by the three vectors.
+    Its absolute value $|(\vect{u}\times\vect{v})\cdot\vect{w}|$ gives the volume of a parallelpiped determined by the three vectors.
     
     % \item \textbf{Suggested Exercises for 10.4}
     %   \begin{itemize}
@@ -433,30 +327,30 @@ v_1 & v_2 \\
   
     \begin{itemize}
     \item Vector Equation and Parametric Equations for a Line
-      \[\vec{r}(t) = \vec{P_0} + t\vec{v}\]
+      \[\vect{r}(t) = \vect{P_0} + t\vect{v}\]
       \[x = x_0 + At, y = y_0 + Bt, z = z_0 + Ct\] for $-\infty < t < \infty$
 
     \item Symmetric Equations for a Line
       \[\frac{x-x_0}{A}=\frac{y-y_0}{B}=\frac{z-z_0}{C}\]
     
     \item Line Segment joining a pair of points
-      \[\vec{r}(t) = \vec{P_0} + t(\vec{P_0P_1})=(1-t)\vec{P_0}+t\vec{P_1}\] for $0 \leq t \leq 1$
+      \[\vect{r}(t) = \vect{P_0} + t(\vect{P_1}-\vect{P_0})=(1-t)\vect{P_0}+t\vect{P_1}\] for $0 \leq t \leq 1$
     
     \item Distance from a Point to a Line
-      \[d = \frac{|\vec{PS} \times \vec{v}|}{|\vec{v}|}\]
+      \[d = \frac{|\vect{PS} \times \vect{v}|}{|\vect{v}|}\]
     
     \item Equation for a Plane
       \[A(x-x_0) + B(y-y_0) + C(z-z_0) = 0\]
       \[Ax+By+Cz = D\]
     
     \item Line of Intersection of Two Planes
-      \[\vec{r}(t) = \vec{P_0} + t(\vec{n_1} \times \vec{n_2})\]
+      \[\vect{r}(t) = \vect{P_0} + t(\vect{n_1} \times \vect{n_2})\]
 
     \item Angle of Intersection of Two Planes
-      \[\theta = \frac{\vec{n_1}\cdot\vec{n_2}}{|\vec{n_1}||\vec{n_2}|}\]
+      \[\cos\theta = \frac{\vect{n_1}\cdot\vect{n_2}}{|\vect{n_1}||\vect{n_2}|}\]
     
     \item Distance from a Point to a Plane
-      \[d = \frac{|\vec{PS} \cdot \vec{n}|}{|\vec{n}|}\]
+      \[d = \frac{|\vect{PS} \cdot \vect{n}|}{|\vect{n}|}\]
 
     % \item \textbf{Suggested Exercises for 10.5}
     %   \begin{itemize}
@@ -567,18 +461,18 @@ v_1 & v_2 \\
 \begin{itemize}
   \item Curves, Paths, and Vector Functions
     \begin{itemize}
-      \item A \textbf{position function} maps a moment in time to a position on a path. It can be defined with \textbf{parametric equations} \[x=x(t), y=y(t), z=z(t)\] or with a \textbf{vector function} \[\vec{r}(t) = \<x(t),y(t),z(t)\>\]
+      \item A \textbf{position function} maps a moment in time to a position on a path. It can be defined with \textbf{parametric equations} \[x=x(t), y=y(t), z=z(t)\] or with a \textbf{vector function} \[\vect{r}(t) = \<x(t),y(t),z(t)\>\]
       \item $x(t),y(t),z(t)$ are called \textbf{component functions}
     \end{itemize}
 
   \item Vector Function Limits
-    \[\lim_{t\to a} \vec{r}(t) = \<\lim_{t\to a} f(t), \lim_{t\to a} g(t), \lim_{t\to a} h(t)\>\]
+    \[\lim_{t\to a} \vect{r}(t) = \<\lim_{t\to a} f(t), \lim_{t\to a} g(t), \lim_{t\to a} h(t)\>\]
 
   \item Continuity of Vector Functions
     \begin{itemize}
       \item
-      The function $\vec{r}(t)$ is \textbf{continuous} if \[\lim_{t\to a}\vec{r}(t) = \vec{r}(a)\] for all $a$ in its domain.
-      \item $\vec{r}(t)$ is continuous exactly when $f(t),g(t),h(t)$ are all continuous.
+      The function $\vect{r}(t)$ is \textbf{continuous} if \[\lim_{t\to a}\vect{r}(t) = \vect{r}(a)\] for all $a$ in its domain.
+      \item $\vect{r}(t)$ is continuous exactly when $f(t),g(t),h(t)$ are all continuous.
     \end{itemize}
 \end{itemize}
 
@@ -588,38 +482,38 @@ v_1 & v_2 \\
 
 \begin{itemize}
   \item Derivatives of Vector Functions
-      \[\ds \frac{d\vec{r}}{dt} = \vec{r}'(t) = \lim_{\Delta t \to 0} \frac{\vec{r}(t+\Delta t) - \vec{r}(t)}{\Delta t} = \<f'(t),g'(t),h'(t)\>\]
+      \[\ds \frac{d\vect{r}}{dt} = \vect{r}'(t) = \lim_{\Delta t \to 0} \frac{\vect{r}(t+\Delta t) - \vect{r}(t)}{\Delta t} = \<f'(t),g'(t),h'(t)\>\]
     \begin{itemize}
-      \item $\vec{r}(t)$ is \textbf{differentiable} if $\vec{r}'(t)$ is defined for every value of $t$ is in its domain.
-      \item $\vec{r}'(a)$ is a \textbf{tangent vector} to the curve where $t=a$
-      \item The \textbf{tangent line} to a curve at $t=a$: \[\vec{l}(t)=\vec{r}(a)+t\vec{r}'(a)\]
+      \item $\vect{r}(t)$ is \textbf{differentiable} if $\vect{r}'(t)$ is defined for every value of $t$ is in its domain.
+      \item $\vect{r}'(a)$ is a \textbf{tangent vector} to the curve where $t=a$
+      \item The \textbf{tangent line} to a curve at $t=a$: \[\vect{l}(t)=\vect{r}(a)+t\vect{r}'(a)\]
     \end{itemize}
 
   % \item Vectors and Physics
   %   \begin{itemize}
-  %   \item Position: $\vec{r}(t)$
-  %   \item Velocity: $\vec{v}(t) = \vec{r}'(t) = \frac{d\vec{r}}{dt}$
-  %   \item Speed: $|\vec{v}(t)|$ 
-  %   \item Direction: $\frac{\vec{v}(t)}{|\vec{v}(t)|}$ 
+  %   \item Position: $\vect{r}(t)$
+  %   \item Velocity: $\vect{v}(t) = \vect{r}'(t) = \frac{d\vect{r}}{dt}$
+  %   \item Speed: $|\vect{v}(t)|$ 
+  %   \item Direction: $\frac{\vect{v}(t)}{|\vect{v}(t)|}$ 
   %     \begin{itemize}
-  %       \item (Remember that $\vec{v}=|\vec{v}|\frac{\vec{v}}{|\vec{v}|}$)
+  %       \item (Remember that $\vect{v}=|\vect{v}|\frac{\vect{v}}{|\vect{v}|}$)
   %     \end{itemize}
-  %   \item Acceleration: $\vec{a}(t) = \vec{v}'(t) = \vec{r}''(t)$ 
+  %   \item Acceleration: $\vect{a}(t) = \vect{v}'(t) = \vect{r}''(t)$ 
   %   \end{itemize}
   
   \item Differentiation Rules for Vector Functions
-      \[\frac{d}{dt} [\vec{C}] = \vec{0}\]
-      \[\frac{d}{dt} [c\vec{u}(t)] = c\vec{u}'(t)\]
-      \[\frac{d}{dt} [f(t)\vec{C}] = f'(t)\vec{C}\]
-      \[\frac{d}{dt} [\vec{u}(t) \pm \vec{v}(t)] = \vec{u}'(t) \pm \vec{v}'(t)\]
-      \[\frac{d}{dt} [f(t)\vec{u}(t)] = f(t)\vec{u}'(t) + f'(t)\vec{u}(t)\]
-      \[\frac{d}{dt} [\vec{u}(t) \cdot \vec{v}(t)] = \vec{u}(t)\cdot\vec{v}'(t) + \vec{u}'(t)\cdot\vec{v}(t)\]
-      \[\frac{d}{dt} [\vec{u}(t) \times \vec{v}(t)] = \vec{u}(t)\times\vec{v}'(t) + \vec{u}'(t)\times\vec{v}(t)\]
-      \[\frac{d\vec{u}}{dt} = \frac{d}{dt} [\vec{u}(f(t))] =\vec{u}'(f(t))f'(t) = \frac{d\vec{u}}{df}\frac{df}{dt}\]
+      \[\frac{d}{dt} [\vect{C}] = \vect{0}\]
+      \[\frac{d}{dt} [c\vect{u}(t)] = c\vect{u}'(t)\]
+      \[\frac{d}{dt} [f(t)\vect{C}] = f'(t)\vect{C}\]
+      \[\frac{d}{dt} [\vect{u}(t) \pm \vect{v}(t)] = \vect{u}'(t) \pm \vect{v}'(t)\]
+      \[\frac{d}{dt} [f(t)\vect{u}(t)] = f(t)\vect{u}'(t) + f'(t)\vect{u}(t)\]
+      \[\frac{d}{dt} [\vect{u}(t) \cdot \vect{v}(t)] = \vect{u}(t)\cdot\vect{v}'(t) + \vect{u}'(t)\cdot\vect{v}(t)\]
+      \[\frac{d}{dt} [\vect{u}(t) \times \vect{v}(t)] = \vect{u}(t)\times\vect{v}'(t) + \vect{u}'(t)\times\vect{v}(t)\]
+      \[\frac{d\vect{u}}{dt} = \frac{d}{dt} [\vect{u}(f(t))] =\vect{u}'(f(t))f'(t) = \frac{d\vect{u}}{df}\frac{df}{dt}\]
   
   \item Derivative of a Constant Length Vector Function
     \begin{itemize}
-      \item If $|\vec{r}(t)|=c$ always, then \[\vec{r}(t) \cdot \vec{r}'(t) = 0\]
+      \item If $|\vect{r}(t)|=c$ always, then \[\vect{r}(t) \cdot \vect{r}'(t) = 0\]
       \item Thus the derivative of a constant length vector function is perpindicular to the original.
     \end{itemize}
   
@@ -630,19 +524,19 @@ v_1 & v_2 \\
 
     \item Antiderivatives of Vector Functions
       \begin{itemize}
-        \item If $\vec{R}'(t)=\vec{r}(t)$, then $\vec{R}(t)$ is an \textbf{antiderivative} of $\vec{r}(t)$.
-        \item The \textbf{indefinite integral} $\ds \int \vec{r}(t) \dvar{t}$ is the collection of all the antiderivatives of $\vec{r}(t)$.
-        \[\ds\int \vec{r}(t) \dvar{t} = \vec{R}(t) + \vec{C}\]
-        \[\ds\int \vec{r}(t) \dvar{t} = \<\int x(t) \dvar{t}, \int y(t) \dvar{t}, \int z(t) \dvar{t} \> \]
+        \item If $\vect{R}'(t)=\vect{r}(t)$, then $\vect{R}(t)$ is an \textbf{antiderivative} of $\vect{r}(t)$.
+        \item The \textbf{indefinite integral} $\ds \int \vect{r}(t) \dvar{t}$ is the collection of all the antiderivatives of $\vect{r}(t)$.
+        \[\ds\int \vect{r}(t) \dvar{t} = \vect{R}(t) + \vect{C}\]
+        \[\ds\int \vect{r}(t) \dvar{t} = \<\int x(t) \dvar{t}, \int y(t) \dvar{t}, \int z(t) \dvar{t} \> \]
       \end{itemize}
 
     \item Definite Integrals
-      \[\ds\int^b_a \vec{r}(t) \dvar{t} = \<\int^b_a x(t) \dvar{t}, \int^b_a y(t) \dvar{t}, \int^b_a z(t) \dvar{t} \> \]
-      \[\int^b_a \vec{r}(t)dt = \left[\vec{R}(t)\right]^b_a=\vec{R}(b)-\vec{R}(a)\]
+      \[\ds\int^b_a \vect{r}(t) \dvar{t} = \<\int^b_a x(t) \dvar{t}, \int^b_a y(t) \dvar{t}, \int^b_a z(t) \dvar{t} \> \]
+      \[\int^b_a \vect{r}(t)dt = \left[\vect{R}(t)\right]^b_a=\vect{R}(b)-\vect{R}(a)\]
 
     \item Differential Vector Equations
       \begin{itemize}
-      \item If we know $\vec{r}'(t)$ and $\vec{r}(a)$ for some $t=a$, then \[\vec{r}(t)=\int_a^t\vec{r}'(t)\,dt+\vec{r}(a)\]
+      \item If we know $\vect{r}'(t)$ and $\vect{r}(a)$ for some $t=a$, then \[\vect{r}(t)=\int_a^t\vect{r}'(t)\,dt+\vect{r}(a)\]
       \end{itemize}
     
     % \item Ideal Projectile Motion 
@@ -650,17 +544,17 @@ v_1 & v_2 \\
     %   \item Assume the following:
     %     \begin{itemize}
     %       \item The acceleration acting on a projectile is $\<0,-g\>$
-    %       \item The launch position is the origin $\<0,0\>=\vec{0}$
+    %       \item The launch position is the origin $\<0,0\>=\vect{0}$
     %       \item The launch angle is $\alpha$
-    %       \item The initial velocity is $\vec{v_0}$, and initial speed is $v_0=|\vec{v_0}|$
+    %       \item The initial velocity is $\vect{v_0}$, and initial speed is $v_0=|\vect{v_0}|$
     %     \end{itemize}
     %   \item This results in the initial value problem:
-    %     \[\vec{a}(t) = \<0,-g\>\]
-    %     \[\vec{v}(0) = \<v_0\cos\alpha,v_0\sin\alpha\>\]
-    %     \[\vec{r}(0) = \<0,0\> \]
-    %   \item The velocity function solves to \[\vec{v}(t) = \<v_0\cos\alpha,-gt+v_0\sin\alpha\>\]
+    %     \[\vect{a}(t) = \<0,-g\>\]
+    %     \[\vect{v}(0) = \<v_0\cos\alpha,v_0\sin\alpha\>\]
+    %     \[\vect{r}(0) = \<0,0\> \]
+    %   \item The velocity function solves to \[\vect{v}(t) = \<v_0\cos\alpha,-gt+v_0\sin\alpha\>\]
     %   \item The position function solves to 
-    %     \[\vec{r}(t) = \<(v_0\cos\alpha)t,-\frac{1}{2}gt^2+(v_0\sin\alpha)t\>\]
+    %     \[\vect{r}(t) = \<(v_0\cos\alpha)t,-\frac{1}{2}gt^2+(v_0\sin\alpha)t\>\]
     %     with parametric equations 
     %     \[x=(v_0\cos\alpha)t\] \[y=-\frac{1}{2}gt^2+(v_0\sin\alpha)t\]
     %   \item The parabolic position curve can be expressed as \[y = -\left(\frac{g}{2v_0^2\cos^2\alpha}\right)x^2+(\tan\alpha)x\]
@@ -668,7 +562,7 @@ v_1 & v_2 \\
     %     \[y_{max} = \frac{(v_0\sin\alpha)^2}{2g}\]
     %     \[t_{tot} = \frac{2v_0\sin\alpha}{g}\]
     %     \[R = \frac{v_0^2}{g}\sin2\alpha\]
-    %   \item If we assume the initial position is instead $\vec{r}(0)=\<x_0,y_0\>$, then the position function changes to \[\vec{r}(t)=\<(v_0\cos\alpha)t+x_0,-\frac{1}{2}gt^2+(v_0\sin\alpha)t+y_0\>\]
+    %   \item If we assume the initial position is instead $\vect{r}(0)=\<x_0,y_0\>$, then the position function changes to \[\vect{r}(t)=\<(v_0\cos\alpha)t+x_0,-\frac{1}{2}gt^2+(v_0\sin\alpha)t+y_0\>\]
     %   \end{itemize}
     % \item \textbf{Suggested Exercises for 11.2}
     %   \begin{itemize}
@@ -684,15 +578,15 @@ v_1 & v_2 \\
 
   \begin{itemize}
     \item Arc Length along a Space Curve
-          \[L = \int_a^b \left|\lim_{\Delta{t}\to0}\frac{\vec{r}(t+\Delta{t})-\vec{r}(t)}{\Delta{t}}\right| \dvar{t} = \int_a^b |\vec{r}'(t)| \dvar{t}\]
+          \[L = \int_a^b \left|\lim_{\Delta{t}\to0}\frac{\vect{r}(t+\Delta{t})-\vect{r}(t)}{\Delta{t}}\right| \dvar{t} = \int_a^b |\vect{r}'(t)| \dvar{t}\]
 
     \item Arclength Parameter 
-      \[s(t) = \int_0^t |\vec{r}'(u)|du\]
-      \[\frac{ds}{dt} = |\vec{r}'(t)|\]
+      \[s(t) = \int_0^t |\vect{r}'(u)|du\]
+      \[\frac{ds}{dt} = |\vect{r}'(t)|\]
 
     \item Unit Tangent Vector
-      \[\vec{T}(s) = \frac{d\vec{r}}{ds}\]
-      \[\vec{T}(t) = \frac{d\vec{r}/dt}{|d\vec{r}/dt|}\]
+      \[\vect{T}(s) = \frac{d\vect{r}}{ds}\]
+      \[\vect{T}(t) = \frac{d\vect{r}/dt}{|d\vect{r}/dt|}\]
 
 %     \item \textbf{Suggested Exercises for 11.3}
 %       \begin{itemize}
@@ -709,10 +603,10 @@ v_1 & v_2 \\
 
     \item Curvature
       \[
-        \kappa(s) = \left|\frac{d\vec{T}}{ds}\right| 
+        \kappa(s) = \left|\frac{d\vect{T}}{ds}\right| 
       \]
       \[
-        \kappa(t) = \frac{|d\vec{T}/dt|}{|d\vec{r}/dt|} = \frac{|\frac{d\vec{r}}{dt}\times \frac{d^2\vec{r}}{dt^2}|}{|\frac{d\vec{r}}{dt}|^3}
+        \kappa(t) = \frac{|d\vect{T}/dt|}{|d\vect{r}/dt|} = \frac{|\frac{d\vect{r}}{dt}\times \frac{d^2\vect{r}}{dt^2}|}{|\frac{d\vect{r}}{dt}|^3}
       \]
       For $y=f(x)$:
       \[
@@ -726,8 +620,8 @@ v_1 & v_2 \\
     %   \end{itemize}
     
     \item Principal Unit Normal Vector
-      \[\vec{N}(s) = \frac{d\vec{T}/ds}{|d\vec{T}/ds|}\]
-      \[\vec{N}(t) = \frac{d\vec{T}/dt}{|d\vec{T}/dt|}\]
+      \[\vect{N}(s) = \frac{d\vect{T}/ds}{|d\vect{T}/ds|}\]
+      \[\vect{N}(t) = \frac{d\vect{T}/dt}{|d\vect{T}/dt|}\]
     
     % \item Circles of Curvature
     
@@ -736,19 +630,19 @@ v_1 & v_2 \\
     %     \begin{enumerate}
     %     \item is tangent to a curve at a point
     %     \item has the same curvature as the curve at that point
-    %     \item lies on the concave side of the curve, in the direction of $\vec{N}$
+    %     \item lies on the concave side of the curve, in the direction of $\vect{N}$
     %     \end{enumerate}
     %   \item Radius: $a = \displaystyle\frac{1}{\kappa}$.
-    %   \item Center: $\<x_0,y_0\> = \vec{r}(t_0)+a\vec{N}$.
+    %   \item Center: $\<x_0,y_0\> = \vect{r}(t_0)+a\vect{N}$.
     %   \item Equations: 
     %     \[(x-x_0)^2+(y-y_0)^2=a^2\]
-    %     \[\vec{c}(t) = \<a\sin t+x_0,a\cos t+y_0\>, 0\leq t\leq 2\pi\]
+    %     \[\vect{c}(t) = \<a\sin t+x_0,a\cos t+y_0\>, 0\leq t\leq 2\pi\]
     %   \end{itemize}
       
     % \item \textbf{ Suggested Exercises for 11.4:}
     
     %   \begin{itemize}
-    %   \item Find $\vec{T},\vec{N},\kappa$: 1-4, 9-16
+    %   \item Find $\vect{T},\vect{N},\kappa$: 1-4, 9-16
     %   \item Circles of Curvature: 21-22
     %   \end{itemize}
     
@@ -761,8 +655,8 @@ v_1 & v_2 \\
 %   \begin{itemize}
   
     \item Binormal Unit Vector
-      \[\vec{B} = \vec{T} \times \vec{N}\]
-      The triple $\vec{T},\vec{N},\vec{B}$ forms a right-handed frame.
+      \[\vect{B} = \vect{T} \times \vect{N}\]
+      The triple $\vect{T},\vect{N},\vect{B}$ forms a right-handed frame.
 
   \end{itemize}
 
@@ -774,34 +668,34 @@ v_1 & v_2 \\
 
     \item Position, Velocity, and Acceleration
       \begin{itemize}
-      \item Position: $\vec{r}(t)$
-      \item Velocity: $\vec{v}(t) = \vec{r}'(t) = \frac{d\vec{r}}{dt}$
-      \item Speed: $v(t)=|\vec{v}(t)|=\frac{ds}{dt}$ 
-      \item Direction: $\vec{T}(t)=\frac{\vec{v}(t)}{|\vec{v}(t)|}$ 
-      \item Acceleration: $\vec{a}(t) = \vec{v}'(t) = \vec{r}''(t)$ 
+      \item Position: $\vect{r}(t)$
+      \item Velocity: $\vect{v}(t) = \vect{r}'(t) = \frac{d\vect{r}}{dt}$
+      \item Speed: $v(t)=|\vect{v}(t)|=\frac{ds}{dt}$ 
+      \item Direction: $\vect{T}(t)=\frac{\vect{v}(t)}{|\vect{v}(t)|}$ 
+      \item Acceleration: $\vect{a}(t) = \vect{v}'(t) = \vect{r}''(t)$ 
       \end{itemize}
 
     \item Ideal Projectile Motion
-      \[\vec{a}(t)=\<0,-g\>\]
-      \[\vec{v}(t)=\<v_0\cos\alpha,-gt+v_0\sin\alpha\>\]
-      \[\vec{r}(t)=\<(v_0\cos\alpha)t,-\frac{1}{2}gt^2+(v_0\sin\alpha)t\>\]
+      \[\vect{a}(t)=\<0,-g\>\]
+      \[\vect{v}(t)=\<v_0\cos\alpha,-gt+v_0\sin\alpha\>\]
+      \[\vect{r}(t)=\<(v_0\cos\alpha)t,-\frac{1}{2}gt^2+(v_0\sin\alpha)t\>\]
       
     \item Tangental and Normal Components of Acceleration
-      \[\vec{a} = \left(\frac{d^2s}{dt^2}\right)\vec{T} + \kappa\left(\frac{ds}{dt}\right)^2\vec{N}+0\vec{B}\]
+      \[\vect{a} = \left(\frac{d^2s}{dt^2}\right)\vect{T} + \kappa\left(\frac{ds}{dt}\right)^2\vect{N}+0\vect{B}\]
       \begin{itemize}
         \item Tangental component
           \[a_T = \frac{d^2s}{dt^2} = v' \]
         \item Normal component
-          \[a_N = \kappa\left(\frac{ds}{dt}\right)^2 = \kappa v^2 = \sqrt{|\vec{a}|^2 - a_T^2}\]
+          \[a_N = \kappa\left(\frac{ds}{dt}\right)^2 = \kappa v^2 = \sqrt{|\vect{a}|^2 - a_T^2}\]
       \end{itemize}
     
     % \item Torsion
     %   \begin{itemize}
     %     \item Magnitude of torsion
-    %       \[|\tau| = \left|\frac{d\vec{B}}{ds}\right|\]
+    %       \[|\tau| = \left|\frac{d\vect{B}}{ds}\right|\]
     %     \item Signed torsion
-    %       \[\frac{d\vec{B}}{ds} = (-\tau)\vec{N}\]
-    %       \[\tau = -\frac{d\vec{B}}{ds}\cdot \vec{N} = -\frac{1}{|\vec{v}|}\left(\frac{d\vec{B}}{dt}\cdot\vec{N}\right)\]
+    %       \[\frac{d\vect{B}}{ds} = (-\tau)\vect{N}\]
+    %       \[\tau = -\frac{d\vect{B}}{ds}\cdot \vect{N} = -\frac{1}{|\vect{v}|}\left(\frac{d\vect{B}}{dt}\cdot\vect{N}\right)\]
     %       \[
     %         \tau
     %         =
@@ -812,7 +706,7 @@ v_1 & v_2 \\
     %         \dddot{x} & \dddot{y} & \dddot{z}
     %         \end{array}
     %         }{
-    %         |\vec{v}\times\vec{a}|^2
+    %         |\vect{v}\times\vect{a}|^2
     %         }
     %       \]
     %   \end{itemize}
@@ -821,7 +715,7 @@ v_1 & v_2 \\
     
     %   \begin{itemize}
     %   \item Finding tangental and normal components of acceleration: 1-6
-    %   \item Finding $\vec{B}$ and $\tau$: 9-16
+    %   \item Finding $\vect{B}$ and $\tau$: 9-16
     %   \end{itemize}
   
   \end{itemize}
@@ -849,26 +743,26 @@ v_1 & v_2 \\
 %       \end{itemize}
       
 %     \item Polar/Cylindrical Unit Vectors
-%       \[\vec{u}_r = \<\cos\theta,\sin\theta\>, \vec{u}_\theta = \<-\sin\theta,\cos\theta\>\]
+%       \[\vect{u}_r = \<\cos\theta,\sin\theta\>, \vect{u}_\theta = \<-\sin\theta,\cos\theta\>\]
 %       \begin{itemize}
 %         \item Cylindrical Right-handed frame
-%           \[\vec{u}_r,\vec{u}_\theta,\veck\]
+%           \[\vect{u}_r,\vect{u}_\theta,\veck\]
 %         \item Derivatives
-%           \[\frac{d}{dt}\left[\vec{u}_r\right] = \dot{\vec{u}_r} = \dot{\theta}\vec{u}_\theta \]
-%           \[\frac{d}{dt}\left[\vec{u}_\theta\right] = \dot{\vec{u}_\theta} = -\dot{\theta}\vec{u}_r \]
+%           \[\frac{d}{dt}\left[\vect{u}_r\right] = \dot{\vect{u}_r} = \dot{\theta}\vect{u}_\theta \]
+%           \[\frac{d}{dt}\left[\vect{u}_\theta\right] = \dot{\vect{u}_\theta} = -\dot{\theta}\vect{u}_r \]
 %         \item Polar Position/Velocity/Acceleration
-%           \[\vec{r} = r\vec{u}_r\]
-%           \[\vec{v} = \dot{r}\vec{u}_r + r\dot\theta\vec{u}_\theta\]
-%           \[\vec{a} = (\ddot{r} - r\dot\theta^2)\vec{u}_r + (r\ddot\theta + 2\dot{r}\dot\theta)\vec{u}_\theta\]
+%           \[\vect{r} = r\vect{u}_r\]
+%           \[\vect{v} = \dot{r}\vect{u}_r + r\dot\theta\vect{u}_\theta\]
+%           \[\vect{a} = (\ddot{r} - r\dot\theta^2)\vect{u}_r + (r\ddot\theta + 2\dot{r}\dot\theta)\vect{u}_\theta\]
 %         \item Cylindrical Position/Velocity/Acceleration
-%           \[\vec{r} = r\vec{u}_r + z\veck\]
-%           \[\vec{v} = \dot{r}\vec{u}_r + r\dot\theta\vec{u}_\theta + \dot{z}\veck\]
-%           \[\vec{a} = (\ddot{r} - r\dot\theta^2)\vec{u}_r + (r\ddot\theta + 2\dot{r}\dot\theta)\vec{u}_\theta+\ddot{z}\veck\]
+%           \[\vect{r} = r\vect{u}_r + z\veck\]
+%           \[\vect{v} = \dot{r}\vect{u}_r + r\dot\theta\vect{u}_\theta + \dot{z}\veck\]
+%           \[\vect{a} = (\ddot{r} - r\dot\theta^2)\vect{u}_r + (r\ddot\theta + 2\dot{r}\dot\theta)\vect{u}_\theta+\ddot{z}\veck\]
 %       \end{itemize}
     
 %     \item \textbf{ Suggested Exercises for 11.6:}
 %       \begin{itemize}
-%       \item Expressing $\vec{v}$ and $\vec{a}$ in terms of $\vec{u}_r$ and $\vec{u}_\theta$: 1-5
+%       \item Expressing $\vect{v}$ and $\vect{a}$ in terms of $\vect{u}_r$ and $\vect{u}_\theta$: 1-5
 %       \end{itemize}
 %   \end{itemize}
 
@@ -895,9 +789,9 @@ v_1 & v_2 \\
 
   \item Alternate Forms
     \begin{itemize}
-      \item We may also consider functions of the form $f(x_1,x_2,\dots)=f(P)=f(\vec{r})$.
-      \item If $P=(x,y)$ and $\vec{r}=\<x,y\>$, then $f(x,y)=f(P)=f(\vec{r})$. 
-      \item If $P=(x,y,z)$ and $\vec{r}=\<x,y,z\>$, then $f(x,y,z)=f(P)=f(\vec{r})$. 
+      \item We may also consider functions of the form $f(x_1,x_2,\dots)=f(P)=f(\vect{r})$.
+      \item If $P=(x,y)$ and $\vect{r}=\<x,y\>$, then $f(x,y)=f(P)=f(\vect{r})$. 
+      \item If $P=(x,y,z)$ and $\vect{r}=\<x,y,z\>$, then $f(x,y,z)=f(P)=f(\vect{r})$. 
     \end{itemize}
 
 
@@ -1100,21 +994,21 @@ v_1 & v_2 \\
 
   \item Nested Functions
     \begin{itemize}
-      \item If $f$ is a function of $\vec{r}=\<x,y,z\>$, and $x,y,z$ are functions of $t$, then we say $x,y,z$ are itermediate variables and may consider the following composed function of $t$:
-        \[f(\vec{r}(t))=f(x(t),y(t),z(t))\]
-      \item If $f$ is a function of $\vec{r}=\<x,y,z\>$, and $x,y,z$ are functions of $\vec{s}=\<t,u,v\>$, then we say $x,y,z$ are itermediate variables and may consider the following composed function of $t,u,v$:
-        \[f(\vec{r}(\vec{s}))=f(x(t,u,v),y(t,u,v),z(t,u,v))\]
+      \item If $f$ is a function of $\vect{r}=\<x,y,z\>$, and $x,y,z$ are functions of $t$, then we say $x,y,z$ are itermediate variables and may consider the following composed function of $t$:
+        \[f(\vect{r}(t))=f(x(t),y(t),z(t))\]
+      \item If $f$ is a function of $\vect{r}=\<x,y,z\>$, and $x,y,z$ are functions of $\vect{s}=\<t,u,v\>$, then we say $x,y,z$ are itermediate variables and may consider the following composed function of $t,u,v$:
+        \[f(\vect{r}(\vect{s}))=f(x(t,u,v),y(t,u,v),z(t,u,v))\]
     \end{itemize}
   
   \item Chain Rule
     \begin{itemize}
-      \item For functions of the form $f(\vec{r}(t))=f(x(t),y(t),z(t))$:
+      \item For functions of the form $f(\vect{r}(t))=f(x(t),y(t),z(t))$:
         \[
-          \frac{df}{dt}=\nabla{f}\cdot\frac{d\vec{r}}{dt}=\frac{\p f}{\p x}\frac{dx}{dt}+\frac{\p f}{\p y}\frac{dy}{dt}+\frac{\p f}{\p z}\frac{dz}{dt}
+          \frac{df}{dt}=\nabla{f}\cdot\frac{d\vect{r}}{dt}=\frac{\p f}{\p x}\frac{dx}{dt}+\frac{\p f}{\p y}\frac{dy}{dt}+\frac{\p f}{\p z}\frac{dz}{dt}
         \]
-      \item For functions of the form $f(\vec{r}(\vec{s}))=f(x(t,u,v),y(t,u,v),z(t,u,v))$:
+      \item For functions of the form $f(\vect{r}(\vect{s}))=f(x(t,u,v),y(t,u,v),z(t,u,v))$:
         \[
-          \frac{\p f}{\p t}=\nabla{f}\cdot\frac{\p\vec{r}}{\p t}=\frac{\p f}{\p x}\frac{\p x}{\p t}+\frac{\p f}{\p y}\frac{\p y}{\p t}+\frac{\p f}{\p z}\frac{\p z}{\p t}
+          \frac{\p f}{\p t}=\nabla{f}\cdot\frac{\p\vect{r}}{\p t}=\frac{\p f}{\p x}\frac{\p x}{\p t}+\frac{\p f}{\p y}\frac{\p y}{\p t}+\frac{\p f}{\p z}\frac{\p z}{\p t}
         \]
     \end{itemize}
     
@@ -1130,7 +1024,7 @@ v_1 & v_2 \\
     \begin{itemize}
     \item If $f$ is a function of $x,y,z$, and $y,z$ are also functions of $x$, then
       \[
-        \frac{df}{dx} = \nabla f \cdot \frac{d\vec{r}}{dx} = 
+        \frac{df}{dx} = \nabla f \cdot \frac{d\vect{r}}{dx} = 
         \frac{\partial f}{\partial x} + \frac{\partial f}{\partial y}\frac{dy}{dx} + \frac{\partial f}{\partial z}\frac{dz}{dx} 
       \]
     \end{itemize}
@@ -1166,12 +1060,12 @@ v_1 & v_2 \\
 \item Directional Derivative
 
   \begin{itemize}
-    \item The \textbf{directional derivative} of $f$ for the unit vector $\vec{u}$ is 
+    \item The \textbf{directional derivative} of $f$ for the unit vector $\vect{u}$ is 
       \[ 
-        D_{\vec{u}}f = \nabla f \cdot \vec{u}
+        D_{\vect{u}}f = \nabla f \cdot \vect{u}
       \]
 
-    \item The maximum value of $D_{\vec{u}}f$ at a fixed point $P_0$ is $|\nabla f(P_0)|$, which occurs when $\vec{u}=\frac{\nabla f(P_0)}{|\nabla f(P_0)|}$.
+    \item The maximum value of $D_{\vect{u}}f$ at a fixed point $P_0$ is $|\nabla f(P_0)|$, which occurs when $\vect{u}=\frac{\nabla f(P_0)}{|\nabla f(P_0)|}$.
   \end{itemize}
   
 \item Normal Vector to Level Curves and Surfaces
@@ -1227,9 +1121,9 @@ v_1 & v_2 \\
 %   \item Tangent Line to Curve of Intersection of Two Surfaces
 %     \begin{itemize}
 %       \item 
-%         If $P_0$ is a point on two surfaces with normal vectors $\vec{n_1},\vec{n_2}$, then the tangent line to the curve of intersection is given by
+%         If $P_0$ is a point on two surfaces with normal vectors $\vect{n_1},\vect{n_2}$, then the tangent line to the curve of intersection is given by
 %         \[
-%           \vec{r}(t) = \vec{P_0} + t(\vec{n_1} \times \vec{n_2})
+%           \vect{r}(t) = \vect{P_0} + t(\vect{n_1} \times \vect{n_2})
 %         \]
 %     \end{itemize}
     
@@ -1642,24 +1536,24 @@ v_1 & v_2 \\
   \item Transformations
   
     \begin{itemize}
-    \item Two similar regions in 2D space can be transformed by a ``nice'' pair of functions \[\vec{r}(u,v) = \vec{r}(\vec{s}) = \<x(\vec{s}),y(\vec{s})\> = \<x(u,v),y(u,v)\>\] that map points in a $uv$ plane to the $xy$ plane.
-    \item Two similar solids in 3D space can be transformed by a ``nice'' triple of functions \[\vec{r}(u,v,w) = \vec{r}(\vec{s}) = \<x(\vec{s}),y(\vec{s}),z(\vec{s})\> = \<x(u,v,w),y(u,v,w),z(u,v,w)\>\] that map points in a $uvw$ space to the $xyz$ space.
+    \item Two similar regions in 2D space can be transformed by a ``nice'' pair of functions \[\vect{r}(u,v) = \vect{r}(\vect{s}) = \<x(\vect{s}),y(\vect{s})\> = \<x(u,v),y(u,v)\>\] that map points in a $uv$ plane to the $xy$ plane.
+    \item Two similar solids in 3D space can be transformed by a ``nice'' triple of functions \[\vect{r}(u,v,w) = \vect{r}(\vect{s}) = \<x(\vect{s}),y(\vect{s}),z(\vect{s})\> = \<x(u,v,w),y(u,v,w),z(u,v,w)\>\] that map points in a $uvw$ space to the $xyz$ space.
     \end{itemize}
   
   \item The Jacobian
   
     \begin{itemize}
-    \item The Jacobian of a 2D transformation given by $\vec{r}(u,v)$ is the determinant
+    \item The Jacobian of a 2D transformation given by $\vect{r}(u,v)$ is the determinant
 \[
-\vec{r}_J(u,v) = \frac{\p (x,y)}{\p (u,v)} = \frac{\p\vec{r}}{\p\vec{s}} =
+\vect{r}_J(u,v) = \frac{\p (x,y)}{\p (u,v)} = \frac{\p\vect{r}}{\p\vect{s}} =
 \begin{array}{|c c|}
 \frac{\p x}{\p u} & \frac{\p x}{\p v} \\
 \frac{\p y}{\p u} & \frac{\p y}{\p v} \\
 \end{array}
 \]
-    \item The Jacobian of a 3D transformation given by $\vec{r}(u,v,w)$ is the determinant
+    \item The Jacobian of a 3D transformation given by $\vect{r}(u,v,w)$ is the determinant
 \[
-\vec{r}_J(u,v,w) = \frac{\partial (x,y,z)}{\partial (u,v,w)} = \frac{\p\vec{r}}{\p\vec{s}} =
+\vect{r}_J(u,v,w) = \frac{\partial (x,y,z)}{\partial (u,v,w)} = \frac{\p\vect{r}}{\p\vect{s}} =
 \begin{array}{|c c c|}
 \frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} & \frac{\partial x}{\partial w} \\
 \frac{\partial y}{\partial u} & \frac{\partial y}{\partial v} & \frac{\partial y}{\partial w} \\
@@ -1671,8 +1565,8 @@ v_1 & v_2 \\
   \item 2D Substitution
   
     \begin{itemize}
-    \item Suppose that the region $R$ in the $xy$-plane is the result of applying the transformation $\vec{r}(u,v)$ to the region $G$ in the $uv$-plane.
-    \item Then it follows that \[\iint\limits_R f(x,y)\,dx\,dy = \iint\limits_G f(x(u,v),y(u,v))|\vec{r}_J(u,v)|\,du\,dv\]
+    \item Suppose that the region $R$ in the $xy$-plane is the result of applying the transformation $\vect{r}(u,v)$ to the region $G$ in the $uv$-plane.
+    \item Then it follows that \[\iint\limits_R f(x,y)\,dx\,dy = \iint\limits_G f(x(u,v),y(u,v))|\vect{r}_J(u,v)|\,du\,dv\]
     \end{itemize}
 
   \newpage
@@ -1680,8 +1574,8 @@ v_1 & v_2 \\
   \item 3D Substitution
   
     \begin{itemize}
-    \item Suppose that the solid $D$ in $xyz$ space is the result of applying the transformation $\vec{r}(u,v,w)$ to the region $H$ in $uvw$ space.
-    \item Then it follows that \[\iiint\limits_D f(x,y,z)\,dx\,dy\,dz \]\[= \iiint\limits_H f(x(u,v,w),y(u,v,w),z(u,v,w))|\vec{r}_J(u,v,w)|\,du\,dv\,dw\]
+    \item Suppose that the solid $D$ in $xyz$ space is the result of applying the transformation $\vect{r}(u,v,w)$ to the region $H$ in $uvw$ space.
+    \item Then it follows that \[\iiint\limits_D f(x,y,z)\,dx\,dy\,dz \]\[= \iiint\limits_H f(x(u,v,w),y(u,v,w),z(u,v,w))|\vect{r}_J(u,v,w)|\,du\,dv\,dw\]
     \end{itemize}
         
   % \item \textbf{Suggested Exercises for 13.8:}
@@ -1701,7 +1595,7 @@ v_1 & v_2 \\
   \item Integrating over Regions expressed using Polar Coordinates
     
     \begin{itemize}
-    \item The polar coordinate transformation \[\vec{r}(r,\theta) = \<r\cos\theta, r\sin\theta\>\] from polar $G$ into Cartesian $R$ yields \[\iint\limits_R f(x,y)\, dA = \iint\limits_G f(r\cos\theta,r\sin\theta)\,r\dvar{r}\dvar{\theta}\]
+    \item The polar coordinate transformation \[\vect{r}(r,\theta) = \<r\cos\theta, r\sin\theta\>\] from polar $G$ into Cartesian $R$ yields \[\iint\limits_R f(x,y)\, dA = \iint\limits_G f(r\cos\theta,r\sin\theta)\,r\dvar{r}\dvar{\theta}\]
     \end{itemize}
       
   % \item \textbf{Suggested Exercises for 13.4:}
@@ -1715,7 +1609,7 @@ v_1 & v_2 \\
   
 % \newpage
 
-\underline{\hspace*{6in}}
+\hruler
 
 \centerline{\bf 15.8 Triple Integrals in Cylindrical Coordinates}
   
@@ -1723,7 +1617,7 @@ v_1 & v_2 \\
   
   \item Cylindrical Coordinates
     \begin{itemize}
-    \item The cylindrical coordinate transformation \[\vec{r}(r,\theta,z) = \<r\cos\theta, r\sin\theta, z\>\] from cylindrical $H$ into Cartesian $D$ yields \[\iiint\limits_D f(x,y,z)\d{V} = \iiint\limits_H f(r\cos\theta,r\sin\theta,z)\,r\d{r}\d{\theta}\d{z}\]
+    \item The cylindrical coordinate transformation \[\vect{r}(r,\theta,z) = \<r\cos\theta, r\sin\theta, z\>\] from cylindrical $H$ into Cartesian $D$ yields \[\iiint\limits_D f(x,y,z)\d{V} = \iiint\limits_H f(r\cos\theta,r\sin\theta,z)\,r\d{r}\d{\theta}\d{z}\]
     \end{itemize}
       
   % \item \textbf{Suggested Exercises for 13.7:}
@@ -1737,7 +1631,7 @@ v_1 & v_2 \\
 
 % \newpage
 
-\underline{\hspace*{6in}}
+\hruler
 
 \centerline{\bf 15.9 Triple Integrals in Spherical Coordinates}
 
@@ -1745,7 +1639,7 @@ v_1 & v_2 \\
   
   \item Spherical Coordinates
     \begin{itemize}
-    \item The spherical coordinate transformation \[\vec{r}(\rho,\phi,\theta)=\<\rho\sin\phi\cos\theta, \rho\sin\phi\sin\theta, \rho\cos\phi\>\] from spherical $H$ into Cartesian $D$ yields \[\iiint\limits_D f(x,y,z)\, dV = \iiint\limits_H f(\rho\sin\phi\cos\theta,\rho\sin\phi\sin\theta,\rho\cos\phi) \,\rho^2\sin\phi\dvar{\rho}\dvar{\phi}\dvar{\theta} \]
+    \item The spherical coordinate transformation \[\vect{r}(\rho,\phi,\theta)=\<\rho\sin\phi\cos\theta, \rho\sin\phi\sin\theta, \rho\cos\phi\>\] from spherical $H$ into Cartesian $D$ yields \[\iiint\limits_D f(x,y,z)\, dV = \iiint\limits_H f(\rho\sin\phi\cos\theta,\rho\sin\phi\sin\theta,\rho\cos\phi) \,\rho^2\sin\phi\dvar{\rho}\dvar{\phi}\dvar{\theta} \]
     \end{itemize}
   \end{itemize}
   
@@ -1758,13 +1652,13 @@ v_1 & v_2 \\
   \item Vector Fields
     \begin{itemize}
     \item A \textbf{vector field} assigns a vector to each point in 2D or 3D space.
-    \[
-      \vec{F}(\vec{r})=\vec{F}(x,y)=\<M(x,y),N(x,y)\>=\<M(\vec{r}),N(\vec{r})\>
-    \]
-    \[
-      \vec{F}(\vec{r})=\vec{F}(x,y,z)=\<M(x,y,z),N(x,y,z),P(x,y,z)\>=\<M(\vec{r}),N(\vec{r}),P(\vec{r})\>
-    \]
     \end{itemize}
+    \[
+      \vect{F}=\vect{F}(\vect{r})=\vect{F}(x,y)=\<P(x,y),Q(x,y)\>=\<P(\vect{r}),Q(\vect{r})\>=\<P,Q\>
+    \]
+    \[
+      \vect{F}=\vect{F}(\vect{r})=\vect{F}(x,y,z)=\<P(x,y,z),Q(x,y,z),R(x,y,z)\>=\<P(\vect{r}),Q(\vect{r}),R(\vect{r})\>=\<P,Q,R\>
+    \]
 
   \item Gradient Vector Field
     \begin{itemize}
@@ -1785,39 +1679,39 @@ v_1 & v_2 \\
     \begin{itemize}
       \item A line segment beginning at $P_0$ and ending at $P_1$
         \[
-          \vec{r}(t) = \vec{P_0} + t(\vec{P_1}-\vec{P_0}), 0\leq t\leq 1
+          \vect{r}(t) = \vect{P_0} + t(\vect{P_1}-\vect{P_0}), 0\leq t\leq 1
         \]
       \item A circle centered at the origin with radius $a$
         \[
-          \vec{r}(t) = \<a\cos t,a\sin t\>, 0\leq t\leq 2\pi \text{ (counter-clockwise)}
+          \vect{r}(t) = \<a\cos t,a\sin t\>, 0\leq t\leq 2\pi \text{ (counter-clockwise)}
         \]
         \[
-          \vec{r}(t) = \<a\sin t,a\cos t\>, 0\leq t\leq 2\pi \text{ (clockwise)}
+          \vect{r}(t) = \<a\sin t,a\cos t\>, 0\leq t\leq 2\pi \text{ (clockwise)}
         \]
       \item A planar curve given by $y=f(x)$ from $(x_0,y_0)$ to $(x_1,y_1)$
         \[
-          \vec{r}(t) = \<t,f(t)\>, x_0\leq t\leq x_1 \text{ (for } x_0\leq x_1 \text{)}
+          \vect{r}(t) = \<t,f(t)\>, x_0\leq t\leq x_1 \text{ (for } x_0\leq x_1 \text{)}
         \]
         \[
-          \vec{r}(t) = \<-t,f(-t)\>, x_1\leq t\leq x_0 \text{ (for } x_1\leq x_0 \text{)}
+          \vect{r}(t) = \<-t,f(-t)\>, x_1\leq t\leq x_0 \text{ (for } x_1\leq x_0 \text{)}
         \]
     \end{itemize}
   
   \item Line Integrals with Respect to Arclength
   
     \begin{itemize}
-    \item We define the \textbf{line integral with respect to arclength} of a function of many variables $f(\vec{r})$ along a curve $C$ to be 
+    \item We define the \textbf{line integral with respect to arclength} of a function of many variables $f(\vect{r})$ along a curve $C$ to be 
       \[
-        \int_C f(\vec{r})\d{s} = \lim_{n\to\infty}\sum_{i=1}^n f(\vec{r}_{n,i})\Delta s_{n,i}
+        \int_C f(\vect{r})\d{s} = \lim_{n\to\infty}\sum_{i=1}^n f(\vect{r}_{n,i})\Delta s_{n,i}
       \]
     where for each positive integer $n$ we've defined a way to partition $C$ into $n$ pieces 
       \[
         \Delta C_{n,1},\Delta C_{n,2},\dots,\Delta C_{n,n}
       \]
-    where $\Delta C_{n,i}$ has length $\Delta s_{n,i}$, contains the position vector $\vec{r}_{n,i}$, and \[\lim_{n\to\infty} \max(\Delta s_{n,i}) = 0\]
-    \item If $\vec{r}(t)$ is a parametrization of $C$ for $a \leq t \leq b$, then 
+    where $\Delta C_{n,i}$ has length $\Delta s_{n,i}$, contains the position vector $\vect{r}_{n,i}$, and \[\lim_{n\to\infty} \max(\Delta s_{n,i}) = 0\]
+    \item If $\vect{r}(t)$ is a parametrization of $C$ for $a \leq t \leq b$, then 
       \[
-        \int\limits_C f(\vec{r})\dvar{s}=\int_{t=a}^{t=b} f(\vec{r}(t))\frac{ds}{dt}\d{t}
+        \int\limits_C f(\vect{r})\dvar{s}=\int_{t=a}^{t=b} f(\vect{r}(t))\frac{ds}{dt}\d{t}
       \]
     \end{itemize}
 
@@ -1826,9 +1720,9 @@ v_1 & v_2 \\
   \item Line Integrals with Respect to Variables
 
     \begin{itemize}
-    \item Similarly, we can find the \textbf{line integral with respect to a variable} for a function of many variables $f(\vec{r})$ along a curve $C$:
+    \item Similarly, we can find the \textbf{line integral with respect to a variable} for a function of many variables $f(\vect{r})$ along a curve $C$:
       \[
-        \int\limits_C f(\vec{r})\dvar{x}=\int_{t=a}^{t=b} f(\vec{r}(t))\frac{dx}{dt}\d{t}
+        \int\limits_C f(\vect{r})\dvar{x}=\int_{t=a}^{t=b} f(\vect{r}(t))\frac{dx}{dt}\d{t}
       \]
     \item Similar defintions hold for $y,z$.
     \end{itemize}
@@ -1836,19 +1730,19 @@ v_1 & v_2 \\
   \item Line Integrals of Vector Fields
 
     \begin{itemize}
-    \item The \textbf{line integral of a vector field} is defined to be the line integral with respect to arclength of the dot product of the vector field $\vec{F}(\vec{r})=\<M(\vec{r}),N(\vec{r}),P(\vec{r})\>$ with the unit tangent vector $\vec{T}(\vec{r})$ to the curve.
+    \item The \textbf{line integral of a vector field} is defined to be the line integral with respect to arclength of the dot product of the vector field $\vect{F}(\vect{r})=\<P(\vect{r}),Q(\vect{r}),R(\vect{r})\>$ with the unit tangent vector $\vect{T}(\vect{r})$ to the curve.
       \[
-        \int_C \vec{F}(x,y,z)\cdot\vec{T}(x,y,z)\d{s}
+        \int_C \vect{F}(x,y,z)\cdot\vect{T}(x,y,z)\d{s}
       \]
     \item There are several ways to write and evaluate line integrals of vector fields:
       \[
-        \int_C \vec{F}\cdot\vec{T}\d{s} = \int_C \vec{F}\cdot\d{\vec{r}} = \int_C \<M,N,P\>\cdot\<\d x,\d y,\d z\>
+        \int_C \vect{F}\cdot\vect{T}\d{s} = \int_C \vect{F}\cdot\d{\vect{r}} = \int_C \<P,Q,R\>\cdot\<\d x,\d y,\d z\>
       \]
       \[
-        = \int_C M\d{x}+N\d{y}+P\d{z} = \int_a^b \left(M(\vec{r}(t))\frac{dx}{dt}+N(\vec{r}(t))\frac{dy}{dt}+P(\vec{r}(t))\frac{dz}{dt}\right)\d{t}
+        = \int_C P\d{x}+Q\d{y}+R\d{z} = \int_a^b \left(P(\vect{r}(t))\frac{dx}{dt}+Q(\vect{r}(t))\frac{dy}{dt}+R(\vect{r}(t))\frac{dz}{dt}\right)\d{t}
       \]
       \[
-        = \int_a^b \vec{F}(\vec{r}(t))\cdot\frac{\d{\vec{r}}}{dt}\d{t}
+        = \int_a^b \vect{F}(\vect{r}(t))\cdot\frac{\d{\vect{r}}}{dt}\d{t}
       \]
     \end{itemize}
     
@@ -1856,28 +1750,28 @@ v_1 & v_2 \\
 
   Let $C_1+C_2$ represent the curve taken by moving along $C_1$ followed by moving along $C_2$.
 
-   \[\int\limits_{C_1+C_2} f(\vec{r})\d{s}=\int\limits_{C_1}f(\vec{r})\d{s}+\int\limits_{C_2}f(\vec{r})\d{s}\]
+   \[\int\limits_{C_1+C_2} f(\vect{r})\d{s}=\int\limits_{C_1}f(\vect{r})\d{s}+\int\limits_{C_2}f(\vect{r})\d{s}\]
 
-   \[\int\limits_{C_1+C_2} f(\vec{r})\d{x}=\int\limits_{C_1}f(\vec{r})\d{x}+\int\limits_{C_2}f(\vec{r})\d{x}\]
+   \[\int\limits_{C_1+C_2} f(\vect{r})\d{x}=\int\limits_{C_1}f(\vect{r})\d{x}+\int\limits_{C_2}f(\vect{r})\d{x}\]
 
-   \[\int\limits_{C_1+C_2} \vec{F}\cdot\d{\vec{r}}=\int\limits_{C_1}\vec{F}\cdot\d{\vec{r}}+\int\limits_{C_2}\vec{F}\cdot\d{\vec{r}}\]
+   \[\int\limits_{C_1+C_2} \vect{F}\cdot\d{\vect{r}}=\int\limits_{C_1}\vect{F}\cdot\d{\vect{r}}+\int\limits_{C_2}\vect{F}\cdot\d{\vect{r}}\]
 
   \item Effects of Curve Orientation
 
   Let $-C$ represent the curve taken by moving along $C$ in the opposite direction.
 
-  \[\int\limits_{C} f(\vec{r})\d{s} = +\int\limits_{-C} f(\vec{r})\d{s}\]
+  \[\int\limits_{C} f(\vect{r})\d{s} = +\int\limits_{-C} f(\vect{r})\d{s}\]
 
-  \[\int\limits_{C} f(\vec{r})\d{x} = -\int\limits_{-C} f(\vec{r})\d{x}\]
+  \[\int\limits_{C} f(\vect{r})\d{x} = -\int\limits_{-C} f(\vect{r})\d{x}\]
 
-  \[\int\limits_{C} \vec{F}\cdot\d{\vec{r}} = -\int\limits_{-C} \vec{F}\cdot\d{\vec{r}}\]
+  \[\int\limits_{C} \vect{F}\cdot\d{\vect{r}} = -\int\limits_{-C} \vect{F}\cdot\d{\vect{r}}\]
 
   \item Work
 
     \begin{itemize}
-      \item If $\vec{F}$ is a vector field representing the force applied to an object as it is moved over a smooth curve $C$, then the \textbf{work} done by the force over that curve is given by
+      \item If $\vect{F}$ is a vector field representing the force applied to an object as it is moved over a smooth curve $C$, then the \textbf{work} done by the force over that curve is given by
         \[
-          \int_C \vec{F}\cdot\d{\vec{r}} = \int_a^b \vec{F}(\vec{r}(t))\cdot\frac{\d{\vec{r}}}{dt}\d{t}
+          \int_C \vect{F}\cdot\d{\vect{r}} = \int_a^b \vect{F}(\vect{r}(t))\cdot\frac{\d{\vect{r}}}{dt}\d{t}
         \]
     \end{itemize}
         
@@ -1900,344 +1794,500 @@ v_1 & v_2 \\
     \begin{itemize}
       \item If $C$ is any smooth curve beginning at the point $A$ and ending at the point $B$, then
         \[
-          \int_C \nabla f\cdot \d{\vec{r}} = \left[f\right]_A^B = f(B)-f(A)
+          \int_C \nabla f\cdot \d{\vect{r}} = \left[f\right]_A^B = f(B)-f(A)
         \]
       \item If $C$ is any smooth curve which is \textbf{closed} (begins and ends at the same point), then
         \[
-          \int_C \nabla f\cdot \d{\vec{r}} = 0
+          \int_C \nabla f\cdot \d{\vect{r}} = 0
         \]
     \end{itemize}
 
   \item Conservative Fields
     \begin{itemize}
-      \item We say $\vec{F}=\<M,N,P\>$ is a conservative field if there is a \textbf{potential function} $f$ such that $\nabla f = \vec{F}$.
+      \item We say $\vect{F}=\<M,N,P\>$ is a conservative field if there is a \textbf{potential function} $f$ such that $\nabla f = \vect{F}$.
       \item Line integrals of conservative fields are said to be path independent since for any curve $C$ beginning at $A$ and ending at $B$:
         \[
-          \int_C \vec{F}\cdot \d{\vec{r}} = \int_C \nabla f\cdot \d{\vec{r}} = \left[f\right]_A^B = f(B)-f(A)
+          \int_C \vect{F}\cdot \d{\vect{r}} = \int_C \nabla f\cdot \d{\vect{r}} = \left[f\right]_A^B = f(B)-f(A)
         \]
       \item We can prove a field is conservative by finding its potential function or showing it satisfies the \textbf{Component Test}:
         \[
-          \frac{\p M}{\p y}=\frac{\p N}{\p x}, \frac{\p N}{\p z}=\frac{\p P}{\p y}, \frac{\p P}{\p x}=\frac{\p M}{\p z}
+          \frac{\p P}{\p y}=\frac{\p Q}{\p x}, \frac{\p Q}{\p z}=\frac{\p R}{\p y}, \frac{\p R}{\p x}=\frac{\p P}{\p z}
         \]
     \end{itemize}
 
   \end{itemize}
   
-  \newpage
-  
-  \centerline{\bf 14.2 Vector Fields, Work, Circulation, and Flux}
-  
-  \begin{itemize}
-  
-  \item Line Integrals with Respect to Variables
-  
-    \begin{itemize}
-      \item The net projected area of the ribbon with base curve $C$ and height $f(x,y,z)$ with respect to the $x$-axis is given by the \textbf{line integral of $f(x,y,z)$ over $C$ with respect to $x$}: \[\int\limits_C f(x,y,z)\,dx\] (similar for $y$, $z$)
-      \item Line integrals with respect to variables can be evaluated by finding a parametrization $\vec{r}(t)$ for the curve $C$:
-        \[
-          \int\limits_C f(x,y,z)\,dx = \int_a^b f(x(t),y(t),z(t))\frac{dx}{dt}\,dt
-        \]
-      \item Such integrals have the property \[\int\limits_{-C} f\dvar{x} = -\int\limits_{C} f\dvar{x}\]
-    \end{itemize}
-  
-  \item Vector Fields
-  
-    \begin{itemize}
-    \item A \textbf{vector field} is a function \[\vec{F}(x,y,z)=\<M(x,y,z),N(x,y,z),P(x,y,z)\>\] ($\vec{F}=\<M,N,P\>$ for short) which assigns a vector to each point in its domain.
-    \item Gradient functions $\nabla f=\<f_x(x,y,z),f_y(x,y,z),f_z(x,y,z)\>$ and transformations $\<x(u,v,w),y(u,v,w),z(u,v,w)\>$ are examples of vector fields.
-    \end{itemize}
-  
-  \item Line Integrals of Vector Fields
-  
-    \begin{itemize}
-    \item The \textbf{line integral of $\vec{F}=\<M,N,P\>$ over $C$} is given by 
-      \[\int\limits_C \vec{F}\cdot d\vec{r} = \int\limits_C M\,dx + N\,dx + P\,dz\]
-    gives the sum of the line integrals of each component of $\vec{F}$ with respect to each variable $x,y,z$.
-    \item These line integrals can be calculated by using parametrizations of $C$: 
-      \[
-        \int\limits_C \vec{F}\cdot d\vec{r} = 
-        \int\limits_C M\,dx + N\,dx + P\,dz = 
-        \int_a^b \left(M\frac{dx}{dt} + N\frac{dx}{dt} + P\frac{dz}{dt}\right)\,dt 
-      \]
-      \[
-        =
-        \int_a^b \vec{F}\cdot\vec{v}\,dt =
-        \int_a^b \vec{F}\cdot\vec{T}\,ds 
-      \]
-    \item It follows that \[\int\limits_{-C} \vec{F}\cdot d\vec{r} = - \int\limits_C \vec{F}\cdot d\vec{r}\]
-    \end{itemize}
-    
-  \item Work over a Smooth Curve
-  
-    \begin{itemize}
-    \item Work is given by the product of force and displacement: \[W = \vec{F} \cdot \vec{D}\]
-    \item So work over a smooth curve can be approximated by the Riemann sum: \[W \approx \sum_{i=1}^n \vec{F}(x_i,y_i,z_i)\cdot\Delta\vec{r_i}\]
-    \item We limit this sum to infinity to define work over a smooth curve: \[W = \int\limits_C \vec{F}\cdot d\vec{r}\]
-    \end{itemize}
-    
-  \item Flow
-  
-    \begin{itemize}
-    \item The \textbf{flow} of a fluid along a curve $C$ is defined to be the line integral \[\textrm{Flow} = \int\limits_C \vec{F}\cdot d\vec{r} \]
-    \item If $C$ is closed (its starting point and ending point are the same), then the flow is also known as the \textbf{circulation}.
-    \end{itemize}
-    
-  \newpage
-    
-  \item Flux (2D)
-  
-    \begin{itemize}
-    \item The two-dimenstional \textbf{flux} of $\vec{F}$ across $C$ is \[\int\limits_C \vec{F}\cdot\vec{n}\,ds\] where $\vec{n}$ is the outward unit normal vector to $C$.
-    \item If $C$ is oriented counter-clockwise, then 
-      \[
-        \int\limits_C \vec{F}\cdot\vec{n}\dvar{s} = \int\limits_C M\dvar{y} - N\dvar{x} = \int\limits_{a}^{b} \left(M\frac{\dvar{y}}{\dvar{t}}-N\frac{\dvar{x}}{\dvar{t}}\right)\dvar{t}
-      \]
-    \end{itemize}
-        
-  \item \textbf{Suggested Exercises for 14.2:}
-  
-    \begin{itemize}
-    \item Work over a curve: 7-22
-    \item Circulation, flow, and flux: 23-28, 37-40
-    \end{itemize}
-    
-  \end{itemize}
-  
-  \newpage
-  
-  \centerline{\bf 14.3 Path Independence, Potential Functions, and Conservative Fields}
-  
-  \begin{itemize}
-    
-  \item Several Equivalencies for Conservative Fields
-    
-    The following are all equivalent for piecewise smooth curves and vector fields with continuous first derivatives:
-    \begin{itemize}
-      \item $\vec{F}=\<M,N,P\>$ is a \textbf{conservative field}.
-      \item $\vec{F}\cdot d\vec{r} = M\,dx+N\,dy+P\,dz$ is \textbf{exact}.
-      \item $\int\vec{F}\cdot d\vec{r}$ is \textbf{path independent}: the value of $\int_C\vec{F}\cdot d\vec{r}$ only depends on the endpoints of the curve $C$.
-      \item There exists a \textbf{potential function} $f$ such that $\nabla f = \vec{F}$.
-      \item (Closed Loop Property of Conservative Fields)\newline $\ds \int_C \vec{F} \cdot d\vec{r} = 0$ for every closed loop $C$ in $D$. 
-      \item (Fundamental Theorem of Line Integrals)\newline $\ds \int_C \vec{F} \cdot d\vec{r} = f(B)-f(A)$ for every path $C$ connecting $A$ to $B$.
-      \item (Component Test for Conservative Fields)\newline $\ds \frac{\partial P}{\partial y}=\frac{\partial N}{\partial z},\,\frac{\partial M}{\partial z}=\frac{\partial P}{\partial x},\text{ and }\frac{\partial N}{\partial x}=\frac{\partial N}{\partial y}$. 
-    \end{itemize}
+\newpage
 
-  \item \textbf{Suggested Exercises for 14.3:}
-  
-    \begin{itemize}
-    \item Determining if a field is conservative: 1-6
-    \item Finding potential functions: 7-12
-    \item Evaluating integrals of differential forms: 13-22
-    \end{itemize}
-    
-  \end{itemize}
-  
-  \newpage
-  
-  \centerline{\bf 14.4 Green's Theorem in the Plane}
-  
-  \begin{itemize}
-    
-  \item Gradient Operator
+\centerline{\bf 16.4 Green's Theorem}
 
-  \[\nabla = \<\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\>\]
-    
-  \item Divergence
-  
-    \begin{itemize}
-    \item The \textbf{divergence} of a planar vector field $\vec{F}=\<M,N\>$ is given by \[ \div \vec{F} = \frac{\partial M}{\partial x}+\frac{\partial N}{\partial y} = \nabla\cdot\vec{F} \]
-    In physics, divergence is often called the \textbf{flux density}.
-    \end{itemize}
-  
-  \item Spin
-  
-    \begin{itemize}
-    \item The \textbf{spin} of a planar vector field $\vec{F}=\<M,N\>$ is given by \[ \spin \vec{F} = \frac{\partial N}{\partial x}-\frac{\partial M}{\partial y} \]
-    In physics, spin is often called the \textbf{circulation density}.
-    \item Spin is also the \textbf{$\veck$-component of curl}, defined in a later section.
-    \end{itemize}
-    
-  \item Simple Curves
-    \begin{itemize}
-    \item A curve which does not cross itself is said to be \textbf{simple}.
-    \end{itemize}
+  \begin{itemize}
+    \item Green's Theorem
+      \begin{itemize}
+        \item Let $C$ be the boundary of the region $R$ oriented counter-clockwise, and $\vect{F}(x,y)$ be a two-dimensional vector field.
+          \[
+            \int_C \vect{F}\cdot\d{\vect{r}} = \iint_D \left(\frac{\p Q}{\p x}-\frac{\p P}{\p y}\right)\d{A}
+          \]
+        \item Due to Green's Theorem, we can find the area of $R$ using a line integral:
+          \[ 
+            A = \int_C x\d{y} = -\int_C y\d{x} = \frac{1}{2}\int_C x\d{y}-y\d{x}
+          \]
+      \end{itemize}
+  \end{itemize}
 
-  \item Green's Theorem in the Plane
-    \begin{itemize}
-    \item Let $C$ be a piecewise smooth, simple closed curve enclosing the region $R$ and oriented counter-clockwise. Let $\vec{F}=\<M,N\>$ be a vector field for which $M,N$ have continuous first partial derivatives in an open region containing $R$. Then:
-      \[\int\limits_C \vec{F}\cdot\vec{n}\,ds = \iint\limits_R \div \vec{F}\dvar{A}\]
-      \[\int\limits_C \vec{F}\cdot\vec{T}\dvar{s} = \iint\limits_R \spin \vec{F}\dvar{A}\]
-    \end{itemize}
-    
-  \item \textbf{Suggested Exercises for 14.4:}
-  
-    \begin{itemize}
-    \item Using Green's Theorem to find circulation and flux: 5-14
-    \item Using Green's Theorem to evaluate line integrals: 17-20
-    \end{itemize}
-    
-  \end{itemize}
-  
-  \newpage
-  
-  \centerline{\bf 14.5 Surfaces and Area}
-  
+\newpage
+
+\centerline{\bf 16.5 Curl and Divergence}
+
   \begin{itemize}
-    
-  \item Parametrization of Surfaces
-  
-    \begin{itemize}
-    \item Vector functions of two variables \[\vec{r}(u,v)=\<x(u,v),y(u,v),z(u,v)\>\] may be used to parametrize surfaces in $xyz$ space.
-    \end{itemize}
-    
-  \item Smooth Vector Functions
-  
-    \begin{itemize}
-    \item A surface parametrized by $\vec{r}(u,v)$ is called \textbf{smooth} if 
-      \[\vec{r}_u = \<\frac{\partial x}{\partial u},\frac{\partial y}{\partial u},\frac{\partial z}{\partial u}\>,\, \vec{r}_v = \<\frac{\partial x}{\partial v},\frac{\partial y}{\partial v},\frac{\partial z}{\partial v}\>\]
-    are continuous and $\vec{r}_u\times\vec{r}_v\not= \vec{0}$ on the interior of the surface. 
-    \end{itemize}
-    
-  \item Surface Area of a Parametrized Surface
-  
-    \begin{itemize}
-    \item The area of a smooth surface with parametrizing vector function $\vec{r}(u,v)$ for a region $R$ in the $uv$ plane is given by \[A = \iint\limits_R |\vec{r}_u\times\vec{r}_v|\,dA\]
-    \end{itemize}
-    
-  \item Implicit Surface
-  
-    \begin{itemize}
-    \item Level surfaces $F(x,y,z)=c$ are sometimes called \textbf{implicit surfaces}.
-    \item If $\vec{p}$ is a unit vector normal a coordinate plane, then the surface area defined by $F(x,y,z)$ bounded by the cylinder given by a region $R$ in that coordinate plane is \[\iint\limits_R \frac{|\nabla F|}{|\nabla F \cdot \vec{p}|}\,dA\]
-    \end{itemize}
-    
-  \item Surface Area Differential
-  
-    \begin{itemize}
-    \item The integral $\iint\limits_S\, d\sigma$ is used to represent surface area, and $d\sigma$ is known as the surface area differential.
-     \[d\sigma = |\vec{r}_u\times\vec{r}_v|\,dA = \frac{|\nabla F|}{|\nabla F \cdot \vec{p}|}\,dA\]
-    \end{itemize}
-        
-  \item \textbf{Suggested Exercises for 14.5:}
-  
-    \begin{itemize}
-    \item Finding parametrizations of surfaces: 1-16
-    \item Finding surface area: 17-26
-    \end{itemize}
-    
-  \end{itemize}
-  
-  \newpage
-  
-  \centerline{\bf 14.6 Surface Integrals and Flux}
-  
-  \begin{itemize}
-    
-  \item Surface Integrals
-  
-    \begin{itemize}
-    \item The \textbf{surface integral} of a function $G(x,y,z)$ over a surface $S$ is given by \[
-      \iint\limits_S G(x,y,z)\,d\sigma = \iint\limits_R G(x(u,v),y(u,v),z(u,v)) |\vec{r}_u\times \vec{r}_v|\,dA
-    \]
-    \[
-      = \iint\limits_R G(x,y,z)\frac{|\nabla F|}{|\nabla F \cdot \vec{p}|}\,dA
-      \]
-    \end{itemize}
-    
-  \item Orientable Surfaces
-    \begin{itemize}
-    \item A surface is said to be \textbf{orientable} if it is ``two-sided'' - there exists a continuous normal unit vector field $\vec{n}$ to the surface.
-    \end{itemize}
-    
-  \item Flux in Three Dimensions
-  
-    \begin{itemize}
-    \item The flux of a three dimensional vector field $\vec{F}$ across an oriented surface $S$ in the direction of $\vec{n}$ is given by the surface integral \[\iint\limits_S \vec{F}\cdot\vec{n}\,d\sigma\]
-    \end{itemize}
-        
-  \item \textbf{Suggested Exercises for 14.6:}
-  
-    \begin{itemize}
-    \item Evaluating surface integrals: 1-14
-    \item Three-dimensional flux: 15-24
-    \end{itemize}
-    
-  \end{itemize}
-  
-  \newpage
-  
-  \centerline{\bf 14.7 Stokes' Theorem}
-  
-  \begin{itemize}
-    
-  \item Curl
-    \begin{itemize}
-    \item The \textbf{curl} of a vector field $\vec{F}$ is defined as \[\textrm{curl}\,\vec{F} = \nabla \times \vec{F} = \textrm{curl}\,\vec{F} = \<\frac{\partial P}{\partial y}-\frac{\partial N}{\partial z},\frac{\partial M}{\partial z}-\frac{\partial P}{\partial x},\frac{\partial N}{\partial x}-\frac{\partial M}{\partial y}\>\]
-    \item The counterclockwise spin with respect to a unit vector $\vec{u}$ is given by \[\textrm{spin}_{\vec{u}}\,\vec{F} = \textrm{curl}\,\vec{F} \cdot \vec{u} = \nabla \times \vec{F} \cdot \vec{u}\]
-    \item In particular, in 2D:
+    \item Gradient Operator
       \[
-        \textrm{spin}\,\vec{F} = \frac{\partial N}{\partial x}-\frac{\partial M}{\partial y} = \textrm{spin}_\veck\,\vec{F}
+        \nabla = \<\frac{\p}{\p x},\frac{\p}{\p y},\frac{\p}{\p z}\>
       \]
-    and in 3D:
+
+    \item Curl
+      \begin{itemize}
+        \item The \textbf{curl} of a vector field is another vector field:
+          \[
+            \curl\vect{F} = \nabla \times \vect{F} = \<\pd{R}{y}-\pd{Q}{z},\pd{P}{z}-\pd{R}{x},\pd{Q}{x}-\pd{P}{y}\>
+          \]
+        \item By the Component Test, if $\vect{F}$ is conservative, then $\curl\vect{F}=\vect{0}$.
+      \end{itemize} 
+
+    \item Divergence
+      \begin{itemize}
+        \item The \textbf{divergence} of a vector field is the scalar function:
+          \[
+            \div\vect{F} = \nabla\cdot\vect{F} = \pd{P}{x}+\pd{Q}{y}+\pd{R}{z}
+          \]
+        \item For any vector field, the divergence of curl is always zero.
+          \[
+            \div\curl\vect{F} = 0
+          \]
+      \end{itemize}
+
+      \item Green's Theorem Alternate Forms
+        \begin{itemize}
+          \item If $\vect{F}$ is a two-dimensional vector field, and $\vect{n}$ is the outward unit normal vector field for a counter-clockwise closed curve $C$:
+            \[
+              \int_C \vect{F}\cdot\vect{T}\d{s} = \iint_D (\curl\vect{F}) \cdot \veck \d{A}
+            \]
+            \[
+              \int_C \vect{F}\cdot\vect{n}\d{s} = \iint_D \div\vect{F} \d{A}
+            \]
+        \end{itemize}
+
+  \end{itemize}
+
+\newpage
+
+\centerline{\bf 16.6 Parametric Surfaces and Their Areas}
+
+  \begin{itemize}
+
+    \item Parametric Surface Equations
       \[
-        \textrm{curl}\,\vec{F} = \<\textrm{spin}_{\veci}\,\vec{F}, \textrm{spin}_{\vecj}\,\vec{F}, \textrm{spin}_{\veck}\,\vec{F}\>
+        \vect{r}(u,v) = \<x(u,v),y(u,v),z(u,v)\>
       \]
-    \end{itemize}
-  
+
+    \item Common Parametric Surfaces
+      \begin{itemize}
+        \item The plane determined by the point $P_0$ and vectors $\vect{v_1}$ and $\vect{v_2}$ can be parametrized by
+          \[
+            \vect{r} = \vect{P_0}+u\vect{v_1}+v\vect{v_2}
+          \]
+        \item The surface $z=f(x,y)$ can be parametrized by
+          \[
+            \vect{r} = \<x,y,f(x,y)\>
+          \]
+        \item A surface determined by a cylindrical coordinate equation can be parametrized by substituting into
+          \[
+            \vect{r} = \<r\cos\theta, r\sin\theta, z\>
+          \]
+        \item A surface determined by a spherical coordinate equation can be parametrized by substituting into
+          \[
+            \vect{r} = \<\rho\sin\phi\cos\theta, \rho\sin\phi\sin\theta, \rho\cos\phi \>
+          \]
+      \end{itemize}
+
+    \item Surface Area
+      \begin{itemize}
+        \item If $G$ is the region in the $uv$ plane which maps onto the surface $S$ by the parametric equations $\vect{r}(u,v)$, then the surface area of $S$ is:
+          \[
+            \iint_G |\vect{r}_u\times\vect{r}_v|\d{A}
+          \]
+        where $\vect{r}_u=\<x_u,y_u,z_u\>$ and $\vect{r}_v=\<x_v,y_v,z_v\>$.
+      \end{itemize}
+
+  \end{itemize}
+
+\newpage
+
+\centerline{\bf 16.7 Surface Integrals}
+
+  \begin{itemize}
+
+    \item Surface Orientation
+      \begin{itemize}
+        \item The orientation of a surface is determined by a continuous unit normal vector field on the surface.
+      \end{itemize}
+
+    \item Surface Integral
+      \begin{itemize}
+        \item If $G$ is the region in the $uv$ plane which maps onto the surface $S$ by the parametric equations $\vect{r}(u,v)$, then the surface integral of $f(\vect{r})$ along $S$ is:
+          \[
+            \iint_S f(\vect{r})\d\sigma = \iint_G f(\vect{r}(u,v))|\vect{r}_u\times\vect{r}_v|\d{A}
+          \]
+      \end{itemize}
+
+    \item Surface Integral of Vector Field
+      \begin{itemize}
+        \item If $G$ is the region in the $uv$ plane which maps onto the surface $S$ by the parametric equations $\vect{r}(u,v)$, and $\vect{n}$ is the unit normal vector field giving the orientation of $S$, then the surface integral of the vector field $\vect{F}$ along $S$ is:
+          \[
+            \iint_S \vect{F}\cdot\d{\vec\sigma} = \iint_S \vect{F}\cdot\vect{n}\d\sigma = \iint_G \vect{F}\cdot(\vect{r}_u\times\vect{r}_v)\d{A}
+          \]
+      \end{itemize}
+  \end{itemize}
+
+\newpage
+
+\centerline{\bf 16.8 Stokes' Theorem}
+  \begin{itemize}
   \item Stokes' Theorem
-  
     \begin{itemize}
-    \item If a curve $C$ in $\mathbb{R}^3$ is the boundary of a surface $S$, and we want to compute the counter-clockwise circulation with respect to unit normal vectors $\vec{n}$ on the surface, we may use \[\int\limits_C \vec{F}\cdot\vec{T}\,ds = \iint\limits_S \textrm{spin}_{\vec{n}}\,\vec{F}\,d\sigma = \iint\limits_S (\textrm{curl}\,\vec{F} \cdot \vec{n})\,d\sigma = \iint\limits_S \nabla \times \vec{F} \cdot \vec{n}\,d\sigma\] 
+    \item Let $C$ give the counter-clockwise oriented boundary of a surface $S$.
+    \[
+      \iint_S \vect{F}\cdot\d{\vec\sigma} = \int_C \vect{F}\cdot\d{\vect{r}}
+    \]
     \end{itemize}
-    
-  \item Identities and Properties
-  
+  \end{itemize}
+
+\hruler
+
+\centerline{\bf 16.9 Divergence Theorem}
+  \begin{itemize}
+  \item Divergence Theorem
     \begin{itemize}
-    \item Due to the Mixed Derivative Theorem, \[\textrm{curl}\, \nabla f = \nabla \times \nabla f = \vec{0}\]
-    \item If $\nabla \times \vec{F} = \vec{0}$ for every point in a region $D$, then \[ \int\limits_C \vec{F}\cdot d\vec{r} = \iint\limits_S \nabla \times \vec{F} \cdot \vec{n}\,d\sigma = 0\] for every curve $C$ and surface $S$ within $D$.
+    \item Let $S$ give the outward-oriented boundary surface of the solid $D$.
+    \[
+      \iint_S \vect{F}\cdot\d{\vec\sigma} = \iiint_D \div{\vect{F}}\d{V}
+    \]
     \end{itemize}
-        
-  \item \textbf{Suggested Exercises for 14.7:}
-  
-    \begin{itemize}
-    \item Using Stokes' Theorem: 1-10
-    \end{itemize}
-    
   \end{itemize}
   
-  \newpage
+  % \centerline{\bf 14.2 Vector Fields, Work, Circulation, and Flux}
   
-  \centerline{\bf 14.8 Divergence Theorem and a Unified Theory}
+  % \begin{itemize}
   
-  \begin{itemize}
-    
-  \item Divergence Theorem
-  
-    \begin{itemize}
-    \item Divergence in $\mathbb{R}^3$ is defined as \[\textrm{div}\,\vec{F} = \frac{\partial M}{\partial x}+\frac{\partial N}{\partial y}+\frac{\partial P}{\partial z} = \nabla \cdot \vec{F} \]
-    \item The Divergence Theorem lets us measure the flux on a closed surface $S$ by integrating over the divergence within its bounded region $D$: \[\text{Flux} = \iint\limits_S \vec{F}\cdot\vec{n}\,d\sigma = \iiint\limits_D \textrm{div}\,\vec{F}\,dV= \iiint\limits_D \nabla\cdot\vec{F}\,dV\]
-    \end{itemize}
-    
-  % \item The Unified Theory
+  % \item Line Integrals with Respect to Variables
   
   %   \begin{itemize}
-  %   \item The unified theory notes that in order to compute circulation and flux over a closed curve or surface, we may consider the spin/curl and divergence over the region bounded by that curve or surface.
-  %   \item Let $C$ be a counter-clockwise closed curve in $\mathbb{R}^2$ bounding the region $R$.
-  %     \[\text{Circulation of } \vec{F} \text{ around } C = \iint\limits_R \textrm{spin}\,\vec{F}\,dA = \iint\limits_R \textrm{curl}\,\vec{F}\cdot \veck\,dA\]
-  %     \[\text{Flux of } \vec{F} \text{ across } C = \iint\limits_R \textrm{div}\,\vec{F}\,dA\]
-  %   \item Let $C$ be a closed curve in $\mathbb{R}^3$ counter-clockwise to $\vec{n}$ bounding the surface $S$.
-  %     \[\text{Circulation of } \vec{F} \text{ around } C = \iint\limits_S \textrm{spin}_{\vec{n}}\,\vec{F}\,d\sigma  = \iint\limits_R \textrm{curl}\,\vec{F}\cdot \vec{n}\,d\sigma\]
-  %   \item Let $S$ be a closed surface in $\mathbb{R}^3$ bounding the solid $D$.
-  %     \[\text{Flux of } \vec{F} \text{ across } S = \iiint\limits_D \textrm{div}\,\vec{F}\,dV\]
+  %     \item The net projected area of the ribbon with base curve $C$ and height $f(x,y,z)$ with respect to the $x$-axis is given by the \textbf{line integral of $f(x,y,z)$ over $C$ with respect to $x$}: \[\int\limits_C f(x,y,z)\,dx\] (similar for $y$, $z$)
+  %     \item Line integrals with respect to variables can be evaluated by finding a parametrization $\vect{r}(t)$ for the curve $C$:
+  %       \[
+  %         \int\limits_C f(x,y,z)\,dx = \int_a^b f(x(t),y(t),z(t))\frac{dx}{dt}\,dt
+  %       \]
+  %     \item Such integrals have the property \[\int\limits_{-C} f\dvar{x} = -\int\limits_{C} f\dvar{x}\]
+  %   \end{itemize}
+  
+  % \item Vector Fields
+  
+  %   \begin{itemize}
+  %   \item A \textbf{vector field} is a function \[\vect{F}(x,y,z)=\<M(x,y,z),N(x,y,z),P(x,y,z)\>\] ($\vect{F}=\<M,N,P\>$ for short) which assigns a vector to each point in its domain.
+  %   \item Gradient functions $\nabla f=\<f_x(x,y,z),f_y(x,y,z),f_z(x,y,z)\>$ and transformations $\<x(u,v,w),y(u,v,w),z(u,v,w)\>$ are examples of vector fields.
+  %   \end{itemize}
+  
+  % \item Line Integrals of Vector Fields
+  
+  %   \begin{itemize}
+  %   \item The \textbf{line integral of $\vect{F}=\<M,N,P\>$ over $C$} is given by 
+  %     \[\int\limits_C \vect{F}\cdot d\vect{r} = \int\limits_C M\,dx + N\,dx + P\,dz\]
+  %   gives the sum of the line integrals of each component of $\vect{F}$ with respect to each variable $x,y,z$.
+  %   \item These line integrals can be calculated by using parametrizations of $C$: 
+  %     \[
+  %       \int\limits_C \vect{F}\cdot d\vect{r} = 
+  %       \int\limits_C M\,dx + N\,dx + P\,dz = 
+  %       \int_a^b \left(M\frac{dx}{dt} + N\frac{dx}{dt} + P\frac{dz}{dt}\right)\,dt 
+  %     \]
+  %     \[
+  %       =
+  %       \int_a^b \vect{F}\cdot\vect{v}\,dt =
+  %       \int_a^b \vect{F}\cdot\vect{T}\,ds 
+  %     \]
+  %   \item It follows that \[\int\limits_{-C} \vect{F}\cdot d\vect{r} = - \int\limits_C \vect{F}\cdot d\vect{r}\]
+  %   \end{itemize}
+    
+  % \item Work over a Smooth Curve
+  
+  %   \begin{itemize}
+  %   \item Work is given by the product of force and displacement: \[W = \vect{F} \cdot \vect{D}\]
+  %   \item So work over a smooth curve can be approximated by the Riemann sum: \[W \approx \sum_{i=1}^n \vect{F}(x_i,y_i,z_i)\cdot\Delta\vect{r_i}\]
+  %   \item We limit this sum to infinity to define work over a smooth curve: \[W = \int\limits_C \vect{F}\cdot d\vect{r}\]
+  %   \end{itemize}
+    
+  % \item Flow
+  
+  %   \begin{itemize}
+  %   \item The \textbf{flow} of a fluid along a curve $C$ is defined to be the line integral \[\textrm{Flow} = \int\limits_C \vect{F}\cdot d\vect{r} \]
+  %   \item If $C$ is closed (its starting point and ending point are the same), then the flow is also known as the \textbf{circulation}.
+  %   \end{itemize}
+    
+  % \newpage
+    
+  % \item Flux (2D)
+  
+  %   \begin{itemize}
+  %   \item The two-dimenstional \textbf{flux} of $\vect{F}$ across $C$ is \[\int\limits_C \vect{F}\cdot\vect{n}\,ds\] where $\vect{n}$ is the outward unit normal vector to $C$.
+  %   \item If $C$ is oriented counter-clockwise, then 
+  %     \[
+  %       \int\limits_C \vect{F}\cdot\vect{n}\dvar{s} = \int\limits_C M\dvar{y} - N\dvar{x} = \int\limits_{a}^{b} \left(M\frac{\dvar{y}}{\dvar{t}}-N\frac{\dvar{x}}{\dvar{t}}\right)\dvar{t}
+  %     \]
   %   \end{itemize}
         
-  \item \textbf{Suggested Exercises for 14.8:}
+  % \item \textbf{Suggested Exercises for 14.2:}
   
-    \begin{itemize}
-    \item Using the Divergence Theorem: 5-16
-    \end{itemize}
+  %   \begin{itemize}
+  %   \item Work over a curve: 7-22
+  %   \item Circulation, flow, and flux: 23-28, 37-40
+  %   \end{itemize}
     
-  \end{itemize}
+  % \end{itemize}
+  
+  % \newpage
+  
+  % \centerline{\bf 14.3 Path Independence, Potential Functions, and Conservative Fields}
+  
+  % \begin{itemize}
+    
+  % \item Several Equivalencies for Conservative Fields
+    
+  %   The following are all equivalent for piecewise smooth curves and vector fields with continuous first derivatives:
+  %   \begin{itemize}
+  %     \item $\vect{F}=\<M,N,P\>$ is a \textbf{conservative field}.
+  %     \item $\vect{F}\cdot d\vect{r} = M\,dx+N\,dy+P\,dz$ is \textbf{exact}.
+  %     \item $\int\vect{F}\cdot d\vect{r}$ is \textbf{path independent}: the value of $\int_C\vect{F}\cdot d\vect{r}$ only depends on the endpoints of the curve $C$.
+  %     \item There exists a \textbf{potential function} $f$ such that $\nabla f = \vect{F}$.
+  %     \item (Closed Loop Property of Conservative Fields)\newline $\ds \int_C \vect{F} \cdot d\vect{r} = 0$ for every closed loop $C$ in $D$. 
+  %     \item (Fundamental Theorem of Line Integrals)\newline $\ds \int_C \vect{F} \cdot d\vect{r} = f(B)-f(A)$ for every path $C$ connecting $A$ to $B$.
+  %     \item (Component Test for Conservative Fields)\newline $\ds \frac{\partial P}{\partial y}=\frac{\partial N}{\partial z},\,\frac{\partial M}{\partial z}=\frac{\partial P}{\partial x},\text{ and }\frac{\partial N}{\partial x}=\frac{\partial N}{\partial y}$. 
+  %   \end{itemize}
+
+  % \item \textbf{Suggested Exercises for 14.3:}
+  
+  %   \begin{itemize}
+  %   \item Determining if a field is conservative: 1-6
+  %   \item Finding potential functions: 7-12
+  %   \item Evaluating integrals of differential forms: 13-22
+  %   \end{itemize}
+    
+  % \end{itemize}
+  
+  % \newpage
+  
+  % \centerline{\bf 14.4 Green's Theorem in the Plane}
+  
+  % \begin{itemize}
+    
+  % \item Gradient Operator
+
+  % \[\nabla = \<\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\>\]
+    
+  % \item Divergence
+  
+  %   \begin{itemize}
+  %   \item The \textbf{divergence} of a planar vector field $\vect{F}=\<M,N\>$ is given by \[ \div \vect{F} = \frac{\partial M}{\partial x}+\frac{\partial N}{\partial y} = \nabla\cdot\vect{F} \]
+  %   In physics, divergence is often called the \textbf{flux density}.
+  %   \end{itemize}
+  
+  % \item Spin
+  
+  %   \begin{itemize}
+  %   \item The \textbf{spin} of a planar vector field $\vect{F}=\<M,N\>$ is given by \[ \spin \vect{F} = \frac{\partial N}{\partial x}-\frac{\partial M}{\partial y} \]
+  %   In physics, spin is often called the \textbf{circulation density}.
+  %   \item Spin is also the \textbf{$\veck$-component of curl}, defined in a later section.
+  %   \end{itemize}
+    
+  % \item Simple Curves
+  %   \begin{itemize}
+  %   \item A curve which does not cross itself is said to be \textbf{simple}.
+  %   \end{itemize}
+
+  % \item Green's Theorem in the Plane
+  %   \begin{itemize}
+  %   \item Let $C$ be a piecewise smooth, simple closed curve enclosing the region $R$ and oriented counter-clockwise. Let $\vect{F}=\<M,N\>$ be a vector field for which $M,N$ have continuous first partial derivatives in an open region containing $R$. Then:
+  %     \[\int\limits_C \vect{F}\cdot\vect{n}\,ds = \iint\limits_R \div \vect{F}\dvar{A}\]
+  %     \[\int\limits_C \vect{F}\cdot\vect{T}\dvar{s} = \iint\limits_R \spin \vect{F}\dvar{A}\]
+  %   \end{itemize}
+    
+  % \item \textbf{Suggested Exercises for 14.4:}
+  
+  %   \begin{itemize}
+  %   \item Using Green's Theorem to find circulation and flux: 5-14
+  %   \item Using Green's Theorem to evaluate line integrals: 17-20
+  %   \end{itemize}
+    
+  % \end{itemize}
+  
+  % \newpage
+  
+  % \centerline{\bf 14.5 Surfaces and Area}
+  
+  % \begin{itemize}
+    
+  % \item Parametrization of Surfaces
+  
+  %   \begin{itemize}
+  %   \item Vector functions of two variables \[\vect{r}(u,v)=\<x(u,v),y(u,v),z(u,v)\>\] may be used to parametrize surfaces in $xyz$ space.
+  %   \end{itemize}
+    
+  % \item Smooth Vector Functions
+  
+  %   \begin{itemize}
+  %   \item A surface parametrized by $\vect{r}(u,v)$ is called \textbf{smooth} if 
+  %     \[\vect{r}_u = \<\frac{\partial x}{\partial u},\frac{\partial y}{\partial u},\frac{\partial z}{\partial u}\>,\, \vect{r}_v = \<\frac{\partial x}{\partial v},\frac{\partial y}{\partial v},\frac{\partial z}{\partial v}\>\]
+  %   are continuous and $\vect{r}_u\times\vect{r}_v\not= \vect{0}$ on the interior of the surface. 
+  %   \end{itemize}
+    
+  % \item Surface Area of a Parametrized Surface
+  
+  %   \begin{itemize}
+  %   \item The area of a smooth surface with parametrizing vector function $\vect{r}(u,v)$ for a region $R$ in the $uv$ plane is given by \[A = \iint\limits_R |\vect{r}_u\times\vect{r}_v|\,dA\]
+  %   \end{itemize}
+    
+  % \item Implicit Surface
+  
+  %   \begin{itemize}
+  %   \item Level surfaces $F(x,y,z)=c$ are sometimes called \textbf{implicit surfaces}.
+  %   \item If $\vect{p}$ is a unit vector normal a coordinate plane, then the surface area defined by $F(x,y,z)$ bounded by the cylinder given by a region $R$ in that coordinate plane is \[\iint\limits_R \frac{|\nabla F|}{|\nabla F \cdot \vect{p}|}\,dA\]
+  %   \end{itemize}
+    
+  % \item Surface Area Differential
+  
+  %   \begin{itemize}
+  %   \item The integral $\iint\limits_S\, d\sigma$ is used to represent surface area, and $d\sigma$ is known as the surface area differential.
+  %    \[d\sigma = |\vect{r}_u\times\vect{r}_v|\,dA = \frac{|\nabla F|}{|\nabla F \cdot \vect{p}|}\,dA\]
+  %   \end{itemize}
+        
+  % \item \textbf{Suggested Exercises for 14.5:}
+  
+  %   \begin{itemize}
+  %   \item Finding parametrizations of surfaces: 1-16
+  %   \item Finding surface area: 17-26
+  %   \end{itemize}
+    
+  % \end{itemize}
+  
+  % \newpage
+  
+  % \centerline{\bf 14.6 Surface Integrals and Flux}
+  
+  % \begin{itemize}
+    
+  % \item Surface Integrals
+  
+  %   \begin{itemize}
+  %   \item The \textbf{surface integral} of a function $G(x,y,z)$ over a surface $S$ is given by \[
+  %     \iint\limits_S G(x,y,z)\,d\sigma = \iint\limits_R G(x(u,v),y(u,v),z(u,v)) |\vect{r}_u\times \vect{r}_v|\,dA
+  %   \]
+  %   \[
+  %     = \iint\limits_R G(x,y,z)\frac{|\nabla F|}{|\nabla F \cdot \vect{p}|}\,dA
+  %     \]
+  %   \end{itemize}
+    
+  % \item Orientable Surfaces
+  %   \begin{itemize}
+  %   \item A surface is said to be \textbf{orientable} if it is ``two-sided'' - there exists a continuous normal unit vector field $\vect{n}$ to the surface.
+  %   \end{itemize}
+    
+  % \item Flux in Three Dimensions
+  
+  %   \begin{itemize}
+  %   \item The flux of a three dimensional vector field $\vect{F}$ across an oriented surface $S$ in the direction of $\vect{n}$ is given by the surface integral \[\iint\limits_S \vect{F}\cdot\vect{n}\,d\sigma\]
+  %   \end{itemize}
+        
+  % \item \textbf{Suggested Exercises for 14.6:}
+  
+  %   \begin{itemize}
+  %   \item Evaluating surface integrals: 1-14
+  %   \item Three-dimensional flux: 15-24
+  %   \end{itemize}
+    
+  % \end{itemize}
+  
+  % \newpage
+  
+  % \centerline{\bf 14.7 Stokes' Theorem}
+  
+  % \begin{itemize}
+    
+  % \item Curl
+  %   \begin{itemize}
+  %   \item The \textbf{curl} of a vector field $\vect{F}$ is defined as \[\textrm{curl}\,\vect{F} = \nabla \times \vect{F} = \textrm{curl}\,\vect{F} = \<\frac{\partial P}{\partial y}-\frac{\partial N}{\partial z},\frac{\partial M}{\partial z}-\frac{\partial P}{\partial x},\frac{\partial N}{\partial x}-\frac{\partial M}{\partial y}\>\]
+  %   \item The counterclockwise spin with respect to a unit vector $\vect{u}$ is given by \[\textrm{spin}_{\vect{u}}\,\vect{F} = \textrm{curl}\,\vect{F} \cdot \vect{u} = \nabla \times \vect{F} \cdot \vect{u}\]
+  %   \item In particular, in 2D:
+  %     \[
+  %       \textrm{spin}\,\vect{F} = \frac{\partial N}{\partial x}-\frac{\partial M}{\partial y} = \textrm{spin}_\veck\,\vect{F}
+  %     \]
+  %   and in 3D:
+  %     \[
+  %       \textrm{curl}\,\vect{F} = \<\textrm{spin}_{\veci}\,\vect{F}, \textrm{spin}_{\vecj}\,\vect{F}, \textrm{spin}_{\veck}\,\vect{F}\>
+  %     \]
+  %   \end{itemize}
+  
+  % \item Stokes' Theorem
+  
+  %   \begin{itemize}
+  %   \item If a curve $C$ in $\mathbb{R}^3$ is the boundary of a surface $S$, and we want to compute the counter-clockwise circulation with respect to unit normal vectors $\vect{n}$ on the surface, we may use \[\int\limits_C \vect{F}\cdot\vect{T}\,ds = \iint\limits_S \textrm{spin}_{\vect{n}}\,\vect{F}\,d\sigma = \iint\limits_S (\textrm{curl}\,\vect{F} \cdot \vect{n})\,d\sigma = \iint\limits_S \nabla \times \vect{F} \cdot \vect{n}\,d\sigma\] 
+  %   \end{itemize}
+    
+  % \item Identities and Properties
+  
+  %   \begin{itemize}
+  %   \item Due to the Mixed Derivative Theorem, \[\textrm{curl}\, \nabla f = \nabla \times \nabla f = \vect{0}\]
+  %   \item If $\nabla \times \vect{F} = \vect{0}$ for every point in a region $D$, then \[ \int\limits_C \vect{F}\cdot d\vect{r} = \iint\limits_S \nabla \times \vect{F} \cdot \vect{n}\,d\sigma = 0\] for every curve $C$ and surface $S$ within $D$.
+  %   \end{itemize}
+        
+  % \item \textbf{Suggested Exercises for 14.7:}
+  
+  %   \begin{itemize}
+  %   \item Using Stokes' Theorem: 1-10
+  %   \end{itemize}
+    
+  % \end{itemize}
+  
+  % \newpage
+  
+  % \centerline{\bf 14.8 Divergence Theorem and a Unified Theory}
+  
+  % \begin{itemize}
+    
+  % \item Divergence Theorem
+  
+  %   \begin{itemize}
+  %   \item Divergence in $\mathbb{R}^3$ is defined as \[\textrm{div}\,\vect{F} = \frac{\partial M}{\partial x}+\frac{\partial N}{\partial y}+\frac{\partial P}{\partial z} = \nabla \cdot \vect{F} \]
+  %   \item The Divergence Theorem lets us measure the flux on a closed surface $S$ by integrating over the divergence within its bounded region $D$: \[\text{Flux} = \iint\limits_S \vect{F}\cdot\vect{n}\,d\sigma = \iiint\limits_D \textrm{div}\,\vect{F}\,dV= \iiint\limits_D \nabla\cdot\vect{F}\,dV\]
+  %   \end{itemize}
+    
+  % % \item The Unified Theory
+  
+  % %   \begin{itemize}
+  % %   \item The unified theory notes that in order to compute circulation and flux over a closed curve or surface, we may consider the spin/curl and divergence over the region bounded by that curve or surface.
+  % %   \item Let $C$ be a counter-clockwise closed curve in $\mathbb{R}^2$ bounding the region $R$.
+  % %     \[\text{Circulation of } \vect{F} \text{ around } C = \iint\limits_R \textrm{spin}\,\vect{F}\,dA = \iint\limits_R \textrm{curl}\,\vect{F}\cdot \veck\,dA\]
+  % %     \[\text{Flux of } \vect{F} \text{ across } C = \iint\limits_R \textrm{div}\,\vect{F}\,dA\]
+  % %   \item Let $C$ be a closed curve in $\mathbb{R}^3$ counter-clockwise to $\vect{n}$ bounding the surface $S$.
+  % %     \[\text{Circulation of } \vect{F} \text{ around } C = \iint\limits_S \textrm{spin}_{\vect{n}}\,\vect{F}\,d\sigma  = \iint\limits_R \textrm{curl}\,\vect{F}\cdot \vect{n}\,d\sigma\]
+  % %   \item Let $S$ be a closed surface in $\mathbb{R}^3$ bounding the solid $D$.
+  % %     \[\text{Flux of } \vect{F} \text{ across } S = \iiint\limits_D \textrm{div}\,\vect{F}\,dV\]
+  % %   \end{itemize}
+        
+  % \item \textbf{Suggested Exercises for 14.8:}
+  
+  %   \begin{itemize}
+  %   \item Using the Divergence Theorem: 5-16
+  %   \end{itemize}
+    
+  % \end{itemize}
 
 \end{document}
 
