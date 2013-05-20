@@ -106,6 +106,267 @@
         \item $z=y^2-4x^2$
       \end{enumerate}
 
+\newpage
+\centerline{\bf Chapter 13}
+
+    \item Give a parametrization of the curve described as a vector function. (13.1)
+
+      \begin{enumerate}
+        \item The parabola $y=x^2$ in the $xy$ plane.
+        \item The directed line segment beginning at $(1,2,-3)$ and ending at $(0,3,0)$.
+        \item The circle $x^2+y^2=9$.
+        \item The ellipse $x^2+9y^2=9$.
+      \end{enumerate}
+
+    \item Find the limit of the vector function. (13.1)
+
+      \begin{enumerate}
+        \item $\ds\lim_{t\to -1} \<\Arctan t, \frac{e^{1+t}}{1-t}\>$
+        \item $\ds\lim_{t\to 2} \<t^2-4,\frac{t^2-4}{t-2}\>$
+        \item $\ds\lim_{t\to 0} \left(\frac{\sin3t}{4t}\veci + \frac{1-\cos t}{t}\vecj\right)$
+        \item $\ds\lim_{t\to \pi/2} \<\sin t, \cos t, \cot t\>$
+        \item $\ds\lim_{t\to 0} \left(\frac{e^t}{t+1}\veci+\frac{e^{t}-1}{t}\vecj+\frac{2^{2t}-1}{t}\veck\right)$
+        \item $\ds\lim_{t\to 1} \<\frac{3t^2-3}{t+1}, \frac{\sin(2t-2)}{2t-2},\frac{3t^2-3}{t-1}\>$
+      \end{enumerate}
+
+    \item Find the derivative $\frac{d\vect{r}}{dt}=\vect{r}'(t)$ of the vector function. (13.2)
+
+      \begin{enumerate}
+        \item $\vect{r}(t) = \<x^2,3+t\>$
+        \item $\vect{r}(t) = \<3\sin4t,-3\cos4t\>$
+        \item $\vect{r}(t) = \<\frac{1}{t^2},\frac{t}{t^2+1}\>$
+        \item $\vect{r}(t) = \<3t^2, 4t^3, 2t+1\>$
+        \item $\vect{r}(t) = (\ln 2t)\veci + (e^{2t}-2)\vecj + \frac{1}{e^t}\veck$
+        \item $\vect{r}(t) = \<\Arcsin t, \Arccsc t, \Arctan t\>$
+      \end{enumerate}
+
+    \newpage
+
+    \item Find the indefinite integral $\int\vect{r}(t)\d{t}$ of the vector function (13.2)
+
+      \begin{enumerate}
+        \item $\vect{r}(t) = \<3t^2, 4t^3, 2t+1\>$
+        \item $\vect{r}(t) = \<2\sin2t,-2\cos2t\>$
+        \item $\vect{r}(t) = \<e^t, 2e^{-t}, e^{3t} \>$
+        \item $\vect{r}(t) = \<\frac{1}{t+2}, \frac{1}{(t+2)^2}, \frac{2t}{t^2+2}\>$
+        \item $\vect{r}(t) = (e^{2t}e^t + 2t)\veci + \frac{\ln t}{t}\veck$
+      \end{enumerate}
+
+    \item Solve the differential vector equation to find $\vect{r}(t)$. (13.2)
+
+      \begin{enumerate}
+        \item $\vect{r}'(t) = \<3t^2, 2t^3\>$, $\vect{r}(0) = \<3,4\>$
+        \item $\vect{r}'(t) = 3\veci+4\vecj-\veck$, $\vect{r}(1)=\veci-\vecj+2\veck$
+        \item $\vect{r}'(t) = \<2e^t, 4, \frac{1}{t}\>$, $\vect{r}(\ln 3)=\<5, 0, \ln(\ln 3)\>$
+        \item $\vect{r}'(t) = \<\frac{3}{2}\sqrt{t}, 8t, 3t^2+3\>$, $\vect{r}(1) = \<1, -3, 6\>$
+        \item $\vect{r}'(t) = \<\frac{1}{1+t^2},\frac{2t}{1+t^2}\>$, $\vect{r}(0) = \<0, 1\>$
+      \end{enumerate}
+
+    \item Find the arclength parameter $s(t)$ where $s(0)=0$ and $\frac{ds}{dt}\geq 0$ and for the given curve, and use it to find the arclength of the given portion of the curve. (13.3)
+
+      \begin{enumerate}
+        \item $\vect{r}(t) = \<1+2t, 2-t, 3-2t\>$, $1\leq t\leq 3$
+        \item $\vect{r}(t) = \< 3\sin t, -4t, 3\cos t \>$, $0\leq t\leq 1$
+        \item $\vect{r}(t) = \<3e^t, -4e^t\>$, $0\leq t\leq \ln 2$
+        \item $\vect{r}(t) = t^3\veci + t^2\vecj + \veck$, $0\leq t\leq 1$
+        \item $\vect{r}(t) = \<6t, t^3, 3t^2\>$, $-3\leq t\leq -2$
+      \end{enumerate}
+
+    \item Find the unit vectors $\vect{T},\vect{N}$ to the curve in terms of the parameter $t$. (13.3)
+
+      \begin{enumerate}
+        \item $\vect{r}(t) = \< 3\sin t, -4t, 3\cos t \>$
+      \end{enumerate}
+
+    \item Given the information about $\vect{r}(t)$ at a point, evaluate the binormal vector $\vect{B}$ and curvature $\kappa$ at that same point. (13.3)
+
+      \begin{enumerate}
+        \item $\frac{d\vect{r}}{dt}=\left< \frac{3\sqrt{2}}{2}, -4, -\frac{3\sqrt{2}}{2}\right>$, $\vect{T}=\left< \frac{3\sqrt{2}}{10}, -\frac{4}{5}, -\frac{3\sqrt{2}}{10}\right>$ \newline $\frac{d\vect{T}}{dt}=\left<-\frac{3\sqrt{2}}{10},0,-\frac{3\sqrt{2}}{10}\right>$, $\vect{N}=\left<-\frac{\sqrt{2}}{2},0,-\frac{\sqrt{2}}{2}\right>$
+      \end{enumerate}
+
+    \item Sketch $\vect{r}(t)$ in the plane and plot the point where $t=a$, and then find and sketch $\vect{v}$, $\vect{a}$ at $t=a$ on the curve. (13.4)
+
+      \begin{enumerate}
+        \item $\vect{r}(t) = \<2\sin t,-2\cos t\>$, $t=\pi/2$
+      \end{enumerate}
+
+    \item Assuming ideal projectile motion and $g=10\frac{m}{s^2}$, find the following.
+
+      \begin{enumerate}
+        \item Flight time of a projectile shot from the ground at an angle of $\pi/4$ degrees with initial speed $100\frac{m}{s}$.
+        \item Maximum height of a projectile shot from the ground at an angle of $\pi/3$ degrees with initial speed $50\frac{m}{s}$.
+      \end{enumerate}
+
+    \item Find the tangential and normal components of acceleration for the given position function at the given value of $t$.
+
+      \begin{enumerate}
+        \item $\vect{r}(t) = \< 3\sin t, -4t, 3\cos t \>$, $t=\pi/2$
+      \end{enumerate}
+
+% % (11.1) Find the velocity function and speed
+% \item Find the velocity and acceleration functions associated with the position function \[\vec{r}(t) = \left<2\sin t,-2\cos t\right>\] which corresponds to the circle \[x^2+y^2=4\]
+
+%   \begin{enumerate}
+%     \item Compute correct velocity function (5 points)
+%     \item Compute correct acceleration function (5 points)
+%   \end{enumerate}
+
+% \vspace*{6in}
+
+% \liner
+% \newpage\up
+
+% \item Sketch the curve given by $\vec{r}(t) = \left<2\sin t,-2\cos t\right>$ from \#1 along with its velocity and acceleration vectors at $t=\pi$.
+
+%   \begin{enumerate}
+%     \item Sketch correct curve (2 points)
+%     \item Mark $t=\pi$ accurately (2 points)
+%     \item Sketch $\vec{v}$ correctly (3 points)
+%     \item Sketch $\vec{a}$ correctly (3 points)
+%   \end{enumerate}
+
+% \vspace*{7.5in}
+
+% \liner
+% \newpage\up
+
+% % (11.2) Definite Vector Integral
+
+% \item Evaluate $\ds \int_0^{\pi/4} (\sec^2 t)\vec{i}+(6)\vec{j}+\left(e^t\right)\vec{k} \, dt$.
+
+%   \begin{enumerate}
+%     \item (3, 6, or 10 points for 1, 2, or 3 correctly evaulated components)
+%   \end{enumerate}
+
+% \vspace*{8in}
+
+% \liner
+% \newpage\up
+
+% % (11.2) Initial Value Problem
+
+% \item Find $\vec{r}(t)$ given $\vec{r}'(t) = \left<2t, 2t-t^2, 2e^{2t}\right>$ and $\vec{r}(0)=\left<0,7,-1\right>$.
+
+%   \begin{enumerate}
+%     \item (3, 6, or 10 points for 1, 2, or 3 correctly evaulated components)
+%   \end{enumerate}
+
+% \vspace*{8.3in}
+
+% \liner
+% \newpage\up
+
+% % (11.2) Ideal projectile motion
+
+% \item Assume $g=10$ m/s$^2$. What is the flight time of a projectile launched from the ground with an initial speed of $100$ m/s and launch angle of $\frac{\pi}{6}$?
+
+%   \begin{itemize}
+%     \item If using formula:
+%       \begin{enumerate}
+%         \item Write correct formula (2 points)
+%         \item Compute corect answer (8 points)
+%       \end{enumerate}
+%     \item If using calculus:
+%       \begin{enumerate}
+%         \item Write correct position function (2 points)
+%         \item Attempt to use correct method to find answer (6 points)
+%         \item Compute correct answer (2 points)
+%       \end{enumerate}
+%   \end{itemize}
+
+% \vspace*{6.5in}
+
+% \liner
+
+% \newpage\up
+
+% % (11.3) Give the length of the curve.
+
+% \item Give the length of the arc on the curve $\vec{r}(t) = \left< 3\sin t, -4t, 3\cos t \right>$ between $t=0$ and $t=1$.
+
+%   \begin{enumerate}
+%     \item Use arclength formula $\ds \int_a^b |\vec{v}(t)| \dvar{t}$ (2 points)
+%     \item Compute $\vec{v}(t)$ correctly (2 points)
+%     \item Simplify $|\vec{v}(t)|$ correctly (3 points)
+%     \item Compute arclength correctly (3 points)
+%   \end{enumerate}
+
+% \vspace*{8in}
+
+% \liner
+% \newpage\up
+
+% % (11.4) Circle of Curvature
+
+% \item Write the equation of the circle of curvature to a curve at a point $(4,0)$ with curvature $\frac{1}{10}$ and normal vector $\vec{N} = \left<-\frac{3}{5},\frac{4}{5}\right>$.
+
+%   \begin{enumerate}
+%     \item Calculate the radius $a = \frac{1}{\kappa}$ correctly (3 points)
+%     \item Calculate the center $\<x_0,y_0\> = \vec{r}(t_0) + a\vec{N}$ correctly (3 points)
+%     \item Write a correct equation for the circle (4 points)
+%   \end{enumerate}
+
+% \vspace*{7.5in}
+
+% \liner
+% \newpage\up
+
+% % % (11.5) Tangential and Normal Components of Acceleration
+% % \item Suppose the position of a particle is given by $\vec{r}(t) = \left< 3\sin t, -4t, 3\cos t \right>$. Give the tangential and normal components of acceleration of the particle at $t=0$.
+
+% %   \begin{enumerate}
+% %     \item Write a correct formula for $a_T = \frac{d^2s}{dt^2} = \frac{d}{dt}|\vec{v}|$ (2 points)
+% %     \item Compute $a_T$ correctly (3 points)
+% %     \item Write a correct formula for $a_N = \kappa\left(\frac{ds}{dt}\right)^2 = \kappa|\vec{v}|^2 = \sqrt{|\vec{a}|^2 - a_T^2}$ (2 points)
+% %     \item Computer $a_N$ correctly (3 points)
+% %   \end{enumerate}
+
+% % \vspace*{7in}
+
+% % \liner
+% % \newpage\up
+
+% % (11.3 & 11.4) T, N
+
+% \item Find $\vec{T}$, $\vec{N}$ for $\vec{r}(t) = \left< 3\sin t, -4t, 3\cos t \right>$.
+
+%   \begin{enumerate}
+%     \item Compute $\vec{v}$ correctly (2 points)
+%     \item Compute $\vec{T}$ correctly (3 points)
+%     \item Compute $\frac{d\vec{T}}{dt}$ correctly (2 points)
+%     \item Compute $\vec{N}$ correctly (3 points)
+%   \end{enumerate}
+
+% \vspace*{8in}
+
+% \liner
+% \newpage\up
+
+% % (11.4 & 11.5) \tau, \kappa, B
+
+% \item Given a point $(1,1,0)$ on a curve where $\vec{v}=\left< \frac{3\sqrt{2}}{2}, -4, -\frac{3\sqrt{2}}{2}\right>$, $\frac{d\vec{T}}{dt}=\left<-\frac{3\sqrt{2}}{10},0,-\frac{3\sqrt{2}}{10}\right>$,\newline $\vec{N}=\left<-\frac{\sqrt{2}}{2},0,-\frac{\sqrt{2}}{2}\right>$, $\frac{d\vec{B}}{dt}=\left<-\frac{4\sqrt{2}}{5},0,-\frac{4\sqrt{2}}{5}\right>$, compute $\kappa$, $\tau$, and $\vec{B}$ at that point.
+
+%   \begin{enumerate}
+%     \item Write a correct formula for each of $\kappa$, $\tau$, and $\vec{B}$ (1, 2, or 4 points)
+%     \item Compute $\kappa$, $\tau$, and $\vec{B}$ correctly (2, 4, or 6 points)
+%   \end{enumerate}
+
+% \vspace*{8in}
+
+% \liner
+
+% \newpage\up
+
+% % (11.6) v in terms of u_r, u_\theta
+% \item Given the polar parametric equations $r(t)=2-\cos t$ and $\theta(t)=2t$, find $\vec{v}$ in terms of $\vec{u}_r$ and $\vec{u}_\theta$ at $t=0$.
+
+%   \begin{enumerate}
+%     \item Write correct formula $\vec{v} = \dot{r}\vec{u}_r + r\dot\theta\vec{u}_\theta$ (2 points)
+%     \item Compute $\dot{r}$ correctly (3 points)
+%     \item Compute $\dot{\theta}$ correctly (3 points)
+%     \item Compute correct expression for $\vec{v}$ (2 points)
+%   \end{enumerate}
+
     \end{enumerate}
 
 \end{document}
