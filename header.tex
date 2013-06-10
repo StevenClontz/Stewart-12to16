@@ -34,6 +34,23 @@
 \usepackage{mathtools}
 \usepackage{amsthm}
 \usepackage{wasysym} % for \smiley
+
+      \theoremstyle{plain}
+      \newtheorem{theorem}{Theorem}
+      \newtheorem{lemma}[theorem]{Lemma}
+      \newtheorem{corollary}[theorem]{Corollary}
+      \newtheorem{proposition}[theorem]{Proposition}
+      \newtheorem{conjecture}[theorem]{Conjecture}
+      \newtheorem{question}[theorem]{Question}
+      \newtheorem{example}[theorem]{Example}
+
+      \newtheorem*{claim}{Claim}
+      
+      \theoremstyle{definition}
+      \newtheorem{definition}[theorem]{Definition}
+      
+      \theoremstyle{remark}
+      \newtheorem{remark}[theorem]{Remark}
       
 \newcommand{\ds}{\displaystyle}
 \newcommand{\vect}[1]{\mathbf{#1}}
@@ -49,7 +66,7 @@
 \newcommand{\<}{\left<}
 \renewcommand{\>}{\right>}
 
-\newcommand{\hruler}{\hrule\vspace{1em}}
+\newcommand{\hr}{\hrule\vspace{1em}}
 
 \newcommand{\p}{\partial}
 \newcommand{\pd}[2]{\frac{\p #1}{\p #2}}
