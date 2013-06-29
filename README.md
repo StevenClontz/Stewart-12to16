@@ -5,12 +5,17 @@ Notes to accompany Chapters 12 to 16 of Stewart's Calculus - Early Transcendenta
 
 This repo is still a work-in-progress.
 
+### Downloads
+
+* PDF: [notes.pdf](https://github.com/StevenClontz/Stewart-12to16/blob/master/stewart_notes.pdf?raw=true), [study_problems.pdf](https://github.com/StevenClontz/Stewart-12to16/blob/master/stewart_study_problems.pdf?raw=true)
+* TeX+PDF: [master.zip](https://github.com/StevenClontz/Stewart-12to16/archive/master.zip)
+
 Abstract
 --------
 
 These notes were written to outline the major topics covered in Auburn University's Calculus III course based on Stewart's 7th Edition Calculus text. It progresses through most of the sections in Chapters 12 through 16 as follows, but Chapter 15 is reorganized slightly to introduce the Jacobian before introducing alternate coordinate systems. (In addition, sections 15.5 and 15.6 are omitted entirely to match Auburn's course syllabus.)
 
-In addition, several example problems based on these notes have also been written, which may be assigned as homework as an alternative to using problems from the text.
+In addition, several original example problems based on these notes have also been written, which may be assigned as homework as an alternative to using problems from the text.
 
 This project is based off of [Steven Clontz](http://www.stevenclontz.com)'s earlier [HassNotes-10to14](http://github.com/StevenClontz/HassNotes-10to14) project based on Hass's University Calculus, and a few notational conventions have been carried over from that project, such as using "&sigma;" as the surface area parameter rather than "S".
 
