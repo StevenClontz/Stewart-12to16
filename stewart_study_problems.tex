@@ -369,26 +369,28 @@
       \end{enumerate}
 
 \newpage
-\centerline{\bf Chapter 14}
+\centerline{\bf Chapter 15}
 
     \item Divide $R$ into $2\times 2$ equal pieces and use the midpoint rule to approximate the double integral. (15.1)
 
       \begin{enumerate}
-        \item $\iint_R 2x+2y+4 \d{A}$, $R: 0\leq x\leq 4, 0\leq y\leq 2$
-        \item $\iint_R 3y^2-4xy\d{A}$, $R: -1\leq x\leq 3, -3\leq y\leq 1$
-        \item $\iint_R 3x^2-2y+4\d{A}$, $R: 0\leq x\leq 4, -2\leq y\leq 6$
-        \item $\iint_R \cos(x+y)\d{A}$, $R: 0\leq x\leq \pi/2, 0\leq y\leq \pi/2$
+        \item $\iint_R 2x+2y+4 \d{A}$, $R = \{(x,y) : 0\leq x\leq 4, 0\leq y\leq 2\}$
+        \item $\iint_R 3y^2-4xy\d{A}$, $R = \{(x,y) : -1\leq x\leq 3, -3\leq y\leq 1\}$
+        \item $\iint_R 3x^2-2y+4\d{A}$, $R = \{(x,y) : 0\leq x\leq 4, -2\leq y\leq 6\}$
+        \item $\iint_R \cos(x+y)\d{A}$, $R = \{ (x,y) : 0\leq x\leq \pi/2, 0\leq y\leq \pi/2\}$
+        \item $\iint_R 12x^2y\d{A}$, $R = \{ (x,y) : 0\leq x\leq 3, 1\leq y\leq 2\}$
+        \item $\iint_R \frac{y}{1+xy}\d{A}$, $R = \{ (x,y) : 0\leq x\leq 2$, $1\leq y\leq 3\}$
       \end{enumerate}
 
     \item Evaluate the double integral. (15.2)
 
       \begin{enumerate}
-        \item $\iint_R 2x+2y+4 \d{A}$, $R: 0\leq x\leq 4, 0\leq y\leq 2$
-        \item $\iint_R 3y^2-4xy\d{A}$, $R: -1\leq x\leq 3, -3\leq y\leq 1$
-        \item $\iint_R 3x^2-2y+4\d{A}$, $R: 0\leq x\leq 4, -2\leq y\leq 6$
-        \item $\iint_R \cos(x+y)\d{A}$, $R: 0\leq x\leq \pi/2, 0\leq y\leq \pi/2$
-        \item $\iint_R 12x^2y\d{A}$, $R: 0\leq x\leq 3, 1\leq y\leq 2$
-        \item $\iint_R \frac{y}{1+xy}\d{A}$, $0\leq x\leq 2$, $1\leq y\leq 3$
+        \item $\iint_R 2x+2y+4 \d{A}$, $R = \{(x,y) : 0\leq x\leq 4, 0\leq y\leq 2\}$
+        \item $\iint_R 3y^2-4xy\d{A}$, $R = \{(x,y) : -1\leq x\leq 3, -3\leq y\leq 1\}$
+        \item $\iint_R 3x^2-2y+4\d{A}$, $R = \{(x,y) : 0\leq x\leq 4, -2\leq y\leq 6\}$
+        \item $\iint_R \cos(x+y)\d{A}$, $R = \{ (x,y) : 0\leq x\leq \pi/2, 0\leq y\leq \pi/2\}$
+        \item $\iint_R 12x^2y\d{A}$, $R = \{ (x,y) : 0\leq x\leq 3, 1\leq y\leq 2\}$
+        \item $\iint_R \frac{y}{1+xy}\d{A}$, $R = \{ (x,y) : 0\leq x\leq 2$, $1\leq y\leq 3\}$
       \end{enumerate}
 
     \item Evaluate the iterated integral or double integral of two variables. (15.3)
@@ -398,7 +400,7 @@
         \item $\ds\int_{-1}^2\int_{-1}^{y^2} 20xy\d{x}\d{y}$
         \item $\ds\int_0^4\int_{\sqrt{y}}^2 6x+30y\d{x}\d{y}$
         \item $\ds\int_{1}^{2}\int_{1/x}^{2/x} xe^x \d{x}\d{y}$
-        \item $\iint_R 8xy\d{A}$, $R: 0\leq x\leq y,0\leq y\leq 1$
+        \item $\iint_R 8xy\d{A}$, $R = \{ (x,y) : 0\leq x\leq y,0\leq y\leq 1\}$
         \item $\iint_R \frac{6}{5}y\d{A}$, $R:$ triangle with vertices $(-2,0)$, $(0,1)$, $(3,0)$
       \end{enumerate}
 
@@ -426,17 +428,77 @@
 
     \item Evaulate the iterated integral of three variables. (15.7)
 
-    \item Find an expression involving iterated integrals for the given volume. (15.7)
+      \begin{enumerate}
+        \item $\ds\int_0^1\int_0^1\int_0^1 8xz-y^2\d{y}\d{x}\d{z}$
+        \item $\ds\int_1^2\int_0^x\int_x^{2z} 24y\d{y}\d{z}\d{x}$
+        \item $\ds\int_{-1}^1\int_{1+y}^{2+y}\int_0^2 z \d{x}\d{z}\d{y}$
+        \item $\ds\int_{-\pi}^0\int_0^{\pi/2}\int_0^x -\sin(z) \d{z}\d{y}\d{x}$
+        \item $\ds\int_0^1\int_0^1\int_0^1 \frac{2xy^2}{(1+xyz)^3}\d{z}\d{x}\d{y}$
+      \end{enumerate}
 
-    \item Find a substitution from the given region in the $uv$ plane into the given region in the $xy$ plane. (15.10)
+    \newpage
 
-    \item Use the given substitution to evaulate the iterated integral of variables $x,y$. (15.10)
+    \item Find an expression involving iterated integrals for the volume of the given solid. (15.7)
 
-    \item (15.4)
+      \begin{enumerate}
+        \item The pyramid with vertices $(0,0,0)$, $(3,0,0)$, $(0,2,0)$, and $(0,0,1)$
+        \item The solid in the first octant bounded by the coordinate planes, $z=1-y^2$, and $x=4$
+        \item The sphere $x^2+y^2+z^2\leq 4$
+        \item The solid bounded by the surfaces $z=4-x^2-y^2$ and $z=4x^2+4y^2-16$
+      \end{enumerate}
 
-    \item (15.8)
+    \item Find a transformation from either the unit square or triangle in the $uv$ plane into the given region $R$ in the $xy$ plane. (15.10)
 
-    \item (15.9)
+      \begin{enumerate}
+        \item $R:$ parallelogram bounded by $y=3x+1$, $y=3x-3$, $y=x-2$ $y=x-5$
+        \item $R:$ triangle bounded by $y=x$, $y=2x$, $y=6-x$
+        \item $R:$ square with vertices $(2,1)$, $(-2,3)$, $(0,7)$, $(4,5)$
+        \item $R:$ triangle with vertices $(0,-2)$ $(-1,1)$, $(1,3)$
+      \end{enumerate}
+
+    \item Evaulate the double integral of variables $x,y$ using the given transformation from the $uv$ plane. (15.10)
+
+      \begin{enumerate}
+        \item $\iint_R 2x-y\d{A}$, $\vect{r}(u,v)=\<u+v,2u-v+3\>$ from unit square into the parallelogram $R$ with vertices $(0,3)$, $(1,5)$, $(2,4)$, $(1,2)$
+        \item $\iint_R (x+y)(x-y-2)\d{A}$, $\vect{r}(u,v)=\<4-u-v,v-u+2\>$ from unit triangle into the triangle $R$ with vertices $(4,2)$, $(3,1)$, $(2,2)$
+        \item $\iint_R (x+y)e^{x^2-y^2}\d{A}$, $\vect{r}(u,v)=\<u+2v,u-2v\>$ from unit square into the rectangle $R$ bounded by $y=x$, $y=x-4$, $y=-x$, $y=2-x$
+        \item $\iint_R \cos(\pi e^x)\d{A}$, $\vect{r}(u,v)=\<\ln (u+v+1),v\>$ from unit triangle into the region $R$ bounded by $y=0$, $y=e^x-2$, $y=\frac{e^x-1}{2}$
+      \end{enumerate}
+
+    \newpage
+
+    \item Use polar coordinates to evaluate the double integral or iterated integral. (15.4)
+
+      \begin{enumerate}
+        \item $\ds\int_{-1}^1\int_{-\sqrt{1-y^2}}^{\sqrt{1-y^2}} 2y\d{x}\d{y}$
+        \item $\ds\int_0^1\int_0^x 3xy\d{y}\d{x}$
+        \item $\ds\iint_R e^{x^2+y^2}\d{A}$, $R:$ disk with boundary $x^2+y^2=9$
+        \item $\ds\int_{-4}^0\int_0^{\sqrt{4x-x^2}} \d{A}$
+      \end{enumerate}
+
+    \item Use cylindrical coordinates to give an equivalent iterated integral which can be directly evaluated. (15.8)
+
+      \begin{enumerate}
+        \item $\ds\int_0^3\int_0^{\sqrt{9-y^2}}\int_0^1 2z\d{z}\d{x}\d{y}$
+        \item $\ds\iiint_D \sqrt{x^2+y^2}\d{V}$, $D:$ right circular cylinder bounded by $|z|\leq 2$ and $x^2+y^2=1$
+        \item $\ds\int_{-2}^2\int_0^{\sqrt{4-x^2}}\int_{\sqrt{x^2+y^2}}^2 \d{z}\d{y}\d{x}$
+        \item The volume of the solid bounded by the $xy$ plane and $z=1-x^2-y^2$
+      \end{enumerate}
+
+    \item Use spherical coordinates to give an equivalent iterated integral which can be directly evaluated. (15.9)
+
+      \begin{enumerate}
+        \item $\ds\int_{-1}^1\int_{-\sqrt{1-y^2}}^{\sqrt{1-y^2}}\int_0^{\sqrt{1-x^2-y^2}} \d{z}\d{x}\d{y}$
+        \item $\ds\iiint_D x\d{V}$, $D:$ hemisphere bounded by $x=\sqrt{4-y^2-z^2}$ and the $yz$ plane
+        \item $\ds\int_{-1}^{1}\int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}\int_{\sqrt{x^2+y^2}}^{\sqrt{2-x^2-y^2}}3xz\d{z}\d{x}\d{y}$
+        \item The volume of the ``ice cream cone'' shaped solid \[D = \{(x,y,z): \sqrt{x^2+y^2} \leq z\leq \sqrt{2x-x^2-y^2}\}\]
+      \end{enumerate}
+
+% \newpage
+% \centerline{\bf Chapter 16}
+
+%     \item 
+
 
     \end{enumerate}
 
