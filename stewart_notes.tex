@@ -1838,7 +1838,13 @@ v_1 & v_2 \\
           \]
         \item Due to Green's Theorem, we can find the area of $R$ using a line integral:
           \[ 
-            A = \int_C x\d{y} = -\int_C y\d{x} = \frac{1}{2}\int_C x\d{y}-y\d{x}
+            A = \iint_R 1 - 0 \d{A} = \int_C x\d{y} 
+          \]
+          \[
+            A = \iint_R 0 - (-1)\d{A} = \int_C -y\d{x} 
+          \]
+          \[
+            A = \iint_R \frac{1}{2} - \left(-\frac{1}{2}\right) \d{A} = \int_C \frac{1}{2}x\d{y}-\frac{1}{2}y\d{x}
           \]
       \end{itemize}
   \end{itemize}
@@ -1965,7 +1971,7 @@ v_1 & v_2 \\
     \begin{itemize}
     \item Let $C$ give the counter-clockwise oriented boundary of a surface $S$.
     \[
-      \iint_S \vect{F}\cdot\d{\vec\sigma} = \int_C \vect{F}\cdot\d{\vect{r}}
+      \iint_S \curl\vect{F}\cdot\d{\vec\sigma} = \int_C \vect{F}\cdot\d{\vect{r}}
     \]
     \end{itemize}
   \end{itemize}

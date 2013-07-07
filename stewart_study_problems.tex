@@ -345,7 +345,7 @@
         \item $f(x,y)=x^2+9y^2+3$
         \item $f(x,y)=x^2-2xy+2y^2+4y-3$
         \item $f(x,y)=x^3+3xy+y^3+2$
-        \item $f(x,y)=x^3-3xy^2+6y^2+18x^2+1$
+        \item $f(x,y)=x^3-3xy^2+6y^2+18x^2+1$ %TODO fix this
         \item $f(x,y)=(x^2+y^2)e^{x+y+2}$
         \item $f(x,y)=x^2y-xy^2+12x-12y$
       \end{enumerate}
@@ -364,7 +364,7 @@
       \begin{enumerate}
         \item Find the maximum volume of a rectangular box without a lid which uses $108$ square units of material.
         \item Find the minimum surface area of a right circular cylinder with volume equal to $54\pi$ cubic units. ($V=\pi r^2h$, $SA=2\pi r(r+h)$)
-        \item Find the volume of the largest rectangle which has its base on the $x$-axis and fits in the triangle with vertices $(-4,0)$, $(0,8)$, $(4,0)$.
+        \item Find the area of the largest rectangle which has its base on the $x$-axis and fits in the triangle with vertices $(-4,0)$, $(0,8)$, $(4,0)$.
         \item Find the highest and lowest points which lay on the curve of intersection for the cylinder $x^2+y^2=8$ and the plane $2x+2y+z=16$.
       \end{enumerate}
 
@@ -411,7 +411,7 @@
       \begin{enumerate}
         \item $\ds\int_0^1\int_x^1 \frac{2}{\sqrt{4+y^2}}\d{y}\d{x}$
         \item $\ds\int_0^2\int_y^2 y(8-x^3)^{1/3}\d{x}\d{y}$
-        \item $\ds\int_0^1\int_{y^2}^1 3\pi \sin(\pi x^3)\d{x}\d{y}$
+        \item $\ds\int_0^1\int_{\sqrt{y}}^1 3\pi \sin(\pi x^3)\d{x}\d{y}$
         \item $\ds\int_0^1\int_{e^x}^e \frac{y}{\ln y}\d{y}\d{x}$
       \end{enumerate}
 
@@ -494,10 +494,92 @@
         \item The volume of the ``ice cream cone'' shaped solid \[D = \{(x,y,z): \sqrt{x^2+y^2} \leq z\leq \sqrt{2x-x^2-y^2}\}\]
       \end{enumerate}
 
-% \newpage
-% \centerline{\bf Chapter 16}
+  \newpage
+  \centerline{\bf Chapter 16}
 
-%     \item 
+    \item Evaluate the line integral with respect to arclength. (16.2)
+
+      \begin{enumerate}
+        \item $\int_C xy^3\d{s}$, $C:$ arc on the circle $x^2+y^2=4$ from $(2,0)$ to $(1,\sqrt{3})$
+      \end{enumerate}
+
+    \item Evaluate the line integral with respect to a variable. (16.2)
+
+      \begin{enumerate}
+        \item $\int_C xy^3\d{y}$, $C:$ arc on the circle $x^2+y^2=4$ from $(2,0)$ to $(1,\sqrt{3})$
+      \end{enumerate}
+
+    \item Compute the work done by the force $\vect{F}$ over the curve $C$. (16.2) % brute force
+
+      \begin{enumerate}
+        \item $\vect{F}=\left<y,z,x\right>$, $C:$ the line segment from $(1,1,2)$ to $(3,-2,1)$.
+      \end{enumerate}
+
+    \item Compute the work done by the force $\vect{F}$ over the curve $C$. (16.3) % fund thm
+
+      \begin{enumerate}
+        \item $\vect{F}=\<x,y,z\>$, $C:$ the line segment from $(1,1,2)$ to $(3,-2,1)$.
+      \end{enumerate}
+
+    \item Compute the work done by the force $\vect{F}$ over the curve $C$. (16.4) % green's thm
+
+      \begin{enumerate}
+        \item $\vect{F}=\<y,2x\>$, $C:$ the boundary of the triangle with vertices $(1,2)$, $(3,-2)$, $(-1,-2)$ oriented counter-clockwise.
+      \end{enumerate}
+
+% % (14.3) Compute work/flow of a conservative field.
+
+% \item Compute the flow of the vector field \[\vec{F}=\left<2xy,x^2-z^2,-2yz\right>\] through the curve $\vec{r}(t)=\left<t2^t,3t^3,\cos(\pi t)\right>$ where $0\leq t\leq 1$. (Hint: Use a potential function.)
+
+% \vspace*{8.5in}
+
+% \liner
+
+% \newpage\up
+
+% % (14.3) Line integral of conservative field over a closed loop.
+
+% \item Show that \[\int\limits_C (ye^{xy}-4yz)\,dx+(xe^{xy}-4xz)\,dy+(-4xy)\,dz = 0\] where $C$ is the pentagon in the $xz$ plane with vertices $(1,0,0)$, $(2,0,1)$, $(2,0,3)$, $(0,0,2)$, and $(0,0,0)$ oriented clockwise with respect to the $y$-axis.
+
+% \vspace*{8in}
+
+% \liner
+
+% \newpage\up
+
+% % (14.4) Green's Theorem for Flux
+
+% \item Express the outward flux of \[\vec{F}=\left<x+y,x^2+y^2\right>\] across the triangle with vertices $(0,0)$, $(1,0)$, and $(1,1)$ as a double iterated integral. \textbf{Do not evaluate the integral.}
+
+% \vspace*{8.5in}
+
+% \liner
+
+% \newpage\up
+
+% % (14.5) Parametrizing a Surface
+
+% \item Use spherical coordinates to give a parametrization corresponding to the portion of the surface \[z^2=x^2+y^2\] between the planes $z=1$ and $z=2$.
+
+% \vspace*{8.5in}
+
+% \liner
+
+% \newpage
+
+% % (14.5) Finding Surface Area
+
+% \item Use the cylindrical coordinate-based parametrization \[\vec{r}(\theta,z)=\left<2\cos\theta,2\sin\theta,z\right>\] to express the area of the surface $x^2+y^2=4$ between the planes $x=0$ and $x=2$ as a double iterated integral. \textbf{Do not evaluate the integral.}
+
+% \vspace*{8in}
+
+% \liner
+
+% \newpage\up
+
+% % (14.6) Surface Integral
+
+% \item Use the spherical coordinate-based parametrization \[\vec{r}(\phi,\theta)=\left<\sin\phi\cos\theta,\sin\phi\sin\theta,\cos\phi\right>\] to express the surface integral $\iint\limits_S 3z^2\,d\sigma$ as a double iterated integral of $\phi,\theta$, where $S$ is the upper half of the unit sphere $z=\sqrt{1-x^2-y^2}$. \textbf{Do not evaluate the integral.}
 
 
     \end{enumerate}
