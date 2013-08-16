@@ -573,11 +573,32 @@
         \item $G:$ triangle with vertices $(0,0)$, $(2,0)$, $(2,4)$\\ $S:$ the triangle with vertices $(0,0,8)$, $(2,0,6)$, $(2,4,2)$
         \item $G:$ $0\leq\theta\leq 2\pi$ and $-1\leq z\leq 4$\\ $S:$ the lateral surface on the cylinder $x^2+y^2=9$ between $z=-1$ and $z=4$
         \item $G:$ $0\leq\theta\leq 2\pi$ and $0\leq\phi\leq\pi$\\  $S:$ the sphere $x^2+y^2+z^2=4$
-        \item $G:$ $0\leq\theta\leq \frac{\pi}{2}$ and $1\leq r\leq 2$\\ $S:$ the conical surface $z=\sqrt{x^2+y^2}$ within the first octant and between the planes $z=1$ and $z=2$
-        \item $G:$ $0\leq\theta\leq \frac{\pi}{2}$ and $\sqrt{2}\leq \rho\leq 2\sqrt{2}$\\ $S:$ the conical surface along $z=\sqrt{x^2+y^2}$ in the first octant and between the planes $z=1$ and $z=2$
+        \item $G:$ $0\leq\theta\leq \frac{\pi}{2}$ and $1\leq r\leq 2$\\ $S:$ the portion of the conical surface $z=\sqrt{x^2+y^2}$ within the first octant and between the planes $z=1$ and $z=2$
+        \item $G:$ $0\leq\theta\leq 2\pi$ and $0\leq \rho\leq 3$\\ $S:$ the portion of the conical surface $z=\sqrt{x^2+y^2}$ inside the sphere $x^2+y^2+z^2=9$
       \end{enumerate}
 
     \newpage
+
+    \item Given the parametrization $\vect{r}$ from the region $G$ to the surface $S$, express the surface area of the $S$ as a double iterated integral. (16.6)
+
+      \begin{enumerate}
+        \item 
+          $\vect{r}(u,v)=\<6u,3v,2-2u-2v\>$\\
+          $G$: triangle with vertices $(0,0)$, $(1,0)$, $(0,1)$\\ 
+          $S$: portion of the plane $x+2y+3z=6$ in the first octant
+        \item
+          $\vect{r}(r,\theta)=\<r\cos\theta,r\sin\theta,8-4r\cos\theta-r\sin\theta\>$\\
+          $G:$ circlular region given by $0\leq r\leq 2$ and $0\leq\theta\leq 2\pi$\\
+          $S$: elliptical region given by the portion of the plane $4x+y+z=8$ inside the cylinder $x^2+y^2=4$
+        \item
+          $\vect{r}(x,y)=\<x,y,\sqrt{x^3}+\sqrt{y^3}\>$\\
+          $G:$ square $0\leq x\leq 9$, $0\leq y\leq 9$\\
+          $S:$ surface $z=\sqrt{x^3}+\sqrt{y^3}$ above $G$
+        \item
+          $\vect{r}(\phi,\theta)=\<2\sin\phi\cos\theta,2\sin\phi\sin\theta,2\cos\phi\>$\\
+          $G$: rectangle $0\leq\phi\leq\frac{\pi}{2}$, $0\leq\theta\leq2\pi$\\
+          $S:$ hemisphere $x^2+y^2+z^2=4$ above the $xy$ plane
+      \end{enumerate}
 
     \end{enumerate}
 
