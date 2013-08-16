@@ -13,7 +13,7 @@ This repo is still a work-in-progress.
 Abstract
 --------
 
-These notes were written to outline the major topics covered in Auburn University's Calculus III course based on Stewart's 7th Edition Calculus text. It progresses through most of the sections in Chapters 12 through 16 as follows, but Chapter 15 is reorganized slightly to introduce the Jacobian before introducing alternate coordinate systems. (In addition, sections 15.5 and 15.6 are omitted entirely to match Auburn's course syllabus.)
+These notes were written to outline the major topics covered in Auburn University's Calculus III course based on Stewart's 7th Edition Calculus text. It progresses through most of the sections in Chapters 12 through 16, but Chapter 15 is reorganized slightly to introduce the Jacobian before introducing alternate coordinate systems. (In addition, sections 15.5 and 15.6 are omitted entirely to match Auburn's course syllabus.)
 
 In addition, several original example problems based on these notes have also been written, which may be assigned as homework as an alternative to using problems from the text.
 
@@ -24,7 +24,7 @@ Purpose
 
 The purpose of these notes is not to replace any calculus or analysis textbook, but rather to be used as a guide/outline for students and instructors covering the topics in a Calculus III course.
 
-As such, when deemed necessary, mathematical rigor is abandoned for the sake of simplicity or brevity. (Many theorems are said to apply only to "nice" functions, and others may omit their caveats entirely.) Instructors are expected to elaborate during lecture whenever rigor is desired, but students should be able to use these notes as a "good-enough" resource for working on computational problems, particularly the included study problems.
+As such, when deemed necessary, mathematical rigor is abandoned for the sake of simplicity or brevity. (Many theorems only apply to "nice" functions, which usually assumes some level of continuity or differentiability.) Instructors are expected to elaborate during lecture whenever rigor is desired, but students should be able to use these notes as a "good-enough" resource for working on computational problems, particularly the included study problems.
 
 About the Author
 ----------------

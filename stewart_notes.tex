@@ -6,6 +6,14 @@
 
 \begin{document}
 
+These notes were written to outline the major topics covered in Auburn University's Calculus III course based on Stewart's 7th Edition Calculus text. It progresses through most of the sections in Chapters 12 through 16, but Chapter 15 is reorganized slightly to introduce the Jacobian before introducing alternate coordinate systems. In addition, sections 15.5 and 15.6 are omitted entirely to match Auburn's course syllabus.
+
+The purpose of these notes is not to replace any calculus or analysis textbook, but rather to be used as a guide/outline for students and instructors covering the topics in a Calculus III course.
+
+As such, when deemed necessary, mathematical rigor is abandoned for the sake of simplicity or brevity. (Many theorems actually only apply to ``nice'' functions, usually requiring some level of continuity or differentiability.) Since for many applications of interest the relevant functions are ``nice'', students should be able to use these notes as a ``good-enough'' resource for working on computational problems, particularly the accompanying study problems.
+
+\newpage
+
 \centerline{\bf 12.1 Three-Dimensional Coordinate Systems}
 
   \begin{itemize}
@@ -1701,7 +1709,7 @@ v_1 & v_2 \\
           \vect{r}(t) = \<t,f(t)\>, x_0\leq t\leq x_1 \text{ (for } x_0\leq x_1 \text{)}
         \]
         \[
-          \vect{r}(t) = \<-t,f(-t)\>, x_1\leq t\leq x_0 \text{ (for } x_1\leq x_0 \text{)}
+          \vect{r}(t) = \<-t,f(-t)\>, -x_0\leq t\leq -x_1 \text{ (for } x_0\leq x_1 \text{)}
         \]
     \end{itemize}
   
@@ -1941,17 +1949,18 @@ v_1 & v_2 \\
 
   \begin{itemize}
 
-    \item Surface Orientation
-      \begin{itemize}
-        \item The orientation of a surface is determined by a continuous unit normal vector field on the surface.
-      \end{itemize}
-
     \item Surface Integral
       \begin{itemize}
         \item If $G$ is the region in the $uv$ plane which maps onto the surface $S$ by the parametric equations $\vect{r}(u,v)$, then the surface integral of $f(\vect{r})$ along $S$ is:
           \[
             \iint_S f(\vect{r})\d\sigma = \iint_G f(\vect{r}(u,v))|\vect{r}_u\times\vect{r}_v|\d{A}
           \]
+      \end{itemize}
+
+    \item Surface Orientation
+      \begin{itemize}
+        \item The orientation of a surface is determined by a continuous unit normal vector field $\vect{n}$ on the surface.
+        \item The M\"obius strip is an example of a non-orientable surface.
       \end{itemize}
 
     \item Surface Integral of Vector Field
@@ -1971,7 +1980,7 @@ v_1 & v_2 \\
     \begin{itemize}
     \item Let $C$ give the counter-clockwise oriented boundary of a surface $S$.
     \[
-      \iint_S \curl\vect{F}\cdot\d{\vec\sigma} = \int_C \vect{F}\cdot\d{\vect{r}}
+      \iint_S \curl\vect{F}\cdot\vect{n}\d{\sigma} = \iint_S \curl\vect{F}\cdot\d{\vec\sigma} = \int_C \vect{F}\cdot\d{\vect{r}}
     \]
     \end{itemize}
   \end{itemize}
