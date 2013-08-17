@@ -569,12 +569,24 @@
     \item Find a parametrization from the region $G$ to the surface $S$. (16.6)
 
       \begin{enumerate}
-        \item $G:$ $0\leq x\leq 2$ and $0\leq y\leq 1$\\ $S:$ the portion of the elliptical paraboloid $z=x^2+y^2$ above $G$
-        \item $G:$ triangle with vertices $(0,0)$, $(2,0)$, $(2,4)$\\ $S:$ the triangle with vertices $(0,0,8)$, $(2,0,6)$, $(2,4,2)$
-        \item $G:$ $0\leq\theta\leq 2\pi$ and $-1\leq z\leq 4$\\ $S:$ the lateral surface on the cylinder $x^2+y^2=9$ between $z=-1$ and $z=4$
-        \item $G:$ $0\leq\theta\leq 2\pi$ and $0\leq\phi\leq\pi$\\  $S:$ the sphere $x^2+y^2+z^2=4$
-        \item $G:$ $0\leq\theta\leq \frac{\pi}{2}$ and $1\leq r\leq 2$\\ $S:$ the portion of the conical surface $z=\sqrt{x^2+y^2}$ within the first octant and between the planes $z=1$ and $z=2$
-        \item $G:$ $0\leq\theta\leq 2\pi$ and $0\leq \rho\leq 3$\\ $S:$ the portion of the conical surface $z=\sqrt{x^2+y^2}$ inside the sphere $x^2+y^2+z^2=9$
+        \item 
+          $S:$ the portion of the elliptical paraboloid $z=x^2+y^2$ above $G$\\
+          $G:$ $0\leq x\leq 2$ and $0\leq y\leq 1$
+        \item 
+          $S:$ the triangle with vertices $(0,0,8)$, $(2,0,6)$, $(2,4,2)$\\
+          $G:$ triangle with vertices $(0,0)$, $(2,0)$, $(2,4)$
+        \item  
+          $S:$ the lateral surface on the cylinder $x^2+y^2=9$ between $z=-1$ and $z=4$\\
+          $G:$ $0\leq\theta\leq 2\pi$ and $-1\leq z\leq 4$
+        \item   
+          $S:$ the sphere $x^2+y^2+z^2=4$\\
+          $G:$ $0\leq\theta\leq 2\pi$ and $0\leq\phi\leq\pi$
+        \item  
+          $S:$ the portion of the conical surface $z=\sqrt{x^2+y^2}$ within the first octant and between the planes $z=1$ and $z=2$\\
+          $G:$ $0\leq\theta\leq \frac{\pi}{2}$ and $1\leq r\leq 2$
+        \item 
+          $S:$ the portion of the conical surface $z=\sqrt{x^2+y^2}$ inside the sphere $x^2+y^2+z^2=9$\\
+          $G:$ $0\leq\theta\leq 2\pi$ and $0\leq \rho\leq 3$
       \end{enumerate}
 
     \newpage
@@ -583,22 +595,46 @@
 
       \begin{enumerate}
         \item 
-          $\vect{r}(u,v)=\<6u,3v,2-2u-2v\>$\\
+          $S$: portion of the plane $x+2y+3z=6$ in the first octant\\
           $G$: triangle with vertices $(0,0)$, $(1,0)$, $(0,1)$\\ 
-          $S$: portion of the plane $x+2y+3z=6$ in the first octant
+          $\vect{r}(u,v)=\<6u,3v,2-2u-2v\>$
         \item
-          $\vect{r}(r,\theta)=\<r\cos\theta,r\sin\theta,8-4r\cos\theta-r\sin\theta\>$\\
+          $S$: elliptical region given by the portion of the plane $4x+y+z=8$ inside the cylinder $x^2+y^2=4$\\
           $G:$ circlular region given by $0\leq r\leq 2$ and $0\leq\theta\leq 2\pi$\\
-          $S$: elliptical region given by the portion of the plane $4x+y+z=8$ inside the cylinder $x^2+y^2=4$
+          $\vect{r}(r,\theta)=\<r\cos\theta,r\sin\theta,8-4r\cos\theta-r\sin\theta\>$
         \item
-          $\vect{r}(x,y)=\<x,y,\sqrt{x^3}+\sqrt{y^3}\>$\\
+          $S:$ surface $z=\sqrt{x^3}+\sqrt{y^3}$ above $G$\\
           $G:$ square $0\leq x\leq 9$, $0\leq y\leq 9$\\
-          $S:$ surface $z=\sqrt{x^3}+\sqrt{y^3}$ above $G$
+          $\vect{r}(x,y)=\<x,y,\sqrt{x^3}+\sqrt{y^3}\>$
         \item
-          $\vect{r}(\phi,\theta)=\<2\sin\phi\cos\theta,2\sin\phi\sin\theta,2\cos\phi\>$\\
+          $S:$ hemisphere $x^2+y^2+z^2=4$ above the $xy$ plane\\
           $G$: rectangle $0\leq\phi\leq\frac{\pi}{2}$, $0\leq\theta\leq2\pi$\\
-          $S:$ hemisphere $x^2+y^2+z^2=4$ above the $xy$ plane
+          $\vect{r}(\phi,\theta)=\<2\sin\phi\cos\theta,2\sin\phi\sin\theta,2\cos\phi\>$
       \end{enumerate}
+
+    \item Use the given parametrization $\vect{r}$ from the region $G$ to the surface $S$ to rewrite the surface integral as a double iterated integral. (16.7)
+
+      \begin{enumerate}
+        \item 
+          $\iint_S x+y+z\d{\sigma}$\\
+          $S$: plane $x+z=2$ above $G$\\
+          $G$: square $0\leq x\leq 1$, $0\leq y\leq 1$\\
+          $\vect{r}(x,y)=\<x,y,2-x\>$
+        \item
+          $\iint_S x^2+y^2\d\sigma$\\
+          $S$: lateral surface of the cylinder $x^2+y^2=4$ where $0\leq z\leq 1$\\
+          $G$: rectangle $0\leq \theta\leq 2\pi$, $0\leq z\leq 1$\\
+          $\vect{r}(\theta,z)=\<2\cos\theta,2\sin\theta,z\>$
+        \item
+          $\iint_S 3z\d\sigma$\\
+          $S$: cone $z=\sqrt{x^2+y^2}$ below $z=2$\\
+          $G$: rectangle $0\leq\rho\leq 2\sqrt{2}$, $0\leq\theta\leq 2\pi$\\
+          $\vect{r}(\rho,\theta)=\<\frac{\sqrt{2}}{2}\rho\cos\theta,\frac{\sqrt{2}}{2}\rho\sin\theta,\frac{\sqrt{2}}{2}\rho\>$
+      \end{enumerate}
+
+    \newpage
+
+    \item 
 
     \end{enumerate}
 
