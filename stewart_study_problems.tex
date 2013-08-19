@@ -524,7 +524,7 @@
         \item $\int_C 2x\d{y}$, $C:$ parabolic arc on $y=x^2$ from $(0,0)$ to $(1,1)$
       \end{enumerate}
 
-    \item Compute the work done by the force $\vect{F}$ over the curve $C$. (16.2) % brute force
+    \item Evaluate the line integral $\int_C \vect{F}\cdot\d{\vect{r}}$ directly. (16.2)
 
       \begin{enumerate}
         \item $\vect{F}=\<y,x+y\>$, $C:$ line segment from $(1,3)$ to $(-4,-9)$
@@ -533,7 +533,7 @@
         \item $\vect{F}=\<y,2y\>$, $C:$ trigonometric arc on $y=\sin x$ from $(0,0)$ to $(\pi,0)$
       \end{enumerate}
 
-    \item Compute the work done by the force $\vect{F}$ over the curve $C$. (16.3) % fund thm
+    \item Evaluate the line integral $\int_C \vect{F}\cdot\d{\vect{r}}$ using the Fundamental Theorem of Line Integrals. (16.3)
 
       \begin{enumerate}
         \item $\vect{F}=\<x,y\>$, $C:$ line segment from $(1,1)$ to $(3,-2)$
@@ -546,7 +546,7 @@
 
     \newpage
 
-    \item Compute the work done by the force $\vect{F}$ over the curve $C$. (16.4) % green's thm
+    \item Evaluate the line integral $\int_C \vect{F}\cdot\d{\vect{r}}$ using Green's Theorem. (16.4)
 
       \begin{enumerate}
         \item $\vect{F}=\<x^2+y,x+y\>$, $C:$ boundary of the unit square oriented counter-clockwise
@@ -612,12 +612,12 @@
           $\vect{r}(\phi,\theta)=\<2\sin\phi\cos\theta,2\sin\phi\sin\theta,2\cos\phi\>$
       \end{enumerate}
 
-    \item Use the given parametrization $\vect{r}$ from the region $G$ to the surface $S$ to rewrite the surface integral as a double iterated integral. (16.7)
+    \item Given the parametrization $\vect{r}$ from the region $G$ to the surface $S$, rewrite the surface integral as a double iterated integral. (16.7)
 
       \begin{enumerate}
         \item 
           $\iint_S x+y+z\d{\sigma}$\\
-          $S$: plane $x+z=2$ above $G$\\
+          $S$: portion of the plane $x+z=2$ above $G$\\
           $G$: square $0\leq x\leq 1$, $0\leq y\leq 1$\\
           $\vect{r}(x,y)=\<x,y,2-x\>$
         \item
@@ -634,7 +634,43 @@
 
     \newpage
 
-    \item 
+    \item Given the positively oriented parametrization $\vect{r}$ from the region $G$ to the surface $S$, rewrite the vector field surface integral as a scalar double iterated integral. (16.7)
+
+      \begin{enumerate}
+        \item
+          $\iint_S \<x+y,y+z,z+x\>\cdot\d{\vec\sigma}$\\
+          $S$: parallelogram with vertices $(4,0,3)$, $(5,-2,2)$, $(4,-1,-1)$, $(3,1,0)$\\
+          $G$: square with vertices $(0,0)$, $(1,0)$, $(1,1)$, $(0,1)$ in the $uv$ plane\\
+          $\vect{r}(u,v) = \< 4+u-v, -2u+v, 3-u-3v\>$
+        \item
+          $\iint_S \<y,-x,1-z\>\cdot\d{\vec{\sigma}}$\\
+          $S$: portion of the elliptical paraboloid $z=x^2+y^2$ above $G$ with concave orientation\\
+          $G$: triangle $0\leq x\leq 2$, $0\leq y\leq 2x$ in the $xy$ plane\\
+          $\vect{r}(x,y)=\<x,y,x^2+y^2\>$
+        \item 
+          $\iint_S \<x,y,z\>\cdot\d{\vec{\sigma}}$\\
+          $S$: surface of the unit sphere oriented outwards\\
+          $G$: rectangle $0\leq\phi\leq\pi$, $0\leq\theta\leq2\pi$\\
+          $\vect{r}(\phi,\theta) = \< \sin\phi\cos\theta, \sin\phi\sin\theta, \cos\phi \>$
+      \end{enumerate}
+
+    \item Use Stokes' Theorem to rewrite the given surface integral as a definite integral, where $S$ is the upper hemisphere $z=\sqrt{1-x^2-y^2}$ with convex orientation.
+
+      \begin{enumerate}
+        \item $\iint_S \<1,1,1\>\cdot\d{\vec{\sigma}}$
+        \item $\iint_S \<-2z,0,-2y\>\cdot\d{\vec{\sigma}}$
+        \item $\iint_S \<0,1-2x,2x-1\>\cdot\d{\vec{\sigma}}$
+        \item $\iint_S \<1,1,3-2y\>\cdot\d{\vec\sigma}$
+      \end{enumerate}
+
+    \item Use the Divergence Theorem to rewrite the given surface integral as a triple iterated integral, where $S$ is the surface of the unit cube oriented outwards.
+
+      \begin{enumerate}
+        \item $\iint_S \<x,y,z\>\cdot\d{\vec\sigma}$
+        \item $\iint_S \<x+y,y^2+z^2,z^3+x^3\>\cdot\d{\vec\sigma}$
+        \item $\iint_S \<xyz,xyz,xyz\>\cdot\d{\vec\sigma}$
+        \item $\iint_S \<xy+yz,yz+zx,zx+xy\>\cdot\d{\vec\sigma}$
+      \end{enumerate}
 
     \end{enumerate}
 
